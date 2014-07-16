@@ -59,7 +59,7 @@ body {
 .jumbotron {
     padding: 0;
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 5px;
 }
 
 .page-header-image-container {
@@ -90,4 +90,25 @@ body {
 
 .fa {
     line-height: inherit;
+}
+
+.fa-custom-size {
+    font-size: 11pt;
+}
+
+.header {
+    padding: 20px 0px 5px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #EEE;
+}
+
+.header p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+
+.header h1, .header .h1 {
+    font-size: 63px;
 }
