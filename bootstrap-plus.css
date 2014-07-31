@@ -1,0 +1,152 @@
+/* bootstrap-plus.css */
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+* {
+    outline: 0 none !important;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.navbar {
+    border: 0px;
+    border-radius: 0px;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#00000000',GradientType=0 );
+
+}
+
+.navbar a {
+    color: #fff !important;
+}
+
+.navbar-nav a {
+    background-color: transparent !important;
+}
+
+.navbar-nav a:hover {
+    background: -moz-linear-gradient(top, rgba(66,149,205,0.75) 0%, rgba(66,149,205,.15) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(66,149,205,0.75)), color-stop(100%,rgba(66,149,205,.15)));
+    background: -webkit-linear-gradient(top, rgba(66,149,205,0.75) 0%,rgba(66,149,205,.15) 100%);
+    background: -o-linear-gradient(top, rgba(66,149,205,0.75) 0%,rgba(66,149,205,.15) 100%);
+    background: -ms-linear-gradient(top, rgba(66,149,205,0.75) 0%,rgba(66,149,205,.15) 100%);
+    background: linear-gradient(to bottom, rgba(66,149,205,0.75) 0%,rgba(66,149,205,.15) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf4295cd', endColorstr='#264295cd',GradientType=0 );
+}
+
+.navbar-nav a:active, .active {
+    color: #fff !important;
+    background-color: rgba(66,149,205, 0.75) !important;
+}
+
+.navbar-toggle {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-toggle:after {
+    content: "Click to show links";
+    padding-right: 8px;
+    top: 16.5px;
+    right: 8px;
+    position: absolute;
+    color: rgba(255,255,255,.85) !important;
+}
+
+.jumbotron {
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.page-header-image-container {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 25%;
+    padding: 0px;
+    height: 320px;
+    margin-top: -70px;
+    background-image: url('/header.png');
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: -9999;
+}
+
+.fill {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.btn-100 {
+    height:100%;
+    min-width:100% !important;
+}
+
+.well .row .col-md-6 {
+    padding-left: 3.75px;
+    padding-right: 3.75px;
+}
+
+.fa {
+    line-height: inherit;
+}
+
+.fa-custom-size {
+    font-size: 11pt;
+}
+
+.header {
+    padding: 20px 0px 5px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #EEE;
+    margin-top: 250px;
+}
+
+.header p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+
+.header h1, .header .h1 {
+    font-size: 63px;
+}
+
+.navbar-brand:after {
+    content: 'Somasis';
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: default;
+}
+
+.navbar-brand:hover:after {
+    content: 'So\00b7ma[e]\00b7sis';
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.center-vertical {
+    padding-top: 3.75%;
+}
+
+.header-lead {
+    font-size: 32px !important;
+}
+
+.album-tile {
+    padding: 0px !important;
+}
