@@ -7,6 +7,10 @@
     font-family: 'Droid Sans', sans-serif;
 }
 
+body {
+    background-color: #f6f6f6;
+}
+
 .navbar {
     border: 0px;
     border-radius: 0px;
@@ -80,7 +84,6 @@
     background-image: url('/header.png');
     top: 0px;
     left: 0px;
-    position: fixed;
     z-index: -9999;
 }
 
