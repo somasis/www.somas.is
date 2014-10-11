@@ -169,3 +169,9 @@ h1, .h1 {
     margin-right: auto;
     display: block;
 }
+
+@media screen and (max-width: 992px) {
+    .content {
+        width: 95%
+    }
+}
