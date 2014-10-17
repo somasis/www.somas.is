@@ -127,6 +127,11 @@ body {
     z-index: -1
 }
 
+a .top-row {
+    color: #333;
+    text-decoration: none;
+}
+
 .heading p {
     margin-bottom: 15px;
     font-size: 21px;
