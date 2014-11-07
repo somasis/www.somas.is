@@ -1,0 +1,18 @@
+#
+# List of repositories.
+# This list could be kept in a different file (e.g. '/etc/cgitrepos')
+# and included like this:
+#   include=/etc/cgitrepos
+#
+
+repo.url=somasis.com
+repo.path=/srv/git-repos/somasis.com
+repo.desc=files that make up my website at git.somasis.com
+
+repo.url=connman-ui
+repo.path=/srv/git-repos/connman-ui
+repo.desc=fork of connman-ui-gtk to make it more like network-manager-applet
+
+repo.url=gnome-colors-revival
+repo.path=/srv/git-repos/gnome-colors-revival
+repo.desc=fork of the gnome-colors icon theme that updates it with more icons and gtk 3.0 themes
