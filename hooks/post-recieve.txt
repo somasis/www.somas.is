@@ -1,0 +1,11 @@
+#!/bin/sh
+
+#short_commit=$(git describe --all --long | sed 's/-[0-9]-/-/')
+short_commit="$3"
+cd /srv/www/htdocs
+
+GIT_DIR=/srv/www/somasis.com.git git checkout -f
+
+find -name '*.html' -exec bash -c 'echo "<!-- updated from http://github.com/Somasis/somasis.com, commit $short_commit at $(date) -->" >> {}' \;
+find -name '*.css'  -exec bash -c 'echo "<!-- updated from http://github.com/Somasis/somasis.com, commit $short_commit at $(date) -->" >> {}' \;
+
