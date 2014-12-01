@@ -1,0 +1,1 @@
+This is a folder containing the hooks I use to update my website. The only thing so far is the post-recieve, which dates and checkouts the git repo for my site into the right directory.

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -x
+
+args="$@"
+GIT_WORK_TREE=/srv/www/htdocs git checkout -f
+
+find -name '*.html' -exec bash -c 'echo "<!-- updated from http://github.com/Somasis/somasis.com, $args at $(date) -->" >> {}' \;
+find -name '*.css'  -exec bash -c 'echo "<!-- updated from http://github.com/Somasis/somasis.com, $args at $(date) -->" >> {}' \;
+
