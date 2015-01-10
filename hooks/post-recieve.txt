@@ -1,6 +1,0 @@
-#!/bin/sh
-
-set -x
-cd /srv/www/htdocs
-GIT_DIR=/srv/www/somasis.com.git git checkout -f
-
