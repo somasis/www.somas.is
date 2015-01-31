@@ -107,8 +107,8 @@ body {
     color: inherit;
     padding-top: 75px;
     padding-bottom: 75px;
-    min-height: 350px;
-    max-height: 350px;
+    min-height: 275px;
+    max-height: 275px;
 }
 
 .top-row:after {
