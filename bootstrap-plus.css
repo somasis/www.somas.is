@@ -116,7 +116,7 @@ body {
 
 .top-row:after {
     content: "";
-    opacity: 0.15;
+    opacity: 0.10;
     background: url('/header.png');
     background-size: cover;
     background-repeat: no-repeat;
