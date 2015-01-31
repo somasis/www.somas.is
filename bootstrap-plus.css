@@ -10,7 +10,6 @@
 
 body {
     background-color: #f6f6f6;
-    padding-bottom: 36px;
 }
 
 .name {
@@ -83,6 +82,10 @@ body {
     top: 0px;
     left: 0px;
     z-index: -9999;
+}
+
+.container {
+    padding-bottom: 36px;
 }
 
 .fill {
