@@ -186,3 +186,8 @@ hr {
         width: 95%
     }
 }
+
+.geekcode {
+    display: block;
+    text-align:left;
+}
