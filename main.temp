@@ -9,7 +9,7 @@
     <meta name="date" content="<?theme date?>" />
     <meta name="generator" content="<?theme version?>" />
     <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
-    <link rel="stylesheet" type="text/css" href="/main.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
     <?theme body?>

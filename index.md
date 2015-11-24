@@ -1,6 +1,7 @@
+<header>
 # Somasis
 ## Kylie McClain. 17-year-old breakcore musician, free software enthusiast, developer
-
+</header>
 [Music] - [Blog] - [Git]
 
 ## Things of note
@@ -23,7 +24,7 @@
 [Git]:                      https://github.com/somasis
 [Exherbo Linux]:            https://www.exherbo.org/
 [musl libc]:                http://www.musl-libc.org/
-[x86_64-pc-linux-musl]:     /stages
+[x86_64-pc-linux-musl]:     ./stages/
 [Working]:                  https://git.exherbo.org/dev/somasis.git/tree/etc/permissive/README.md
 [permissively-licensed]:    http://www.openbsd.org/policy.html
 [beginning]:                https://github.com/somasis/beginning
