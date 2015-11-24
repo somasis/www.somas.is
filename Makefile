@@ -7,6 +7,8 @@ clean:
 
 %.html:	%.md main.temp main.css
 	[[ -f "$*.temp" ]] && theme -t "$*.temp" < "$<" > "$@" || theme -t "main.temp" "$<" -o "$@"
+	tidy5 "$@" > "$@".tmp
+	mv "$@".tmp "$@"
 
 deploy: *.html
 	rm -f $(IMAGE)/*.md $(IMAGE)/Makefile $(IMAGE)/*.temp $(IMAGE)/*.tmp
