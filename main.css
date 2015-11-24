@@ -1,0 +1,28 @@
+body {
+    margin: 20px 20px auto;
+    max-width: 700px;
+    line-height: 1.4;
+    font-size: 14pt;
+    color: #444;
+    background-color: #fafafa;
+}
+
+header h1 {
+    font-size: 32pt;
+    line-height: 1.2;
+}
+
+header aside {
+    font-weight: normal;
+    font-size: 14pt;
+    color: #777;
+}
+
+a:link {
+    color: #3e68bf;
+}
+
+a:visited {
+    color: #935D99;
+}
+
