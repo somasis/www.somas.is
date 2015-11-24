@@ -6,9 +6,12 @@ clean:
 	rm -f *.html *.tmp
 
 %.html:	%.md main.temp main.css
-	[[ -f "$*.temp" ]] && theme -t "$*.temp" < "$<" > "$@" || theme -t "main.temp" "$<" -o "$@"
-	tidy5 "$@" > "$@".tmp
-	mv "$@".tmp "$@"
+	if [[ -f "$*.temp" ]];then \
+		theme -t "$*.temp" < "$<" > "$@";	\
+	else	\
+		theme -t "main.temp" < "$<" > "$@";	\
+	fi
+	tidy -q -utf8 -language en -i -m "$@" || true
 
 deploy: *.html
 	rm -f $(IMAGE)/*.md $(IMAGE)/Makefile $(IMAGE)/*.temp $(IMAGE)/*.tmp
