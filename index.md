@@ -1,3 +1,7 @@
+% Somasis
+% Kylie McClain
+% 2015-11-24
+
 <header>
 # Somasis
 ## Kylie McClain. 17-year-old breakcore musician, free software enthusiast, developer
