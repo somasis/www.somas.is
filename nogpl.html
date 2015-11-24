@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>nogpl.md</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Homepage of breakcore musician, Exherbo Linux developer, computer lover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="" />
+    <meta name="date" content="Mon Nov 23 23:19:56 2015
+" />
+    <meta name="generator" content="2.1.8 DEBUG DL=DISCOUNT" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+    <a name="nogpl"></a>
+<h1>nogpl</h1>
+
+<a name="replacements.for.GPL.implementations.of.programs.and.libraries"></a>
+<h3>replacements for GPL implementations of programs and libraries</h3>
+
+<a name="init"></a>
+<h2>init</h2>
+
+<ul>
+<li><a href="http://homepage.ntlworld.com/jonathan.deboynepollard/Softwares/nosh.html">nosh</a> - suite of utilities for managing daemons/terminals - MIT/ISC/BSD-2
+
+<ul>
+<li>can use systemd units!</li>
+</ul>
+</li>
+<li><a href="https://github.com/Somasis/beginning">Beginning</a> - simple BSD-style rc.d init - ISC
+
+<ul>
+<li>heavily inspired from arch linux initscripts</li>
+</ul>
+</li>
+<li><a href="http://b0llix.net/perp/">perp</a> - Persistent process supervisor, service management framework - BSD-2</li>
+<li><a href="http://skarnet.org/software/s6/">s6</a> - Process supervision toolbox - ISC</li>
+<li><a href="http://cr.yp.to/daemontools.html">daemontools</a> - DJB&rsquo;s famous collection of tools for managing services - Public domain
+
+<ul>
+<li>[daemontools-encore] - MIT</li>
+</ul>
+</li>
+<li><a href="http://smarden.org/runit/">runit</a> - init scheme with service supervision - BSD-3</li>
+</ul>
+
+
+<a name="coreutils"></a>
+<h2>coreutils</h2>
+
+<ul>
+<li><a href="http://landley.net/toybox/">toybox</a> - Implementation of common Linux command line utilities - BSD/Public domain
+
+<ul>
+<li>includes all coreutils (bar a few GNU weird ones)</li>
+</ul>
+</li>
+</ul>
+
+
+<a name="tar"></a>
+<h2>tar</h2>
+
+<ul>
+<li><a href="http://libarchive.org/">libarchive</a> - includes feature-complete versions of tar and cpio - BSD-2
+
+<ul>
+<li>did you know you can use it to replace unzip? <code>tar xvf file.zip</code>!</li>
+</ul>
+</li>
+</ul>
+
+
+<a name="awk"></a>
+<h2>awk</h2>
+
+<ul>
+<li><a href="https://github.com/dimkr/lok">lok</a> - Linux port of OpenBSD awk - ISC/some sort of BSD</li>
+</ul>
+
+
+<a name="sed"></a>
+<h2>sed</h2>
+
+<ul>
+<li><a href="http://landley.net/toybox/">toybox</a> sed - BSD/Public domain</li>
+</ul>
+
+
+<a name="man"></a>
+<h2>man</h2>
+
+<ul>
+<li><a href="http://mdocml.bsd.lv/">mandoc</a> - Alternative to groff, man-db - ISC</li>
+</ul>
+
+
+<a name="udev"></a>
+<h2>udev</h2>
+
+<ul>
+<li>[vdev] - very cool cross-platform device-file manager - ISC (dual-licensed with GPLv3+)
+
+<ul>
+<li>some Linux-specific programs are derived from udev source, and are GPLv2</li>
+</ul>
+</li>
+</ul>
+
+
+<a name="libraries"></a>
+<h1>libraries</h1>
+
+<a name="libc"></a>
+<h2>libc</h2>
+
+<ul>
+<li><a href="http://www.musl-libc.org/">musl</a> - A lightweight standard C library - MIT</li>
+</ul>
+
+
+<a name="readline"></a>
+<h2>readline</h2>
+
+<ul>
+<li>[libedit] - line editor library with history, tokenization, unicode - BSD-3
+
+<ul>
+<li>with a few symlinks it is source-code compatible with readline</li>
+</ul>
+</li>
+</ul>
+
+
+<a name="toolchain.development"></a>
+<h1>toolchain/development</h1>
+
+<a name="compilers"></a>
+<h2>compilers</h2>
+
+<ul>
+<li><a href="http://clang.llvm.org/">clang</a>/clang++ - LLVM-based C, C++, Obj-C++ compiler - UoI/NCSA</li>
+</ul>
+
+
+<a name="m4"></a>
+<h2>m4</h2>
+
+<ul>
+<li><a href="http://cvsweb.openbsd.org/cgi-bin/cvsweb/src/usr.bin/m4/">OpenBSD m4</a> - implementation of m4 with some GNU extensions - BSD-2/ISC</li>
+<li><a href="http://haddonthethird.net/m4/">Quasar m4</a> - drop-in replacement for GNU m4, forked from FreeBSD 9.1 - BSD-2</li>
+</ul>
+
+
+<a name="debuggers"></a>
+<h2>debuggers</h2>
+
+<ul>
+<li><a href="http://lldb.llvm.org/">lldb</a> - LLVM project debugger - UoI/NCSA</li>
+</ul>
+
+
+<a name="libtool"></a>
+<h2>libtool</h2>
+
+<ul>
+<li>don&rsquo;t use it! - Public domain</li>
+</ul>
+
+
+<a name="pkg-config"></a>
+<h2>pkg-config</h2>
+
+<ul>
+<li><a href="https://github.com/pkgconf/pkgconf">pkgconf</a> - drop-in replacement for pkg-config, without glib dependencies - ISC</li>
+</ul>
+
+
+</body>
+</html>

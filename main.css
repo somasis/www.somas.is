@@ -26,3 +26,13 @@ a:visited {
     color: #935D99;
 }
 
+ul {
+    list-style: none;
+}
+
+ul li:before {
+    content: "-";
+    padding-right: 4px;
+    font-sie: 90%;
+}
+
