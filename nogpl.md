@@ -1,10 +1,16 @@
+% nogpl
+% Kylie McClain
+%
+
+<header>
 # nogpl
-### replacements for GPL implementations of programs and libraries
+## replacements for GPL implementations of programs and libraries
+</header>
 
 ## init
 - [nosh] - suite of utilities for managing daemons/terminals - MIT/ISC/BSD-2
     - can use systemd units!
-- [Beginning] - simple BSD-style rc.d init - ISC
+- [beginning] - simple BSD-style rc.d init - ISC
     - heavily inspired from arch linux initscripts
 - [perp] - Persistent process supervisor, service management framework - BSD-2
 - [s6] - Process supervision toolbox - ISC
@@ -58,19 +64,22 @@
 ## pkg-config
 - [pkgconf] - drop-in replacement for pkg-config, without glib dependencies - ISC
 
-[musl]:         http://www.musl-libc.org/
-[nosh]:         http://homepage.ntlworld.com/jonathan.deboynepollard/Softwares/nosh.html
-[beginning]:    https://github.com/Somasis/beginning
-[perp]:         http://b0llix.net/perp/
-[s6]:           http://skarnet.org/software/s6/
-[daemontools]:  http://cr.yp.to/daemontools.html
-[runit]:        http://smarden.org/runit/
-[toybox]:       http://landley.net/toybox/
-[libarchive]:   http://libarchive.org/
-[lok]:          https://github.com/dimkr/lok
-[mandoc]:       http://mdocml.bsd.lv/
-[clang]:        http://clang.llvm.org/
-[lldb]:         http://lldb.llvm.org/
-[openbsd m4]:   http://cvsweb.openbsd.org/cgi-bin/cvsweb/src/usr.bin/m4/
-[quasar m4]:    http://haddonthethird.net/m4/
-[pkgconf]:      https://github.com/pkgconf/pkgconf
+[musl]:                 http://www.musl-libc.org/
+[nosh]:                 http://homepage.ntlworld.com/jonathan.deboynepollard/Softwares/nosh.html
+[beginning]:            https://github.com/Somasis/beginning
+[perp]:                 http://b0llix.net/perp/
+[s6]:                   http://skarnet.org/software/s6/
+[daemontools]:          http://cr.yp.to/daemontools.html
+[daemontools-encore]:   http://untroubled.org/daemontools-encore/
+[runit]:                http://smarden.org/runit/
+[toybox]:               http://landley.net/toybox/
+[libarchive]:           http://libarchive.org/
+[lok]:                  https://github.com/dimkr/lok
+[mandoc]:               http://mdocml.bsd.lv/
+[clang]:                http://clang.llvm.org/
+[lldb]:                 http://lldb.llvm.org/
+[openbsd m4]:           http://cvsweb.openbsd.org/cgi-bin/cvsweb/src/usr.bin/m4/
+[quasar m4]:            http://haddonthethird.net/m4/
+[pkgconf]:              https://github.com/pkgconf/pkgconf
+[vdev]:                 https://github.com/jcnelson/vdev
+[libedit]:              http://thrysoee.dk/editline/

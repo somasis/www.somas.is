@@ -11,7 +11,7 @@ clean:
 	else	\
 		theme -t "main.temp" < "$<" > "$@";	\
 	fi
-	tidy -q -utf8 -language en -i -m "$@" || true
+	tidy -q -utf8 -language en -i -m -w 0 "$@" || true
 
 deploy: *.html
 	rm -f $(IMAGE)/*.md $(IMAGE)/Makefile $(IMAGE)/*.temp $(IMAGE)/*.tmp
