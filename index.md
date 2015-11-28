@@ -5,8 +5,8 @@
 <header>
 # ~somasis
 ## Kylie McClain. Breakcore musician, free software enthusiast, developer
-</header>
 [Music] - [Blog] - [Git]
+</header>
 
 ## About me
 
