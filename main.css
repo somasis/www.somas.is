@@ -77,3 +77,7 @@ footer {
     font-size: 12pt;
     font-weight: 200;
 }
+
+.float-right {
+    float: right !important;
+}
