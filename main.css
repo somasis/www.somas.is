@@ -6,7 +6,7 @@
         margin: <t> <r> <b> <l>;
 */
 
-@import url(http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
 
 body {
