@@ -1,4 +1,4 @@
-IMAGE=/srv/www/www.somasis.com
+IMAGE?=	/srv/www/www.somasis.com
 
 all:	$(addsuffix .html,$(basename $(shell find -type f -name '*.md')))
 
@@ -13,5 +13,7 @@ clean:
 	fi
 	tidy -q -utf8 -language en -i -m -w 0 "$@" || true
 
-deploy: *.html
-	rm -f $(IMAGE)/*.md $(IMAGE)/Makefile $(IMAGE)/*.temp $(IMAGE)/*.tmp
+deploy: $(wildcard *.html)
+	rm -rf $(IMAGE)/*.md $(IMAGE)/Makefile $(IMAGE)/*.temp $(IMAGE)/*.tmp
+
+.PHONY:	all clean deploy
