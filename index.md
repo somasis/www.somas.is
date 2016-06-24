@@ -34,6 +34,7 @@ try to be varied in my influences and creations.
       components whenever possible.
     - Redesigned website to look more modern, and be responsive to different
       devices.
+    - I maintain a [distfiles mirror].
 - [beginning], an init system no smarter than me or you
 - [lux], a Linux kernel updater
 - [git-gerrit], a non-interactive Gerrit interface
@@ -50,7 +51,8 @@ This site is made with [Discount] and [Markdown]. The source is located [here][S
 [Git]:                      https://github.com/somasis
 [Exherbo Linux]:            http://www.exherbo.org/
 [musl libc]:                http://www.musl-libc.org/
-[x86_64-pc-linux-musl]:     ./stages/
+[x86_64-pc-linux-musl]:     /dl/stages
+[distfiles mirror]:         /dl/mirror/exherbo
 [Working]:                  https://git.exherbo.org/dev/somasis.git/tree/etc/permissive/README.md
 [permissively-licensed]:    http://www.openbsd.org/policy.html
 [beginning]:                https://github.com/somasis/beginning
