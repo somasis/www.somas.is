@@ -4,7 +4,7 @@
 
 <header>
 # ~somasis
-## Kylie McClain. Breakcore musician, free software enthusiast, developer
+## breakcore musician, free software enthusiast, developer
 [Music] - [Blog] - [Git]
 </header>
 
@@ -16,10 +16,10 @@ get a lot of joy out helping people do what they want to do, and I have a lot of
 fun finding solutions to problems. A lot of my time nowadays is spent working on
 Exherbo Linux, which I was recruited as a developer for on May 12th, 2015.
 
-I've held interest in old video games since I was a young kid, being that weird
-kid that talked about glitches in NES emulators while my friends wondered what I
-was even saying. My love for video games has waned over the years, but I still
-appreciate them for an artful aspect.
+Since joining Exherbo I've became more interested in system administration and
+system integrating, and hope to pursue system administration as a career. My plans
+are to go to college majoring in system administration and minoring in audio
+engineering.
 
 Some of my favorite musicians are Aphex Twin, Venetian Snares, Squarepusher, The
 Flashbulb, and The Meters. My music tends to go between breakcore, and
