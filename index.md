@@ -35,12 +35,14 @@ try to be varied in my influences and creations.
     - Redesigned website to look more modern, and be responsive to different
       devices.
     - I maintain a [distfiles mirror].
-- [beginning], an init system no smarter than me or you
 - [lux], a Linux kernel updater
 - [git-gerrit], a non-interactive Gerrit interface
+- [Bootstrapped], a clean tumblr theme.
+
+### Old projects
+- [beginning], an init system no smarter than me or you
 - [gnome-colors-revival], [shiki-colors-revival], [arc-colors-revival],
   maintained versions of the "GNOME Colors" suite of themes
-- [Bootstrapped], a clean tumblr theme.
 
 <footer>
 This site is made with [Discount] and [Markdown]. The source is located [here][Source].
