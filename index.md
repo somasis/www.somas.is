@@ -5,7 +5,7 @@
 <header>
 # ~somasis
 ## breakcore musician, free software enthusiast, developer
-[Music] - [Blog] - [Git]
+[Music] - [Git]
 </header>
 
 ## About me
