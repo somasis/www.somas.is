@@ -49,7 +49,6 @@ This site is made with [Discount] and [Markdown]. The source is located [here][S
 </footer>
 
 [Music]:                    https://somasis.bandcamp.com/
-[Blog]:                     http://blog.somasis.com/
 [Git]:                      https://github.com/somasis
 [Exherbo Linux]:            http://www.exherbo.org/
 [musl libc]:                http://www.musl-libc.org/
