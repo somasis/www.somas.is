@@ -27,17 +27,19 @@ instrumental hip-hop something. I like to think I keep it fairly eclectic, and
 try to be varied in my influences and creations.
 
 ## Things of note
-- [Music] which I have written.
-- [Exherbo Linux], which I am an active developer on.
+- [Music] which I have written
+- [Exherbo Linux], which I am an active developer on
     - Implemented support for [musl libc]. [x86_64-pc-linux-musl] <3
     - [Working] towards making the system run with [permissively-licensed]
       components whenever possible.
     - Redesigned website to look more modern, and be responsive to different
       devices.
     - I maintain a [distfiles mirror].
+- [musl-wiki], a wiki documenting the musl libc
+- [musl-compat], compatibility headers and utilities for musl libc systems
 - [lux], a Linux kernel updater
 - [git-gerrit], a non-interactive Gerrit interface
-- [Bootstrapped], a clean tumblr theme.
+- [Bootstrapped], a clean tumblr theme
 
 ### Old projects
 - [beginning], an init system no smarter than me or you
@@ -50,6 +52,7 @@ This site is made with [Discount] and [Markdown]. The source is located [here][S
 
 [Music]:                    https://somasis.bandcamp.com/
 [Git]:                      https://github.com/somasis
+[musl-wiki]:                https://wiki.somasis.com/
 [Exherbo Linux]:            http://www.exherbo.org/
 [musl libc]:                http://www.musl-libc.org/
 [x86_64-pc-linux-musl]:     /dl/stages
@@ -58,6 +61,7 @@ This site is made with [Discount] and [Markdown]. The source is located [here][S
 [permissively-licensed]:    http://www.openbsd.org/policy.html
 [beginning]:                https://github.com/somasis/beginning
 [lux]:                      https://github.com/somasis/lux
+[musl-compat]:              https://github.com/somasis/musl-compat
 [git-gerrit]:               https://github.com/somasis/git-gerrit
 [Bootstrapped]:             https://www.tumblr.com/theme/38707
 [gnome-colors-revival]:     https://github.com/somasis/gnome-colors-revival
