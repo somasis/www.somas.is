@@ -5,7 +5,7 @@
 <header>
 # ~somasis
 ## breakcore musician, free software enthusiast, developer
-[Music] - [Git]
+[Blog] - [Music] - [Git]
 </header>
 
 ## About me
@@ -50,6 +50,7 @@ try to be varied in my influences and creations.
 This site is made with [Discount] and [Markdown]. The source is located [here][Source].
 </footer>
 
+[Blog]:                     http://blog.somasis.com/
 [Music]:                    https://somasis.bandcamp.com/
 [Git]:                      https://github.com/somasis
 [musl-wiki]:                https://wiki.somasis.com/
