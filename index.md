@@ -3,7 +3,7 @@
 
 ## About me
 
-My name is Kylie McClain, and I am an 18 year old woman. I have been using
+My name is Kylie McClain, and I am a 19 year old woman. I have been using
 computers since I was about three years old, and using Linux since age seven. I
 get a lot of joy out helping people do what they want to do, and I have a lot of
 fun finding solutions to problems. A lot of my time nowadays is spent working on
