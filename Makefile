@@ -20,9 +20,9 @@ lint:
 # cssnano is ran separately because it likes to take out vendor prefixes we might still need
 %.min.css: %.css
 ifeq ($(USE_POSTCSS), true)
-	-postcss -u cssnano "$*.css" -o "$*.css.tmp"
-	-postcss -u autoprefixer "$*.css.tmp" -o "$*.min.css"
-	-rm -f "$*.css.tmp"
+	postcss -u cssnano "$*.css" -o "$*.css.tmp"
+	postcss -u autoprefixer "$*.css.tmp" -o "$*.min.css"
+	rm -f "$*.css.tmp"
 else
 	-cp "$*.css" "$*.min.css"
 endif
@@ -42,6 +42,6 @@ watch:
 	done
 
 deploy: all
-	rm -f $(IMAGE)/Makefile $(iMAGE)/scripts $(shell find "$(IMAGE)" -type f -name '*.css' -and -not -name '*.min.css') $(shell find "$(IMAGE)" -type f -name '*.md' -or -name '*.theme' -or -name '*.tmp')
+	rm -rf $(IMAGE)/Makefile $(IMAGE)/scripts $(shell find "$(IMAGE)" -type f -name '*.css' -and -not -name '*.min.css') $(shell find "$(IMAGE)" -type f -name '*.md' -or -name '*.theme' -or -name '*.tmp')
 
 .PHONY: all clean deploy lint watch
