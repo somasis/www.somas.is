@@ -1,12 +1,5 @@
-% ~somasis
-% Kylie McClain
-% 2016-05-28
-
-<header>
-# ~somasis
-## breakcore musician, free software enthusiast, developer
-[Blog] - [Music] - [Git]
-</header>
+# Somasis
+## breakcore musician, free software enthusiast, and developer
 
 ## About me
 
@@ -27,7 +20,7 @@ instrumental hip-hop something. I like to think I keep it fairly eclectic, and
 try to be varied in my influences and creations.
 
 ## Things of note
-- [Music] which I have written
+
 - [Exherbo Linux], which I am an active developer on
     - Implemented support for [musl libc]. [x86_64-pc-linux-musl] <3
     - [Working] towards making the system run with [permissively-licensed]
@@ -39,20 +32,14 @@ try to be varied in my influences and creations.
 - [musl-compat], compatibility headers and utilities for musl libc systems
 - [lux], a Linux kernel updater
 - [git-gerrit], a non-interactive Gerrit interface
-- [Bootstrapped], a clean tumblr theme
 
 ### Old projects
+
+- [Bootstrapped], a clean tumblr theme
 - [beginning], an init system no smarter than me or you
 - [gnome-colors-revival], [shiki-colors-revival], [arc-colors-revival],
   maintained versions of the "GNOME Colors" suite of themes
 
-<footer>
-This site is made with [Discount] and [Markdown]. The source is located [here][Source].
-</footer>
-
-[Blog]:                     http://blog.somasis.com/
-[Music]:                    https://somasis.bandcamp.com/
-[Git]:                      https://github.com/somasis
 [musl-wiki]:                https://wiki.somasis.com/
 [Exherbo Linux]:            http://www.exherbo.org/
 [musl libc]:                http://www.musl-libc.org/
