@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title><?makefile title?></title>
+    <title><?makedown title?></title>
     <meta charset="UTF-8" />
-    <meta name="description" content="<?makefile description?>" />
+    <meta name="description" content="<?makedown description?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="<?makefile author?>" />
-    <meta name="date" content="<?makefile date?>" />
-    <meta name="generator" content="<?makefile version?>" />
+    <meta name="author" content="<?makedown author?>" />
+    <meta name="date" content="<?makedown date?>" />
+    <meta name="generator" content="<?makedown version?>" />
     <link rel="shortcut icon" href="/favicon.png" />
     <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
     <link rel="stylesheet" type="text/css" href="/main.min.css" />
@@ -26,14 +26,12 @@
         </nav>
     </header>
     <main>
-        <?makefile body?>
+        <?makedown body?>
     </main>
     <footer>
-        This site is made with
-        <a href='http://www.pell.portland.or.us/~orc/Code/discount/'>Discount</a>
-        and <a href='https://daringfireball.net/projects/markdown/'>Markdown</a>.
+        This site is made with <a href='https://github.com/somasis/makedown' title='Makedown source code'>makedown</a>.
         The source is located <a href='https://github.com/somasis/www.somasis.com' title='Website source code'>here</a>.
-        <small><?makefile commit?></small>
+        <small><?makedown commit?></small>
     </footer>
 </body>
 </html>
