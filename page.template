@@ -8,18 +8,18 @@
     <meta name="author" content="<?makefile author?>" />
     <meta name="date" content="<?makefile date?>" />
     <meta name="generator" content="<?makefile version?>" />
+    <link rel="shortcut icon" href="/favicon.png" />
     <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
     <link rel="stylesheet" type="text/css" href="/main.min.css" />
 </head>
 <body>
     <header>
         <div class='title'>
-            <a href='/'>Somasis</a>
-            <small class='title'>musician and free software developer</small>
+            <a href='/'>Kylie McClain</a>
         </div>
         <nav>
             <ul>
-                <li><a href='http://blog.somasis.com/'>Blog</a></li>
+                <li><a href='https://blog.somasis.com/'>Blog</a></li>
                 <li><a href='https://somasis.bandcamp.com/'>Music</a></li>
                 <li><a href='https://github.com/somasis'>Git</a></li>
             </ul>

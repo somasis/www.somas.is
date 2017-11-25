@@ -1,35 +1,26 @@
 # Somasis
-## breakcore musician, free software enthusiast, and developer
+## musician and computer junkie
 
 ## About me
 
-My name is Kylie McClain, and I am a 19 year old woman. I have been using
-computers since I was about three years old, and using Linux since age seven. I
-get a lot of joy out helping people do what they want to do, and I have a lot of
-fun finding solutions to problems. A lot of my time nowadays is spent working on
-Exherbo Linux, which I was recruited as a developer for on May 12th, 2015.
+My name is Kylie McClain.
 
 Since joining Exherbo I've became more interested in system administration and
 system integrating, and hope to pursue system administration as a career. My plans
 are to go to college majoring in system administration and minoring in audio
 engineering.
 
-Some of my favorite musicians are Aphex Twin, Venetian Snares, Squarepusher, The
-Flashbulb, and The Meters. My music tends to go between breakcore, and
-instrumental hip-hop something. I like to think I keep it fairly eclectic, and
-try to be varied in my influences and creations.
-
 ## Things of note
 
-- [Exherbo Linux], which I am an active developer on
+- [musl-wiki], a wiki documenting the musl libc
+- [Exherbo Linux], I was recruited as a developer in May 2015
     - Implemented support for [musl libc]. [x86_64-pc-linux-musl] <3
     - [Working] towards making the system run with [permissively-licensed]
       components whenever possible.
     - Redesigned website to look more modern, and be responsive to different
       devices.
     - I maintain a [distfiles mirror].
-- [musl-wiki], a wiki documenting the musl libc
-- [musl-compat], compatibility headers and utilities for musl libc systems
+    - [musl-compat], compatibility headers and utilities for musl libc systems
 - [lux], a Linux kernel updater
 - [git-gerrit], a non-interactive Gerrit interface
 
