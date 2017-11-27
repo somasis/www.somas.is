@@ -1,36 +1,27 @@
-/*
-    since you're going to forget:
-        margin: <l/r/t/b>;
-        margin: <t/b> <l/r>;
-        margin: <t> <l/r> <b>;
-        margin: <t> <r> <b> <l>;
-*/
-
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Raleway:200,300');
+
+* {
+    margin-top: 0px;
+    padding-top: 0px;
+}
 
 body {
-    line-height: 1.4;
-    max-width: 780px;
+    line-height: 1.5;
+    max-width: 1000px;
 
     padding: 0px 16px;
-    margin: 0 auto;
+    margin: 16px 0px;
 
-    background-color: #544263;
-    color: #efefef;
+    background-color: #eeeeee;
+    color: #111111;
 
-    font-family: "Droid Sans", sans-serif;
+    font-family: sans-serif;
     font-size: 12pt;
 }
 
-header, main, footer {
-    width: 100%;
-}
-
 main ul, main ul li {
-    margin: 0px;
-    padding: 0px;
+    padding-left: 0px;
     list-style: none;
 }
 
@@ -45,24 +36,21 @@ main ul li:before {
 
 /* Headings */
 
-h1,h2,h3,h4,h5,h6 {
-    margin: 4px 0px;
-}
-
 h1,h2,h3 {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 2px solid rgba(0,0,0,.25);
 }
 
 a:link {
-    color: #5e98ef;
+    color: #ff3396;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #9caed1;
+    text-decoration: underline;
 }
 
 a:visited {
-    color: #d394b8;
+    color: #96607a;
 }
 
 a:visited:hover {
@@ -71,135 +59,83 @@ a:visited:hover {
 
 /* Page header */
 header {
-    text-align: left;
     display: block;
-    padding-top: 16px;
-    padding-bottom: 0px;
+    height: 96px;
 }
 
-header div.title {
-    font-family: "Raleway", serif;
-    font-size: 48pt;
-    margin-right: 16px;
-    line-height: 1;
+header div.title .avatar {
+    float: left;
+    vertical-align: top;
+    margin-right: .5rem;
+    width: 96px;
+    heigt: 96px;
 }
 
 header div.title a:link,
 header div.title a:hover,
 header div.title a:visited,
 header div.title a:visited:hover {
-    color: #efefef;
-    user-select: none;
-    text-decoration: none;
+    font-weight: bold;
+    font-size: 30pt;
+    color: #ff4385;
+}
+
+header div.title a .nickname {
+    font-weight: normal;
+    visibility: hidden;
+}
+header div.title a:focus .nickname,
+header div.title a:hover .nickname {
+    visibility: visible;
 }
 
 header div.title small {
-    font-family: "Raleway", sans-serif;
-    font-size: 12pt;
-    font-weight: 300;
-    text-transform: lowercase;
-    padding-bottom: 16px;
-    display: block;
-    width: 100%;
-    overflow: hidden;
-}
-
-header small {
     border: 0;
-
     white-space: nowrap;
-}
-
-header nav {
-    margin-bottom: -28px;
-    margin-left: 48px;
-    margin-right: 48px;
-    user-select: none;
+    display: block;
 }
 
 header nav ul {
     text-align: justify;
-    width: 100%;
     margin: 0px;
     padding: 0px;
 }
 
-header nav ul:after {
-    content: '';
-    width: 100%;
-    display: inline-block;
+header nav li {
+    font-size: 14pt;
+    display: inline;
 }
 
-header nav ul, header nav li {
-    display: inline-block;
+header nav li:after,
+header nav li:first-of-type:after {
+    content: ' - '
+}
+
+header nav li:last-of-type:after {
+    content: ''
 }
 
 footer {
-    margin-top: 16px;
     padding: 8px 0px;
-    border-top: 2px solid rgba(255, 255, 255, 0.25);
-    text-align: center;
-}
-
-blockquote {
-    background: rgba(128,128,128,.1);
-    margin: 0 auto;
-    padding: 4px;
-    border-top: 2px solid rgb(79,100,128);
-    border-bottom: 2px solid rgb(79,100,128);
-}
-
-blockquote p {
-    margin: 0;
-}
-
-pre {
-    max-width: 100%;
-    word-wrap: break-word;
-    white-space: pre-line;
+    border-top: 2px solid rgba(0,0,0,0.25);
 }
 
 main > pre, pre > code {
-    font-family: "Droid Sans Mono", monospace;
-    font-size: 11pt;
+    font-family: monospace;
 }
 
-/* Responsiveness */
-@media only screen and (max-width: 480px) {
-    header small {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 740px) {
     body {
         font-size: 11pt;
-        padding: 0px 8px;
     }
 
-    header {
-        padding-top: 16px;
+    header div.title a .nickname {
+        display: none !important;
     }
-
-    header div.title {
-        font-size: 20vw;
-        font-size: 48pt;
-    }
-
-    h2 {
-        font-size: 16pt;
-    }
-
-    h1,h2,h3,h4,h5,h6 {
-        margin-bottom: 4px;
-    }
-
-    header nav ul {
-        text-align: center;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
 }
 
-
+@media only screen and (max-width: 515px) {
+    li > ul {
+        margin-left: 12px;
+    }
+}

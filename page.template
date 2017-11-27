@@ -8,14 +8,17 @@
     <meta name="author" content="<?makedown author?>" />
     <meta name="date" content="<?makedown date?>" />
     <meta name="generator" content="<?makedown version?>" />
-    <link rel="shortcut icon" href="/favicon.png" />
     <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
-    <link rel="stylesheet" type="text/css" href="/main.min.css" />
+    <link rel="stylesheet" type="text/css" href="/main.css" />
 </head>
 <body>
     <header>
         <div class='title'>
-            <a href='/'>Kylie McClain</a>
+            <img class='avatar' src='https://www.gravatar.com/avatar/6b7b5cfb8e44b6af598fa2a0c5d1aa3c?s=256' />
+            <a href='/'>
+                <span class='fullname'>Kylie McClain</span>
+                <span class='nickname'>(Somasis)</span>
+            </a>
         </div>
         <nav>
             <ul>
