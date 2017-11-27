@@ -1,1 +1,1 @@
-./makedown/Makefile
+makedown/Makefile
