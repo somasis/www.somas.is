@@ -1,37 +1,34 @@
 # Somasis
 ## musician and computer junkie
 
-## About me
 
-My name is Kylie McClain.
-
-Since joining Exherbo I've became more interested in system administration and
-system integrating, and hope to pursue system administration as a career. My plans
-are to go to college majoring in system administration and minoring in audio
-engineering.
-
-## Things of note
+## Projects
 
 - [musl-wiki], a wiki documenting the musl libc
-- [Exherbo Linux], I was recruited as a developer in May 2015
-    - Implemented support for [musl libc]. [x86_64-pc-linux-musl] <3
-    - [Working] towards making the system run with [permissively-licensed]
-      components whenever possible.
-    - Redesigned website to look more modern, and be responsive to different
-      devices.
-    - I maintain a [distfiles mirror].
-    - [musl-compat], compatibility headers and utilities for musl libc systems
+- [makedown], a build system for building static webpages written in markdown
 - [lux], a Linux kernel updater
 - [git-gerrit], a non-interactive Gerrit interface
 
 ### Old projects
 
+Old means I don't really actively work on them anymore. The projects probably
+still work but you might want to learn how to work on them yourself.
+
+- [Exherbo Linux], I was recruited as a developer in May 2015
+    - Implemented support for [musl libc]. [x86_64-pc-linux-musl] <3
+    - Implemented replacing some GNU components with minimalist/embedded-oriented
+      alternatives; `coreutils` for `busybox`
+    - Redesigned website to look more modern, and be responsive to different
+      devices.
+    - I maintain a [distfiles mirror].
+- [musl-compat], compatibility headers and utilities for musl libc systems
 - [Bootstrapped], a clean tumblr theme
 - [beginning], an init system no smarter than me or you
 - [gnome-colors-revival], [shiki-colors-revival], [arc-colors-revival],
   maintained versions of the "GNOME Colors" suite of themes
 
 [musl-wiki]:                https://wiki.somasis.com/
+[makedown]:                 https://github.com/somasis/makedown
 [Exherbo Linux]:            http://www.exherbo.org/
 [musl libc]:                http://www.musl-libc.org/
 [x86_64-pc-linux-musl]:     /dl/stages
