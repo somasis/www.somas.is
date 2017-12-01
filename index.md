@@ -1,7 +1,6 @@
 # Somasis
 ## musician and computer junkie
 
-
 ## Projects
 
 - [musl-wiki], a wiki documenting the musl libc
@@ -20,21 +19,22 @@ still work but you might want to learn how to work on them yourself.
       alternatives; `coreutils` for `busybox`
     - Redesigned website to look more modern, and be responsive to different
       devices.
-    - I maintain a [distfiles mirror].
+    - I maintained a distfiles mirror.
 - [musl-compat], compatibility headers and utilities for musl libc systems
 - [Bootstrapped], a clean tumblr theme
 - [beginning], an init system no smarter than me or you
 - [gnome-colors-revival], [shiki-colors-revival], [arc-colors-revival],
   maintained versions of the "GNOME Colors" suite of themes
 
+## Contact
+
+My email is <kylie@somasis.com>.
+
 [musl-wiki]:                https://wiki.somasis.com/
 [makedown]:                 https://github.com/somasis/makedown
-[Exherbo Linux]:            http://www.exherbo.org/
-[musl libc]:                http://www.musl-libc.org/
+[Exherbo Linux]:            https://www.exherbo.org/
+[musl libc]:                https://www.musl-libc.org/
 [x86_64-pc-linux-musl]:     /dl/stages
-[distfiles mirror]:         /dl/mirror/exherbo
-[Working]:                  https://git.exherbo.org/dev/somasis.git/tree/etc/permissive/README.md
-[permissively-licensed]:    http://www.openbsd.org/policy.html
 [beginning]:                https://github.com/somasis/beginning
 [lux]:                      https://github.com/somasis/lux
 [musl-compat]:              https://github.com/somasis/musl-compat
@@ -43,6 +43,6 @@ still work but you might want to learn how to work on them yourself.
 [gnome-colors-revival]:     https://github.com/somasis/gnome-colors-revival
 [shiki-colors-revival]:     https://github.com/somasis/shiki-colors-revival
 [arc-colors-revival]:       https://github.com/somasis/arc-colors-revival
-[Discount]:                 http://www.pell.portland.or.us/~orc/Code/discount/
+[Discount]:                 https://www.pell.portland.or.us/~orc/Code/discount/
 [Markdown]:                 https://daringfireball.net/projects/markdown/
-[Source]:                   https://github.com/somasis/somasis.com
+[Source]:                   https://github.com/somasis/www.somasis.com

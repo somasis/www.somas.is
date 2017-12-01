@@ -29,7 +29,6 @@
         </nav>
     </header>
     <main>
-        <h1 class='pagetitle'><?makedown title_unprefixed?></h1>
         <?makedown body?>
     </main>
     <footer>

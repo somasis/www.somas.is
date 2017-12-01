@@ -35,9 +35,20 @@ main ul li:before {
 }
 
 /* Headings */
-
-h1,h2,h3 {
+h1,h2,h3,h4,h5,h6 {
     border-bottom: 2px solid rgba(0,0,0,.25);
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+
+body > ul {
+    margin: 0 0 16px 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 16px 0;
 }
 
 a:link {
@@ -67,8 +78,8 @@ header div.title .avatar {
     float: left;
     vertical-align: top;
     margin-right: .5rem;
+    height: 96px;
     width: 96px;
-    heigt: 96px;
 }
 
 header div.title a:link,
