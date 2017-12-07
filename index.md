@@ -59,7 +59,7 @@ still work but you might want to learn how to work on them yourself.
 
 My email is <kylie@somasis.com>.
 
-[musl-wiki]:                https://wiki.somasis.com/
+[musl-wiki]:                https://wiki.musl-libc.org/
 [makedown]:                 https://github.com/somasis/makedown
 [Exherbo Linux]:            https://www.exherbo.org/
 [musl libc]:                https://www.musl-libc.org/
