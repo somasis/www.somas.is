@@ -79,9 +79,9 @@ header div.title .avatar {
     vertical-align: top;
     margin-right: .5rem;
     height: 96px;
-    width: 96px;
 }
 
+header div.title,
 header div.title a:link,
 header div.title a:hover,
 header div.title a:visited,
@@ -135,18 +135,65 @@ main > pre, pre > code {
     font-family: monospace;
 }
 
-@media only screen and (max-width: 740px) {
+div.discography {
+    width: 100%;
+    line-height: 0px;
+    margin-bottom: 16px;
+    margin-left: 4px;
+}
+
+div.discography img {
+    display: inline-block;
+    width: calc(100% / 4);
+    margin-left: -4px;
+    background: rgba(255,255,255,.3)
+}
+
+div.discography a:hover > img,
+div.discography a:focus > img {
+    opacity: .85;
+}
+
+div.discography a {
+    outline: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    header div.title a .nickname {
+        display: none !important;
+    }
+
+    header div.title a {
+        font-size: 10pt;
+    }
+
+    li > ul {
+        margin-left: 12px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
     body {
         font-size: 11pt;
     }
 
-    header div.title a .nickname {
-        display: none !important;
+    header {
+        height: auto;
     }
-}
 
-@media only screen and (max-width: 515px) {
-    li > ul {
-        margin-left: 12px;
+    header div.title {
+        font-size: inherit;
+    }
+
+    header div.title .avatar {
+        display: none;
+    }
+
+    header div.title a {
+        font-size: 6vh !important;
+    }
+
+    div.discography img {
+        width: calc(100% / 3);
     }
 }
