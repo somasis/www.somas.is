@@ -50,6 +50,9 @@ still work but you might want to learn how to work on them yourself.
       devices.
     - I maintained a distfiles mirror.
 - [musl-compat], compatibility headers and utilities for musl libc systems
+    - Instead, try some projects from the Adélie Linux people;
+      [gcompat](https://code.foxkit.us/adelie/gcompat) and
+      [shimmy](https://code.foxkit.us/adelie/shimmy) look pretty good
 - [Bootstrapped], a clean tumblr theme
 - [beginning], an init system no smarter than me or you
 - [gnome-colors-revival], [shiki-colors-revival], [arc-colors-revival],
