@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/somasis
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://somasis.com
+  * I am somasis (https://keybase.io/somasis) on keybase.
+  * I have a public key ASCXLtwDXEvr_McUcnzMryUdHk9wJz5J857sGaBJxyNtoAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120972edc035c4bebfcc714727cccaf251d1e4f70273e49f39eec19a049c7236da00a",
+      "host": "keybase.io",
+      "kid": "0120972edc035c4bebfcc714727cccaf251d1e4f70273e49f39eec19a049c7236da00a",
+      "uid": "ad80d1442611ab5aa6d718c4d1706919",
+      "username": "somasis"
+    },
+    "merkle_root": {
+      "ctime": 1513943363,
+      "hash": "28e9b1d3a17cee33e432cc46367b014302bddfa709954e5322fe3de661467192ea570e5b772777215ea0ce7161e6bb62ba716864b03697fe5b846b8951cbe575",
+      "hash_meta": "70540b8cf3f2943d8455ff621418cc005e8798f3c99844bb1ca363e5e04db13a",
+      "seqno": 1849372
+    },
+    "service": {
+      "hostname": "somasis.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.38"
+  },
+  "ctime": 1513943409,
+  "expire_in": 504576000,
+  "prev": "dc398769c1576cdda748331b59287383bfcaeab9e71e14d35cd4ff4122658095",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgly7cA1xL6/zHFHJ8zK8lHR5PcCc+SfOe7BmgSccjbaAKp3BheWxvYWTFA0J7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwOTcyZWRjMDM1YzRiZWJmY2M3MTQ3MjdjY2NhZjI1MWQxZTRmNzAyNzNlNDlmMzllZWMxOWEwNDljNzIzNmRhMDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwOTcyZWRjMDM1YzRiZWJmY2M3MTQ3MjdjY2NhZjI1MWQxZTRmNzAyNzNlNDlmMzllZWMxOWEwNDljNzIzNmRhMDBhIiwidWlkIjoiYWQ4MGQxNDQyNjExYWI1YWE2ZDcxOGM0ZDE3MDY5MTkiLCJ1c2VybmFtZSI6InNvbWFzaXMifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MTM5NDMzNjMsImhhc2giOiIyOGU5YjFkM2ExN2NlZTMzZTQzMmNjNDYzNjdiMDE0MzAyYmRkZmE3MDk5NTRlNTMyMmZlM2RlNjYxNDY3MTkyZWE1NzBlNWI3NzI3NzcyMTVlYTBjZTcxNjFlNmJiNjJiYTcxNjg2NGIwMzY5N2ZlNWI4NDZiODk1MWNiZTU3NSIsImhhc2hfbWV0YSI6IjcwNTQwYjhjZjNmMjk0M2Q4NDU1ZmY2MjE0MThjYzAwNWU4Nzk4ZjNjOTk4NDRiYjFjYTM2M2U1ZTA0ZGIxM2EiLCJzZXFubyI6MTg0OTM3Mn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJzb21hc2lzLmNvbSIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjM4In0sImN0aW1lIjoxNTEzOTQzNDA5LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6ImRjMzk4NzY5YzE1NzZjZGRhNzQ4MzMxYjU5Mjg3MzgzYmZjYWVhYjllNzFlMTRkMzVjZDRmZjQxMjI2NTgwOTUiLCJzZXFubyI6NywidGFnIjoic2lnbmF0dXJlIn2jc2lnxEAQWEICUcVbl+T+mZxoCVogW9xEjHD0d4P5W6yTeALZ4H5KTdbMOFxmRG8oMfsvvQYaRlWbvxVNadN6UXieF8oIqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQg+B2RGJ2tcuWKhMpltzFY9sBIKAwKWoUmXfTWTuorWyWjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/somasis
+
+==================================================================
