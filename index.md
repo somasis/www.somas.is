@@ -60,7 +60,7 @@ still work but you might want to learn how to work on them yourself.
 
 ## Contact
 
-My email is <kylie@somasis.com>.
+My email is <kylie@somas.is>.
 
 [musl-wiki]:                https://wiki.musl-libc.org/
 [makedown]:                 https://github.com/somasis/makedown
@@ -77,4 +77,4 @@ My email is <kylie@somasis.com>.
 [arc-colors-revival]:       https://github.com/somasis/arc-colors-revival
 [Discount]:                 https://www.pell.portland.or.us/~orc/Code/discount/
 [Markdown]:                 https://daringfireball.net/projects/markdown/
-[Source]:                   https://github.com/somasis/www.somasis.com
+[Source]:                   https://github.com/somasis/www.somas.is
