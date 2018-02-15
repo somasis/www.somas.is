@@ -72,7 +72,7 @@ My email is <kylie@somas.is>; my PGP key is [0x37133B9826BBB5C2][pgp].
 [lux]:                      https://github.com/somasis/lux
 [musl-compat]:              https://github.com/somasis/musl-compat
 [git-gerrit]:               https://github.com/somasis/git-gerrit
-[Bootstrapped]:             https://www.tumblr.com/theme/38707
+[Bootstrapped]:             https://github.com/somasis/tumblrthemes/blob/master/bootstrapped.html
 [gnome-colors-revival]:     https://github.com/somasis/gnome-colors-revival
 [shiki-colors-revival]:     https://github.com/somasis/shiki-colors-revival
 [arc-colors-revival]:       https://github.com/somasis/arc-colors-revival
