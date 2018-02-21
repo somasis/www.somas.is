@@ -62,7 +62,7 @@ still work but you might want to learn how to work on them yourself.
 
 My email is <kylie@somas.is>; my PGP key is [0x37133B9826BBB5C2][pgp].
 
-[pgp]:                      http://pool.sks-keyservers.net/pks/lookup?op=vindex&fingerprint=on&search=0x37133B9826BBB5C2
+[pgp]:                      https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&search=0x37133B9826BBB5C2
 [musl-wiki]:                https://wiki.musl-libc.org/
 [makedown]:                 https://github.com/somasis/makedown
 [Exherbo Linux]:            https://www.exherbo.org/
