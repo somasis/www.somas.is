@@ -4,29 +4,29 @@
 ## Music
 
 <div class='discography'>
-    <a href='https://somasis.bandcamp.com/album/sunraiser-revolution-means-beauty'>
-        <img src='/img/covers/sunraiserrevolutionmeansbeauty.jpg' title='Sunraiser / Revolution Means Beauty' />
+    <a href='https://somasis.bandcamp.com/album/sunraiser-revolution-means-beauty' title='Sunraiser / Revolution Means Beauty'>
+        <img src='/img/covers/sunraiserrevolutionmeansbeauty.jpg' alt='Sunraiser / Revolution Means Beauty' />
     </a>
-    <a href='https://somasis.bandcamp.com/album/live-from-the-tapedeck-spaceship'>
-        <img src='/img/covers/livefromthetapedeckspaceship.jpg' title='Live from the Tapedeck Spaceship' />
+    <a href='https://somasis.bandcamp.com/album/live-from-the-tapedeck-spaceship' title='Live from the Tapedeck Spaceship'>
+        <img src='/img/covers/livefromthetapedeckspaceship.jpg' alt='Live from the Tapedeck Spaceship' />
     </a>
-    <a href='https://somasis.bandcamp.com/album/rejected-from-the-tapedeck-spaceship'>
-        <img src='/img/covers/rejectedfromthetapedeckspaceship.jpg' title='Rejected from the Tapedeck Spaceship' />
+    <a href='https://somasis.bandcamp.com/album/rejected-from-the-tapedeck-spaceship' title='Rejected from the Tapedeck Spaceship'>
+        <img src='/img/covers/rejectedfromthetapedeckspaceship.jpg' alt='Rejected from the Tapedeck Spaceship' />
     </a>
-    <a href='https://somasis.bandcamp.com/album/the-infinite-sadness-2'>
-        <img src='/img/covers/theinfinitesadness.jpg' title='The Infinite Sadness' />
+    <a href='https://somasis.bandcamp.com/album/the-infinite-sadness-2' title='The Infinite Sadness'>
+        <img src='/img/covers/theinfinitesadness.jpg' alt='The Infinite Sadness' />
     </a>
-    <a href='https://somasis.bandcamp.com/album/scattered-we-unified'>
-        <img src='/img/covers/scatteredweunified.jpg' title='Scattered, We Unified' />
+    <a href='https://somasis.bandcamp.com/album/scattered-we-unified' title='Scattered, We Unified'>
+        <img src='/img/covers/scatteredweunified.jpg' alt='Scattered, We Unified' />
     </a>
-    <a href='https://somasis.bandcamp.com/album/a-most-beautiful-sight'>
-        <img src='/img/covers/amostbeautifulsight.jpg' title='A Most Beautiful Sight' />
+    <a href='https://somasis.bandcamp.com/album/a-most-beautiful-sight' title='A Most Beautiful Sight'>
+        <img src='/img/covers/amostbeautifulsight.jpg' alt='A Most Beautiful Sight' />
     </a>
-    <a href='https://somasis.bandcamp.com/album/the-lonesome-planetarium'>
-        <img src='/img/covers/thelonesomeplanetarium.jpg' title='the lonesome planetarium' />
+    <a href='https://somasis.bandcamp.com/album/the-lonesome-planetarium' title='the lonesome planetarium'>
+        <img src='/img/covers/thelonesomeplanetarium.jpg' alt='the lonesome planetarium' />
     </a>
-    <a href='https://somasis.bandcamp.com/album/sleepless'>
-        <img src='/img/covers/sleepless.jpg' title='sleepless' />
+    <a href='https://somasis.bandcamp.com/album/sleepless' title='sleepless'>
+        <img src='/img/covers/sleepless.jpg' alt='sleepless' />
     </a>
 </div>
 
