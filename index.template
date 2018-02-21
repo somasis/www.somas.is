@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class='title'>
-            <img class='avatar' src='https://www.gravatar.com/avatar/6b7b5cfb8e44b6af598fa2a0c5d1aa3c?s=256' />
+            <img class='avatar' alt='A picture of me' src='/avatar-512.png' />
             <a href='/'>
                 <span class='fullname'>Kylie McClain</span>
                 <span class='nickname'>(Somasis)</span>
