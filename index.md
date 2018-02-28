@@ -34,6 +34,7 @@
 
 - [musl-wiki], a wiki documenting the musl libc
 - [makedown], a build system for building static webpages written in markdown
+- [scripts], a collection of useful scripts
 - [lux], a Linux kernel updater
 - [git-gerrit], a non-interactive Gerrit interface
 
@@ -64,6 +65,7 @@ My email is <kylie@somas.is>; my PGP key is [0x37133B9826BBB5C2][pgp].
 
 [pgp]:                      https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&search=0x37133B9826BBB5C2
 [musl-wiki]:                https://wiki.musl-libc.org/
+[scripts]:                  https://github.com/somasis/scripts
 [makedown]:                 https://github.com/somasis/makedown
 [Exherbo Linux]:            https://www.exherbo.org/
 [musl libc]:                https://www.musl-libc.org/
