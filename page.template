@@ -24,7 +24,8 @@
             <ul>
                 <li><a href='https://blog.somasis.is/'>Blog</a></li>
                 <li><a href='https://somasis.bandcamp.com/'>Music</a></li>
-                <li><a href='https://github.com/somasis'>Git</a></li>
+                <li><a href='https://github.com/somasis'>GitHub</a></li>
+                <li><a href='https://gitlab.com/somasis'>GitLab</a></li>
             </ul>
         </nav>
     </header>
