@@ -24,7 +24,6 @@
             <ul>
                 <li><a href='https://blog.somas.is/'>Blog</a></li>
                 <li><a href='https://somasis.bandcamp.com/'>Music</a></li>
-                <li><a href='https://github.com/somasis'>GitHub</a></li>
                 <li><a href='https://gitlab.com/somasis'>GitLab</a></li>
             </ul>
         </nav>
@@ -33,8 +32,8 @@
         <?makedown body?>
     </main>
     <footer>
-        This site is made with <a href='https://github.com/somasis/makedown' title='Makedown source code'>makedown</a>.
-        The source is located <a href='https://github.com/somasis/www.somas.is' title='Website source code'>here</a>.
+        This site is made with <a href='https://gitlab.com/somasis/makedown' title='Makedown source code'>makedown</a>.
+        The source is located <a href='https://gitlab.com/somasis/www.somas.is' title='Website source code'>here</a>.
         <small><?makedown commit?></small>
     </footer>
 </body>

@@ -65,19 +65,19 @@ My email is <kylie@somas.is>; my PGP key is [0x37133B9826BBB5C2][pgp].
 
 [pgp]:                      https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&search=0x37133B9826BBB5C2
 [musl-wiki]:                https://wiki.musl-libc.org/
-[scripts]:                  https://github.com/somasis/scripts
-[makedown]:                 https://github.com/somasis/makedown
+[scripts]:                  https://gitlab.com/somasis/scripts
+[makedown]:                 https://gitlab.com/somasis/makedown
 [Exherbo Linux]:            https://www.exherbo.org/
 [musl libc]:                https://www.musl-libc.org/
 [x86_64-pc-linux-musl]:     /dl/stages
-[beginning]:                https://github.com/somasis/beginning
-[lux]:                      https://github.com/somasis/lux
-[musl-compat]:              https://github.com/somasis/musl-compat
-[git-gerrit]:               https://github.com/somasis/git-gerrit
-[Bootstrapped]:             https://github.com/somasis/tumblrthemes/blob/master/bootstrapped.html
-[gnome-colors-revival]:     https://github.com/somasis/gnome-colors-revival
-[shiki-colors-revival]:     https://github.com/somasis/shiki-colors-revival
-[arc-colors-revival]:       https://github.com/somasis/arc-colors-revival
+[beginning]:                https://gitlab.com/somasis/beginning
+[lux]:                      https://gitlab.com/somasis/lux
+[musl-compat]:              https://gitlab.com/somasis/musl-compat
+[git-gerrit]:               https://gitlab.com/somasis/git-gerrit
+[Bootstrapped]:             https://gitlab.com/somasis/tumblrthemes/blob/master/bootstrapped.html
+[gnome-colors-revival]:     https://gitlab.com/somasis/gnome-colors-revival
+[shiki-colors-revival]:     https://gitlab.com/somasis/shiki-colors-revival
+[arc-colors-revival]:       https://gitlab.com/somasis/arc-colors-revival
 [Discount]:                 https://www.pell.portland.or.us/~orc/Code/discount/
 [Markdown]:                 https://daringfireball.net/projects/markdown/
-[Source]:                   https://github.com/somasis/www.somas.is
+[Source]:                   https://gitlab.com/somasis/www.somas.is
