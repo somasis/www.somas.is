@@ -32,6 +32,12 @@
 
 ## Projects
 
+- [Exherbo Linux], I was recruited as a developer in May 2015
+    - Implemented support for [musl libc]. [x86_64-pc-linux-musl] <3
+    - Implemented replacing some GNU components with minimalist/embedded-oriented
+      alternatives; `coreutils` for `busybox`
+    - Redesigned website to look more modern, and be responsive to different
+      devices.
 - [musl-wiki], a wiki documenting the musl libc
 - [makedown], a build system for building static webpages written in markdown
 - [scripts], a collection of useful scripts
@@ -43,13 +49,6 @@
 Old means I don't really actively work on them anymore. The projects probably
 still work but you might want to learn how to work on them yourself.
 
-- [Exherbo Linux], I was recruited as a developer in May 2015
-    - Implemented support for [musl libc]. [x86_64-pc-linux-musl] <3
-    - Implemented replacing some GNU components with minimalist/embedded-oriented
-      alternatives; `coreutils` for `busybox`
-    - Redesigned website to look more modern, and be responsive to different
-      devices.
-    - I maintained a distfiles mirror.
 - [musl-compat], compatibility headers and utilities for musl libc systems
     - Instead, try some projects from the Adélie Linux people;
       [gcompat](https://code.foxkit.us/adelie/gcompat) and
