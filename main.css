@@ -29,6 +29,17 @@ li > ul {
     margin-left: 24px;
 }
 
+li img {
+    vertical-align: middle;
+}
+
+li img.zebrapig {
+    width: 24px;
+    height: 24px;
+    text-decoration: none !important;
+    margin-right: 2px;
+}
+
 main ul li:before {
     content: "\2013";
     padding-right: 4px;
