@@ -34,10 +34,8 @@
 
 - <a href='https://exherbo.org'><img src='/zebrapig.svg' class='zebrapig' />Exherbo Linux</a>, I was recruited as a developer in May 2015
     - Implemented support for [musl libc]. [x86_64-pc-linux-musl] <3
-    - Implemented replacing some GNU components with minimalist/embedded-oriented
-      alternatives; `coreutils` for `busybox`
-    - Redesigned website to look more modern, and be responsive to different
-      devices.
+    - Implemented replacing some GNU components with minimalist/embedded-oriented alternatives; `coreutils` for `busybox`.
+    - Redesigned website to look more modern, and be responsive to different devices.
     - Implemented support for using `clang` as system C/C++ compiler.
 - [musl-wiki], a wiki documenting the musl libc
 - [makedown], a build system for building static webpages written in markdown
