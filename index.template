@@ -10,6 +10,9 @@
     <meta name="generator" content="<?makedown version?>" />
     <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
     <link rel="stylesheet" type="text/css" href="/main.css" />
+    <meta property="og:image" content="/avatar-512.png" />
+    <meta property="og:site_name" content="Kylie McClain" />
+    <meta property="og:description" content="<?makedown description?>" />
 </head>
 <body>
     <header>
