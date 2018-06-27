@@ -38,6 +38,7 @@
       alternatives; `coreutils` for `busybox`
     - Redesigned website to look more modern, and be responsive to different
       devices.
+    - Implemented support for using `clang` as system C/C++ compiler.
 - [musl-wiki], a wiki documenting the musl libc
 - [makedown], a build system for building static webpages written in markdown
 - [scripts], a collection of useful scripts
