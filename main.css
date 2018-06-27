@@ -90,6 +90,8 @@ header div.title .avatar {
     vertical-align: top;
     margin-right: .5rem;
     height: 96px;
+    /* so the alt isn't HUGE */
+    font-size: 12pt;
 }
 
 header div.title,
