@@ -12,8 +12,11 @@ avatars: $(avatar_files)
 avatars-clean:
 	rm -f $(avatar_files)
 
+$(WORK)/favicon.png: $(WORK)/avatar-512.png
+	cp $(WORK)/avatar-512.png $(WORK)/favicon.png
+
 makedown-clean: avatars-clean
 
 clean: avatars-clean makedown-clean
 
-all: avatars makedown-all
+all: avatars makedown-all $(WORK)/favicon.png
