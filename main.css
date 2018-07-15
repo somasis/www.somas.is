@@ -13,8 +13,8 @@ body {
     padding: 0px 16px;
     margin: 16px 0px;
 
-    background-color: #eeeeee;
-    color: #111111;
+    background-color: #e0eaf0;
+    color: #2f343f;
 
     font-family: sans-serif;
     font-size: 12pt;
@@ -47,7 +47,7 @@ main ul li:before {
 
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
-    border-bottom: 2px solid rgba(0,0,0,.25);
+    border-bottom: 2px solid rgba(0,0,0,.1);
     padding: 0;
     margin: 0 0 16px 0;
 }
@@ -63,20 +63,21 @@ p {
 }
 
 a:link {
-    color: #ff3396;
+    color: #4aa5ff;
     text-decoration: none;
 }
 
 a:hover {
+    color: #78bcff;
     text-decoration: underline;
 }
 
 a:visited {
-    color: #96607a;
+    color: #8f36da;
 }
 
 a:visited:hover {
-    color: #c68fcc;
+    color: #bb70fa;
 }
 
 /* Page header */
@@ -101,7 +102,7 @@ header div.title a:visited,
 header div.title a:visited:hover {
     font-weight: bold;
     font-size: 30pt;
-    color: #ff4385;
+    color: #4aa5ff;
 }
 
 header div.title a .nickname {
@@ -141,7 +142,7 @@ header nav li:last-of-type:after {
 
 footer {
     padding: 8px 0px;
-    border-top: 2px solid rgba(0,0,0,0.25);
+    border-top: 2px solid rgba(0,0,0,.1);
 }
 
 main > pre, pre > code {
@@ -159,7 +160,7 @@ div.discography img {
     display: inline-block;
     width: calc(100% / 4);
     margin-left: -4px;
-    background: rgba(255,255,255,.3)
+    background: rgba(255,255,255,.3);
 }
 
 div.discography a:hover > img,
