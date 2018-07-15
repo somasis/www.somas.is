@@ -60,6 +60,7 @@ still work but you might want to learn how to work on them yourself.
 ## Contact
 
 My email is <kylie@somas.is>; my PGP key is [0x37133B9826BBB5C2][pgp].
+My Matrix ID is [@somasis:matrix.org](https://matrix.to/#/@somasis:matrix.org).
 
 [pgp]:                      https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&search=0x37133B9826BBB5C2
 [musl-wiki]:                https://wiki.musl-libc.org/
