@@ -13,6 +13,7 @@
     <meta property="og:image" content="/avatar-512.png" />
     <meta property="og:site_name" content="Kylie McClain" />
     <meta property="og:description" content="<?makedown description?>" />
+    <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
 </head>
 <body>
     <header>
@@ -29,6 +30,7 @@
                 <li><a href='https://somasis.bandcamp.com/'><span class='fa fa-bandcamp' aria-hidden='true'>&nbsp;</span>Music</a></li>
                 <li><a href='https://gitlab.com/somasis'><span class='fa fa-gitlab' aria-hidden='true'>&nbsp;</span>GitLab</a></li>
                 <li><a href='https://twitter.com/kyliesomasis'><span class='fa fa-twitter' aria-hidden='true'>&nbsp;</span>Twitter</a></li>
+                <li><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#4aa5ff', 'C0C3HH3R');kofiwidget2.draw();</script><li>
             </ul>
         </nav>
     </header>
