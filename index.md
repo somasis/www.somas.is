@@ -32,6 +32,7 @@
 
 ## Projects
 
+- <a href='https://pickle.zone'>pickle.zone</a>, a Mastodon instance that I run
 - <a href='https://exherbo.org'><img src='/zebrapig.svg' class='zebrapig' />Exherbo Linux</a>, I was recruited as a developer in May 2015
     - Implemented support for [musl libc]. [x86_64-pc-linux-musl] <3
     - Implemented replacing some GNU components with minimalist/embedded-oriented alternatives; `coreutils` for `busybox`.
