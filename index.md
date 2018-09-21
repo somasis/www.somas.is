@@ -4,6 +4,9 @@
 ## Music
 
 <div class='discography'>
+    <a href='https://somasis.bandcamp.com/track/wickd-handl-somasis-remix' title='Human Action Network - Wickd Handl (Somasis remix) (2018)'>
+        <img src='/img/covers/wickdhandlremix.jpg' alt='Human Action Network - Wickd Handl (Somasis remix)' />
+    </a>
     <a href='https://somasis.bandcamp.com/album/sunraiser-revolution-means-beauty' title='Sunraiser / Revolution Means Beauty (2017)'>
         <img src='/img/covers/sunraiserrevolutionmeansbeauty.jpg' alt='Sunraiser / Revolution Means Beauty' />
     </a>
