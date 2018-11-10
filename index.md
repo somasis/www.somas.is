@@ -4,6 +4,9 @@
 ## Music
 
 <div class='discography'>
+    <a href='https://somasis.bandcamp.com/album/hawk-crow-somasis-remixes' title='Ivy Hollivana & ANDR - Hawk & Crow (Somasis remixes) (2018)'>
+        <img src='/img/covers/hawkandcrowremix.jpg' alt='Ivy Hollivana & ANDR - Hawk & Crow (Somasis remix)' />
+    </a>
     <a href='https://somasis.bandcamp.com/track/wickd-handl-somasis-remix' title='Human Action Network - Wickd Handl (Somasis remix) (2018)'>
         <img src='/img/covers/wickdhandlremix.jpg' alt='Human Action Network - Wickd Handl (Somasis remix)' />
     </a>
