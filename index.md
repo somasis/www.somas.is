@@ -1,5 +1,8 @@
 # Kylie McClain
-## musician and computer junkie
+## Student of philosophy, obsessed musician
+
+Hi. I'm Kylie. I'm a twenty year old woman pursuing a B.A. in philosophy.
+I also make music and love to compute.
 
 ## Music
 
