@@ -72,8 +72,8 @@ and thus consider them of the past.
 ## Contact
 
 My email is <kylie@somas.is>; my PGP key is [0x37133B9826BBB5C2][pgp].
-My Discord is `somasis#5867`.
 My Matrix ID is [@somasis:matrix.org](https://matrix.to/#/@somasis:matrix.org).
+My Discord is `somasis#5867`.
 
 [pgp]:                      https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&search=0x37133B9826BBB5C2
 [musl-wiki]:                https://wiki.musl-libc.org/
