@@ -38,31 +38,33 @@
 
 ## Projects
 
-- <a href='https://pickle.zone'>pickle.zone</a>, a Mastodon instance that I run
-- <a href='https://exherbo.org'><img src='/zebrapig.svg' class='zebrapig' />Exherbo Linux</a>, I was recruited as a developer in May 2015
-    - Implemented support for [musl libc]. [x86_64-pc-linux-musl] <3
-    - Implemented replacing some GNU components with minimalist/embedded-oriented alternatives; `coreutils` for `busybox`.
-    - Redesigned website to look more modern, and be responsive to different devices.
-    - Implemented support for using `clang` as system C/C++ compiler.
+- I run a few web services for personal and public use...
+    - [pickle.zone](https://pickle.zone), a [Mastodon](https://joinmastodon.org/) instance
+    - [search.somas.is](https://search.somas.is), a [searX](https://asciimoo.github.io/searx/) instance
 - [musl-wiki], a wiki documenting the musl libc
 - [makedown], a build system for building static webpages written in markdown
 - [scripts], a collection of useful scripts
+
+### Past projects
+
+Most of these things still function fine, but I don't personally use them much anymore
+and thus consider them of the past.
+
 - [lux], a Linux kernel updater
 - [git-gerrit], a non-interactive Gerrit interface
-
-### Old projects
-
-Old means I don't really actively work on them anymore. The projects probably
-still work but you might want to learn how to work on them yourself.
-
+- <a href='https://exherbo.org'><img src='/zebrapig.svg' class='zebrapig' />Exherbo Linux</a>,
+  I was recruited as a developer in May 2015. Still technically one, but I stopped contributing
+  actively late 2016.
+    - Implemented support for [musl libc]. [x86_64-pc-linux-musl] <3
+    - Implemented the ability to replace some GNU components with minimalist/embedded-oriented
+      alternatives; `coreutils` for `busybox`, etc.
+    - Redesigned website to look more modern, and be responsive to different devices.
+    - Implemented support for using `clang` as system C/C++ compiler.
 - [musl-compat], compatibility headers and utilities for musl libc systems
-    - Instead, try some projects from the Adélie Linux people;
-      [gcompat](https://code.foxkit.us/adelie/gcompat) and
-      [shimmy](https://code.foxkit.us/adelie/shimmy) look pretty good
 - [Bootstrapped], a clean tumblr theme
 - [beginning], an init system no smarter than me or you
 - [gnome-colors-revival], [shiki-colors-revival], [arc-colors-revival],
-  maintained versions of the "GNOME Colors" suite of themes
+  (once) maintained versions of the "GNOME Colors" suite of themes
 
 ## Contact
 
