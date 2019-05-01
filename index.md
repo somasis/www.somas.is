@@ -7,6 +7,9 @@ I also make music and love to compute.
 ## Music
 
 <div class='discography'>
+    <a href='https://somasis.bandcamp.com/track/january-2' title='somasis - january (2019)'>
+        <img src='/img/covers/january.jpg' alt='somasis - january' />
+    </a>
     <a href='https://somasis.bandcamp.com/album/hawk-crow-somasis-remixes' title='Ivy Hollivana & ANDR - Hawk & Crow (Somasis remixes) (2018)'>
         <img src='/img/covers/hawkandcrowremix.jpg' alt='Ivy Hollivana & ANDR - Hawk & Crow (Somasis remix)' />
     </a>
