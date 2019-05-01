@@ -1,23 +1,8 @@
 email           = kylie@somas.is
 email_hashed    = $(shell printf '%s' $(email) | tr ':upper:' ':lower:' | md5sum - | cut -d' ' -f1)
-avatar_sizes    = 128 256 512 1024 2048
-avatar_files    = $(foreach size,$(avatar_sizes),$(WORK)/avatar-$(size).png)
+avatar          = https://www.libravatar.org/avatar/$(email_hashed)?s=512
 
-$(WORK)/avatar-%.png:
-	@mkdir -p $(WORK)
-	curl -f# https://www.gravatar.com/avatar/$(email_hashed)?s=$* -o $@
+$(WORK)/favicon.png:
+	wget -O $(WORK)/favicon.png $(avatar)
 
-avatars: $(avatar_files)
-
-avatars-clean:
-	rm -f $(avatar_files)
-	rm -f $(WORK)/favicon.png
-
-$(WORK)/favicon.png: $(WORK)/avatar-512.png
-	cp $(WORK)/avatar-512.png $(WORK)/favicon.png
-
-makedown-clean: avatars-clean
-
-clean: avatars-clean makedown-clean
-
-all: avatars makedown-all $(WORK)/favicon.png
+all: makedown-all $(WORK)/favicon.png

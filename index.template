@@ -10,14 +10,14 @@
     <meta name="generator" content="<?makedown version?>" />
     <link rel="icon" type="image/png" href="/favicon.png" sizes="96x96" />
     <link rel="stylesheet" type="text/css" href="/main.css" />
-    <meta property="og:image" content="/avatar-512.png" />
+    <meta property="og:image" content="/favicon.png" />
     <meta property="og:site_name" content="Kylie McClain" />
     <meta property="og:description" content="<?makedown description?>" />
 </head>
 <body>
     <header>
         <div class='title'>
-            <img class='avatar' alt='A picture of me' src='/avatar-512.png' />
+            <img class='avatar' alt='A picture of me' src='/favicon.png' />
             <a href='/'>
                 <span class='fullname'>Kylie McClain</span>
                 <span class='nickname'>(Somasis)</span>
