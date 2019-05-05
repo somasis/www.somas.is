@@ -46,7 +46,7 @@ I also make music and love to compute.
 
 - I run a few web services for personal and public use...
     - [pickle.zone](https://pickle.zone), a [Mastodon](https://joinmastodon.org/) instance
-    - [search.somas.is](https://search.somas.is), a [searX](https://asciimoo.github.io/searx/) instance
+    - [searx.somas.is](https://searx.somas.is), a [searX](https://asciimoo.github.io/searx/) instance
 - [musl-wiki], a wiki documenting the musl libc
 - [makedown], a build system for building static webpages written in markdown
 - [scripts], a collection of useful scripts
