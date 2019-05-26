@@ -80,7 +80,7 @@ and thus consider them of the past.
 ## Contact
 
 My email is <kylie@somas.is>; my PGP key is [0x37133B9826BBB5C2][pgp].
-My Matrix ID is [@somasis:matrix.org](https://matrix.to/#/@somasis:matrix.org).
+My username on Freenode IRC is `somasis`.
 My Discord is `somasis#5867`.
 
 [pgp]:                      https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&search=0x37133B9826BBB5C2
