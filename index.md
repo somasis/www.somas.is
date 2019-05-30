@@ -1,4 +1,4 @@
-# Kylie McClain
+# Kylie J. McClain
 ## Student of philosophy, obsessed musician
 
 Hi. I'm Kylie. I'm a twenty year old woman pursuing a B.A. in philosophy.

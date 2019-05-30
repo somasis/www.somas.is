@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" href="/favicon.png" sizes="512x512" />
     <link rel="stylesheet" type="text/css" href="/main.css" />
     <meta property="og:image" content="/favicon.png" />
-    <meta property="og:site_name" content="Kylie McClain" />
+    <meta property="og:site_name" content="Kylie J. McClain" />
     <meta property="og:description" content="<?makedown description?>" />
 </head>
 <body>
@@ -19,7 +19,7 @@
         <div class='title'>
             <img class='avatar' alt='A picture of me' src='/favicon.png' />
             <a href='/'>
-                <span class='fullname'>Kylie McClain</span>
+                <span class='fullname'>Kylie J. McClain</span>
                 <span class='nickname'>(Somasis)</span>
             </a>
         </div>
