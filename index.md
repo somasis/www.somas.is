@@ -44,6 +44,8 @@ I also make music and love to compute.
 
 ## Projects
 
+Aside from music, I also love doing work with free software and free culture in general.
+
 My main open source project for... a few years, has been an attempt to make my own distribution,
 [Mutiny](https://mutiny.zone). It's been mostly a passion project so far, involving a lot of
 conceptual planning and architecturing. If you find the ideas behind it interesting though, please
@@ -52,6 +54,7 @@ get in touch on [#mutiny@irc.freenode.net](ircs://irc.freenode.net/mutiny).
 - I run a few web services for personal and public use...
     - [pickle.zone](https://pickle.zone), a [Mastodon](https://joinmastodon.org/) instance
     - [searx.somas.is](https://searx.somas.is), a [searX](https://asciimoo.github.io/searx/) instance
+- I [really](https://www.openstreetmap.org/user/somasis/history) enjoy doing work on OpenStreetMap.
 - [musl-wiki], a wiki documenting the musl libc
 - [makedown], a build system for building static webpages written in markdown
 - [scripts], a collection of useful scripts
