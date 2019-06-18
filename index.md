@@ -7,6 +7,9 @@ I also make music and love to compute.
 ## Music
 
 <div class='discography'>
+    <a href='https://somasis.bandcamp.com/album/spirit-songs-for-lovers' title='somasis - spirit / songs for lovers (2019)'>
+        <img src='/img/covers/spiritsongsforlovers.jpg' alt='somasis - spirit / songs for lovers' />
+    </a>
     <a href='https://somasis.bandcamp.com/track/january-2' title='somasis - january (2019)'>
         <img src='/img/covers/january.jpg' alt='somasis - january' />
     </a>
