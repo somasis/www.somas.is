@@ -1,0 +1,23 @@
+<header class='siteheader'>
+    <header class='name'>
+        <a href='/' class='name'>
+            <img class='avatar' alt='A picture of me' src='https://www.gravatar.com/avatar/a187e38560bb56f5231cd19e45ad80f6?s=512'>
+            <h1 class='nickname'>somasis <span class='fullname'>Kylie J. McClain</span></h1>
+        </a>
+    </header>
+    <aside>
+        she/her - {{ site.description }}
+    </aside>
+
+    <nav>
+        <ul>
+            {% for item in site.navigation %}
+                <li>
+                    <a{% if item.class %} class="{{ item.class }}"{% endif %} href="{{item.url}}"{% if item.description %} title="{{item.description}}"{% endif
+%}>{% if item.fa-icon %}<span class='fa fa-{{item.fa-icon}}'></span>{% endif %}{% if item.icon
+%}<img src="{% link {{ item.icon }} %}" class='icon'>{% endif %}{{ item.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

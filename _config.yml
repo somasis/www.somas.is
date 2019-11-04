@@ -1,0 +1,54 @@
+title: "Somasis"
+
+description: >-
+    21 year old woman who likes philosophy, music, maps, and computers (sometimes)
+
+author: "Kylie J. McClain"
+
+twitter:
+    username: kyliesomasis
+    card: summary
+
+url: "https://www.somas.is"
+lang: "en-US"
+
+plugins:
+    - jekyll-asciidoc
+    - jekyll-feed
+    - jekyll-time-to-read
+    - jekyll-sitemap
+
+asciidoc: {}
+asciidoctor:
+    base_dir: :docdir
+    safe: unsafe
+    attributes:
+        - idseparator=_
+        - source-highlighter=coderay
+        - icons=font
+
+navigation:
+    - title: spirit / songs for lovers
+      description: My latest album
+      icon: /assets/img/spirit_songs_for_lovers_icon.png
+      url: https://somasis.bandcamp.com/album/spirit-songs-for-lovers
+      class: release
+    - title: Music
+      fa-icon: bandcamp
+      url: https://somasis.bandcamp.com
+    - title: Mutiny
+      url: https://mutiny.zone
+      icon: /assets/img/mutiny_icon.png
+      class: mutiny
+    - fa-icon: twitter
+      url: https://twitter.com/kyliesomasis
+      description: '@kyliesomasis'
+    - fa-icon: mastodon
+      url: https://pickle.zone/@kylie
+      description: Mastodon
+    - fa-icon: code-fork
+      url: https://gitlab.com/somasis
+      description: GitLab
+    - fa-icon: tumblr
+      url: https://blog.somas.is/
+      description: Tumblr

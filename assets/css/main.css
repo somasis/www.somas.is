@@ -1,0 +1,171 @@
+html {
+    margin: 0 auto;
+    max-width: 960px
+}
+
+body {
+    padding: 16px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: serif;
+    background: #eee;
+    color: #000;
+}
+
+header.siteheader {
+    line-height: 1;
+    border-bottom: 2px solid rgba(0, 0, 0, .25);
+    padding-bottom: 16px;
+}
+
+header.name {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+
+header.siteheader a {
+    outline: none;
+}
+
+header img.avatar {
+    float: left;
+    height: 100%;
+    font-size: 16px;
+    margin-right: 16px;
+    height: 96px;
+}
+
+header.name {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+header.name .nickname,
+header.name .fullname {
+    margin-bottom: 8px;
+}
+
+header.name .fullname {
+    visibility: hidden;
+}
+
+header.name:hover .fullname,
+header.name:focus .fullname {
+    visibility: visible;
+}
+
+header.name .fullname::before {
+    content: ' - '
+}
+
+header.name h1 {
+    margin: 0;
+}
+
+header.siteheader > aside {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+header.siteheader nav ul {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    display: block;
+    line-height: 1.5;
+}
+
+header.siteheader nav ul li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+header.siteheader nav ul li a img.icon {
+    max-height: 24px;
+    margin-right: 4px;
+    vertical-align: text-bottom;
+}
+
+header.siteheader nav ul li span {
+    margin-right: 4px;
+}
+
+body > footer {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 300;
+    border-top: 2px solid rgba(0, 0, 0, .25);
+}
+
+footer.sitefooter .license a.address {
+    display: inline;
+    font-style: normal;
+}
+
+footer.sitefooter .license a.address::before {
+    content: '<'
+}
+
+footer.sitefooter .license a.address::after {
+    content: '>'
+}
+
+a:link,
+header.siteheader a:visited {
+    font-weight: 600;
+    color: #597bf7;
+    text-decoration: none;
+}
+
+a:hover, a:focus,
+header.siteheader > nav a:hover .fa:not(.fa-bandcamp),
+header.siteheader > nav a:focus .fa:not(.fa-bandcamp) {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-skip-ink: none;
+}
+
+a:visited {
+    color: #9e6aae;
+}
+
+header.siteheader > nav > ul > li > a.mutiny {
+    color: #ac143f;
+}
+
+header.siteheader > nav > ul > li > a.release {
+    color: #9e11bb;
+}
+
+blockquote {
+    border-left: 2px solid rgba(255, 255, 255, .4);
+    margin: 16px 32px;
+    padding-left: 16px;
+}
+
+@media only screen and (max-width: 900px) {
+    header.siteheader header.name h1.nickname span.fullname {
+        display: none;
+    }
+
+    header.siteheader header.name {
+        margin-bottom: 26px;
+        display: block;
+        width: 100%;
+    }
+
+    header.siteheader header.name img.avatar {
+        max-height: 64px;
+    }
+
+    header.siteheader header.name h1.nickname {
+        font-size: 48px;
+    }
+
+    header.siteheader > aside {
+        display: block;
+        float: left;
+    }
+}

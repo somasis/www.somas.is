@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+    <head>
+        {% include site_head.html %}
+        <link rel="stylesheet" href="{{ '/assets/css/index.css' | relative_url }}">
+    </head>
+    <body>
+        {% include site_header.html %}
+
+        <nav class="articles">
+            {% for post in site.posts %}
+                <article>
+                    <header>
+                        <span class='post-overview'>
+                            <h2 class='title'><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                            {% if post.description %}
+                            <aside class='description'>{{ post.description }}</aside>{% endif %}
+                        </span>
+                        <aside class='details'>
+                            <aside class='reading-time'>{{ content | reading_time_as_i }} to read</aside>
+                            {% if page.tags %}
+                                <aside>
+                                    {% for tag in page.tags %}
+                                    {% endfor %}
+                                </aside>
+                            {% endif %}
+                            <small class="tags">{{ post.tags }}</small>
+                            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y-%m-%d' }}</time>
+                        </aside>
+                    </header>
+                    <main>
+                        <blockquote>{{ post.excerpt }}</blockquote>
+                    </main>
+                    {% if post.excerpt != post.content %}
+                        <nav>
+                            <a href="{{ post.url }}">Read more...</a>
+                        </nav>
+                    {% endif %}
+                </article>
+            {% endfor %}
+        </nav>
+
+        {% include site_footer.html %}
+    </body>
+</html>

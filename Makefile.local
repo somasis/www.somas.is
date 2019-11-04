@@ -1,8 +1,0 @@
-email           = kylie@somas.is
-email_hashed    = $(shell printf '%s' $(email) | tr ':upper:' ':lower:' | md5sum - | cut -d' ' -f1)
-avatar          = https://www.libravatar.org/avatar/$(email_hashed)?s=512
-
-$(WORK)/favicon.png:
-	wget -O $(WORK)/favicon.png $(avatar)
-
-all: makedown-all $(WORK)/favicon.png

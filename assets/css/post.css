@@ -1,0 +1,59 @@
+main.post header {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+main.post header > span.post-overview > h1 {
+    margin: 0;
+}
+
+main.post header > span.post-overview > aside.description {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+main.post header > footer > aside.reading-time {
+    font-size: 14px;
+}
+
+main.post header > footer {
+    text-align: right;
+    float: right;
+}
+
+main.post article {
+    line-height: 32px;
+}
+
+main.post article .imageblock {
+    display: block;
+    text-align: center;
+}
+
+main.post article .imageblock .title {
+    font-size: 16px;
+    font-style: italic;
+}
+
+main.post article #footnotes {
+    font-size: 16px;
+}
+
+nav.prevnext {
+    display: none;
+}
+
+@media only screen and (max-width: 960px) {
+    main.post header {
+        display: inline-block;
+    }
+
+    main.post header > footer {
+        text-align: left;
+        float: left;
+    }
+}
+

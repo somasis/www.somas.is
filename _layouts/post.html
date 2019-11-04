@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+    <head>
+        {% include site_head.html %}
+        <link rel="stylesheet" href="{{ '/assets/css/post.css' | relative_url }}">
+    </head>
+    <body>
+        {% include site_header.html %}
+
+        <main class='post'>
+            <header>
+                <span class='post-overview'>
+                    <h1>{{ page.title }}</h1>
+                    {% if page.description %}<aside class='description'>{{ page.description }}</aside>{% endif %}
+                </span>
+                <footer>
+                    <aside class='reading-time'>{{ content | reading_time_as_i }} to read</aside>
+                    {% if page.tags %}
+                        <aside>
+                            {% for tag in page.tags %}
+                            {% endfor %}
+                        </aside>
+                    {% endif %}
+                    <time datetime="{{ page.date }}" title="{{ page.date | date: '%H:%M:%S %p' }}">{{ page.date | date: '%A, %B %d, %Y' }}</time>
+                </footer>
+            </header>
+            <article>
+                {{ content }}
+            </article>
+        </main>
+
+        <nav class='prevnext'>
+            <span class="">
+                <a href="${sblg-next-base}.html"><span class='fa fa-angle-double-left' /> Older</a>
+            </span>
+            <span class="${sblg-prev-has}">
+                <a href="${sblg-prev-base}.html">Newer <span class='fa fa-angle-double-right' /></a>
+            </span>
+        </nav>
+
+        {% include site_footer.html %}
+    </body>
+</html>
