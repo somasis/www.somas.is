@@ -3,11 +3,8 @@ title: "Somasis"
 description: >-
     21 year old woman who likes philosophy, music, maps, and computers (sometimes)
 
-author: "Kylie J. McClain"
-
-twitter:
-    username: kyliesomasis
-    card: summary
+author:
+    twitter: kyliesomasis
 
 url: "https://www.somas.is"
 lang: "en-US"
@@ -17,6 +14,7 @@ plugins:
     - jekyll-feed
     - jekyll-time-to-read
     - jekyll-sitemap
+    - jekyll-seo-tag
 
 asciidoc: {}
 asciidoctor:
