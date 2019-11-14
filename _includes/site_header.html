@@ -11,7 +11,7 @@
 
     <nav>
         <ul>
-            {% for item in site.navigation %}
+            {% for item in site.data.navigation %}
                 <li>
                     <a{% if item.class %} class="{{ item.class }}"{% endif %} href="{{item.url}}"{% if item.description %} title="{{item.description}}"{% endif
 %}>{% if item.fa-icon %}<span class='fa fa-{{item.fa-icon}}'></span>{% endif %}{% if item.icon
