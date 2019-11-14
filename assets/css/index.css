@@ -18,7 +18,6 @@ nav.articles > article > header > span.post-overview > aside {
     opacity: .7;
     font-size: 16px;
     font-style: italic;
-    float: right;
 }
 
 nav.articles > article > header > aside.details > .reading-time {

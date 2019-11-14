@@ -13,17 +13,14 @@
                     <header>
                         <span class='post-overview'>
                             <h2 class='title'><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                            {% if post.description %}
-                            <aside class='description'>{{ post.description }}</aside>{% endif %}
+                            {% if post.description %}<aside class='description'>{{ post.description }}</aside>{% endif %}
                         </span>
                         <aside class='details'>
                             <aside class='reading-time'>{{ content | reading_time_as_i }} to read</aside>
-                            {% if page.tags %}
-                                <aside>
+                            {% if page.tags %}<aside>
                                     {% for tag in page.tags %}
                                     {% endfor %}
-                                </aside>
-                            {% endif %}
+                                </aside>{% endif %}
                             <small class="tags">{{ post.tags }}</small>
                             <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y-%m-%d' }}</time>
                         </aside>
