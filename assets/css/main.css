@@ -135,6 +135,10 @@ header.siteheader > nav > ul > li > a.mutiny {
     color: #ac143f;
 }
 
+header.siteheader > nav > ul > li > a.exherbo {
+    color: #3c7304;
+}
+
 header.siteheader > nav > ul > li > a.release {
     color: #9e11bb;
 }
