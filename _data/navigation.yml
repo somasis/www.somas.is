@@ -6,6 +6,7 @@
 - title: Music
   fa-icon: bandcamp
   url: https://somasis.bandcamp.com
+  class: bandcamp
 - title: Exherbo
   url: https://exherbo.org
   icon: /assets/img/exherbo_icon.png

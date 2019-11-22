@@ -131,6 +131,10 @@ a:visited {
     color: #9e6aae;
 }
 
+header.siteheader > nav > ul > li > a.bandcamp {
+    color: #1da0c3;
+}
+
 header.siteheader > nav > ul > li > a.mutiny {
     color: #ac143f;
 }
