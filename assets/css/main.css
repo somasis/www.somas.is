@@ -18,32 +18,27 @@ header.siteheader {
     padding-bottom: 16px;
 }
 
-span.meta {
+span.meta .u-url {
     display: flex;
     justify-content: start;
     align-items: baseline;
+    font-weight: 700;
 }
 
 header.siteheader a {
     outline: none;
 }
 
-span.meta img.u-photo {
+span.meta .u-logo {
     float: left;
-    height: 100%;
     font-size: 16px;
     margin-right: 16px;
     height: 96px;
 }
 
-span.meta {
-    margin: 0;
-    padding: 0;
+span.meta .u-url {
     display: block;
-}
-
-span.meta .p-nickname,
-span.meta .p-name {
+    font-size: 36px;
     margin-bottom: 8px;
 }
 
@@ -51,8 +46,9 @@ span.meta .p-name {
     visibility: hidden;
 }
 
-span.meta:hover .p-name,
-span.meta:focus .p-name {
+span.meta a:hover .p-name,
+span.meta a:focus .p-name,
+span.meta a:active .p-name {
     visibility: visible;
 }
 
@@ -60,11 +56,7 @@ span.meta .p-name::before {
     content: ' - '
 }
 
-span.meta h1 {
-    margin: 0;
-}
-
-header.siteheader > aside {
+span.meta aside {
     margin-bottom: 10px;
     font-size: 16px;
 }
@@ -154,26 +146,40 @@ blockquote {
 }
 
 @media only screen and (max-width: 900px) {
-    header.siteheader span.meta h1.p-nickname span.p-name {
+    span.meta span.p-name {
         display: none;
     }
 
-    header.siteheader span.meta {
+    span.meta {
         margin-bottom: 26px;
         display: block;
         width: 100%;
     }
 
-    header.siteheader span.meta img.u-photo {
+    span.meta .u-logo {
         max-height: 64px;
     }
 
-    header.siteheader span.meta h1.p-nickname {
-        font-size: 48px;
+    span.meta .u-url {
+        font-size: 56px;
     }
 
-    header.siteheader > aside {
+    span.meta .p-note {
         display: block;
         float: left;
+        width: 100%;
+        margin-top: 8px;
+        line-height: 1.5;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    span.meta .u-url {
+        font-size: 40px;
+    }
+
+    span.meta .u-logo {
+        max-height: 48px;
+        margin-right: 8px;
     }
 }
