@@ -7,6 +7,7 @@
   fa-icon: bandcamp
   url: https://somasis.bandcamp.com
   class: bandcamp
+  rel: me
 - title: Exherbo
   url: https://exherbo.org
   icon: /assets/img/exherbo_icon.png
@@ -18,12 +19,16 @@
 - fa-icon: twitter
   url: https://twitter.com/kyliesomasis
   description: '@kyliesomasis'
+  rel: me
 - fa-icon: mastodon
   url: https://pickle.zone/@kylie
   description: Mastodon
+  rel: me
 - fa-icon: code-fork
   url: https://gitlab.com/somasis
   description: GitLab
+  rel: me
 - fa-icon: tumblr
   url: https://blog.somas.is/
   description: Tumblr
+  rel: me
