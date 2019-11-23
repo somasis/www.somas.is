@@ -111,7 +111,6 @@ header.siteheader > nav a:hover .fa:not(.fa-bandcamp),
 header.siteheader > nav a:focus .fa:not(.fa-bandcamp) {
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-decoration-skip-ink: none;
 }
 
 a:visited {
