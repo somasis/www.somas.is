@@ -18,7 +18,7 @@ header.siteheader {
     padding-bottom: 16px;
 }
 
-header.meta {
+span.meta {
     display: flex;
     justify-content: start;
     align-items: baseline;
@@ -28,7 +28,7 @@ header.siteheader a {
     outline: none;
 }
 
-header img.u-photo {
+span.meta img.u-photo {
     float: left;
     height: 100%;
     font-size: 16px;
@@ -36,31 +36,31 @@ header img.u-photo {
     height: 96px;
 }
 
-header.meta {
+span.meta {
     margin: 0;
     padding: 0;
     display: block;
 }
 
-header.meta .p-nickname,
-header.meta .p-name {
+span.meta .p-nickname,
+span.meta .p-name {
     margin-bottom: 8px;
 }
 
-header.meta .p-name {
+span.meta .p-name {
     visibility: hidden;
 }
 
-header.meta:hover .p-name,
-header.meta:focus .p-name {
+span.meta:hover .p-name,
+span.meta:focus .p-name {
     visibility: visible;
 }
 
-header.meta .p-name::before {
+span.meta .p-name::before {
     content: ' - '
 }
 
-header.meta h1 {
+span.meta h1 {
     margin: 0;
 }
 
@@ -154,21 +154,21 @@ blockquote {
 }
 
 @media only screen and (max-width: 900px) {
-    header.siteheader header.meta h1.p-nickname span.p-name {
+    header.siteheader span.meta h1.p-nickname span.p-name {
         display: none;
     }
 
-    header.siteheader header.meta {
+    header.siteheader span.meta {
         margin-bottom: 26px;
         display: block;
         width: 100%;
     }
 
-    header.siteheader header.meta img.u-photo {
+    header.siteheader span.meta img.u-photo {
         max-height: 64px;
     }
 
-    header.siteheader header.meta h1.p-nickname {
+    header.siteheader span.meta h1.p-nickname {
         font-size: 48px;
     }
 
