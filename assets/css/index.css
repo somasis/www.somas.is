@@ -2,6 +2,11 @@ nav.articles {
     margin-top: 8px;
 }
 
+body > h1.articles-header {
+    margin: 0px;
+    margin-top: 8px;
+}
+
 nav.articles > article > header {
     display: flex;
     align-content: baseline;

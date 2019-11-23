@@ -1,7 +1,7 @@
 = Introducing...
 :page-description: A short introduction of my new website, the process making it, and some life \
                    events.
-:page-tags: meta
+:page-tags: [meta]
 
 Welcome! This is my new website. I became discontent with the way my old one was, since it mostly
 served as a landing page for all my other stuff. With this new site, I'm hoping to actually get into

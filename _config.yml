@@ -10,6 +10,7 @@ lang: "en-US"
 
 plugins:
     - jekyll-asciidoc
+    - jekyll-archives
     - jekyll-feed
     - jekyll-time-to-read
     - jekyll-sitemap
@@ -24,3 +25,13 @@ asciidoctor:
         - source-highlighter=coderay
         - icons=font
 
+jekyll-archives:
+    enabled:
+        - year
+        - month
+        - tags
+    layout: archive
+    permalinks:
+        year: '/:year/'
+        month: '/:year/:month/'
+        tag: '/tag/:name/'

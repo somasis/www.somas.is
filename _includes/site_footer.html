@@ -1,4 +1,16 @@
 <footer class='sitefooter'>
+    <nav class='archives'>
+        {% for archive in site.archives %}
+            {% if archive.type == 'year' %}
+                {% assign year = archive.date | date: "%Y" %}
+                <a href="/{{ year }}">{{ year }}</a>
+            {% endif %}
+            {% if archive.type == 'tag' %}
+                <a href="/tag/{{ archive.title }}">#{{ archive.title }}</a>
+            {% endif %}
+        {% endfor %}
+    </nav>
+
     <p class='meta'>
         This site was created with <a href="https://jekyllrb.com">Jekyll</a>.
         The source can be found at the <a href="https://git.somas.is/www.somas.is" title="Website source code">git repository</a>.

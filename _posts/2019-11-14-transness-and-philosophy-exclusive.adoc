@@ -1,6 +1,6 @@
 = Transness and Philosophy aren't exclusive
 :page-description: Some thoughts about how philosophy and trans identities interact.
-:page-tags: trans philosophy
+:page-tags: [trans, philosophy]
 
 In class this afternoon, I began to realize these thoughts and wrote them down frantically into my
 notebook, because something was bothering me that I couldn't quite grasp fully. We were discussing
