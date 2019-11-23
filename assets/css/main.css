@@ -139,6 +139,16 @@ blockquote {
     padding-left: 16px;
 }
 
+footer > nav.archives > ul {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer > nav.archives > ul > li {
+    display: inline-block;
+}
+
 @media only screen and (max-width: 900px) {
     span.meta span.p-name {
         display: none;

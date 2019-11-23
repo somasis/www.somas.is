@@ -1,14 +1,14 @@
 <footer class='sitefooter'>
     <nav class='archives'>
-        {% for archive in site.archives %}
+        <ul>{% for archive in site.archives %}
             {% if archive.type == 'year' %}
                 {% assign year = archive.date | date: "%Y" %}
-                <a href="/{{ year }}">{{ year }}</a>
+                <li><a href="/{{ year }}">{{ year }}</a></li>
             {% endif %}
             {% if archive.type == 'tag' %}
-                <a href="/tag/{{ archive.title }}">#{{ archive.title }}</a>
+                <li><a href="/tag/{{ archive.title }}">#{{ archive.title }}</a></li>
             {% endif %}
-        {% endfor %}
+        {% endfor %}</ul>
     </nav>
 
     <p class='meta'>
