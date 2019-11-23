@@ -4,14 +4,20 @@ nav.articles {
 
 nav.articles > article > header {
     display: flex;
-    width: 100%;
-    align-items: stretch;
-    justify-content: space-between;
+    align-content: baseline;
 }
 
-nav.articles > article > header > span.post-overview > h2 {
-    margin: 0;
-    padding: 0;
+nav.articles > article > header > span.post-overview {
+    flex-grow: 2;
+}
+
+nav.articles > article > header > aside.details {
+    display: flex;
+    flex-direction: column;
+}
+
+nav.articles > article > header > span.post-overview > h2.title {
+    margin: 0px;
 }
 
 nav.articles > article > header > span.post-overview > aside {

@@ -1,31 +1,37 @@
-main.post header {
-    width: 100%;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+main.post > article > header > h1 {
+    margin: 0px;
 }
 
-main.post header > span.post-overview > h1 {
-    margin: 0;
-}
-
-main.post header > span.post-overview > aside.description {
+main.post > article > header > span.post-extra {
     font-size: 16px;
+}
+
+main.post > article > header > span.post-extra > span.description {
     font-style: italic;
+}
+
+main.post > article > header > span.post-extra > span.reading-time {
     font-weight: 300;
 }
 
-main.post header > footer > aside.reading-time {
-    font-size: 14px;
+main.post > article > footer {
+    border-top: 2px dashed rgba(0,0,0,.25);
+    padding-top: 16px;
+    font-weight: 300;
 }
 
-main.post header > footer {
-    text-align: right;
+main.post > article > footer > span.tags {
+    display: inline;
+    float: left;
+}
+
+main.post > article > footer > time {
+    display: inline;
     float: right;
 }
 
 main.post article {
-    line-height: 32px;
+    line-height: 2;
 }
 
 main.post article .imageblock {
@@ -40,6 +46,7 @@ main.post article .imageblock .title {
 
 main.post article #footnotes {
     font-size: 16px;
+    padding-bottom: 16px;
 }
 
 nav.prevnext {
@@ -47,11 +54,11 @@ nav.prevnext {
 }
 
 @media only screen and (max-width: 960px) {
-    main.post header {
+    main.post > article > header {
         display: inline-block;
     }
 
-    main.post header > footer {
+    main.post > article > header > footer {
         text-align: left;
         float: left;
     }
