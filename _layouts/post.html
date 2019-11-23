@@ -23,12 +23,12 @@ layout: compress
                     {{ content }}
                 </span>
                 <footer class='post-details'>
-                    {% if page.tags %}<span>
+                    {% if page.tags %}<span class='tags'>
                         {% for tag in page.tags %}
-                            <a href="#{{ tag }}
+                            <a href="/tag/{{ tag }}">#{{ tag }}</a>
                         {% endfor %}
                     </span>{% endif %}
-                    <time class="dt-published" datetime="{{ page.date }}" title="{{ page.date | date: '%H:%M:%S %p' }}">Posted on {{ page.date | date: '%A, %B %d, %Y' }}.</time>
+                    <time class="dt-published" datetime="{{ page.date }}" title="{{ page.date | date: '%H:%M:%S %p' }}"><a href="{{ post }}">Posted on {{ page.date | date: '%A, %B %d, %Y' }}.</a></time>
             </article>
         </main>
 

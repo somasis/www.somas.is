@@ -21,13 +21,18 @@ main.post > article > footer {
 }
 
 main.post > article > footer > span.tags {
-    display: inline;
-    float: left;
+    font-weight: normal;
 }
 
 main.post > article > footer > time {
-    display: inline;
     float: right;
+}
+
+main.post > article > footer > time > a,
+main.post > article > footer > span.tags > a {
+    font-weight: 600;
+    color: #000;
+
 }
 
 main.post article {
