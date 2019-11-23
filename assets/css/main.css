@@ -47,7 +47,7 @@ span.meta a:active .p-name {
 }
 
 span.meta .p-name::before {
-    content: ' - '
+    content: ' is '
 }
 
 span.meta span.p-note {
