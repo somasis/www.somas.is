@@ -1,12 +1,12 @@
 <header class='siteheader'>
-    <header class='h-card'>
+    <header class='meta h-card'>
         <a href='/' class='u-url'>
-            <img class='u-photo' alt='A picture of me' src='https://www.gravatar.com/avatar/a187e38560bb56f5231cd19e45ad80f6?s=512'>
+            <img class='u-photo' alt='A picture of me' src="{{ site.data.meta.avatar }}">
             <h1 class='p-nickname'>somasis <span class='p-name'><span class='p-given-name'>Kylie</span> <span class='p-additional-name'>Juliet</span> <span class='p-family-name'>McClain</span></h1>
         </a>
     </header>
-    <aside>
-        {{ site.age }} year old {{ site.pronouns }} {{ site.gender }}, {{ site.description }}
+    <aside class='h-card p-note'>
+        {{ site.data.meta.age }} year old {{ site.data.meta.pronouns }} {{ site.data.meta.gender }}, {{ site.description }}
     </aside>
 
     <nav>

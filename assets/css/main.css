@@ -18,7 +18,7 @@ header.siteheader {
     padding-bottom: 16px;
 }
 
-header.h-card {
+header.meta {
     display: flex;
     justify-content: start;
     align-items: baseline;
@@ -36,31 +36,31 @@ header img.u-photo {
     height: 96px;
 }
 
-header.h-card {
+header.meta {
     margin: 0;
     padding: 0;
     display: block;
 }
 
-header.h-card .p-nickname,
-header.h-card .p-name {
+header.meta .p-nickname,
+header.meta .p-name {
     margin-bottom: 8px;
 }
 
-header.h-card .p-name {
+header.meta .p-name {
     visibility: hidden;
 }
 
-header.h-card:hover .p-name,
-header.h-card:focus .p-name {
+header.meta:hover .p-name,
+header.meta:focus .p-name {
     visibility: visible;
 }
 
-header.h-card .p-name::before {
+header.meta .p-name::before {
     content: ' - '
 }
 
-header.h-card h1 {
+header.meta h1 {
     margin: 0;
 }
 
@@ -154,21 +154,21 @@ blockquote {
 }
 
 @media only screen and (max-width: 900px) {
-    header.siteheader header.h-card h1.p-nickname span.p-name {
+    header.siteheader header.meta h1.p-nickname span.p-name {
         display: none;
     }
 
-    header.siteheader header.h-card {
+    header.siteheader header.meta {
         margin-bottom: 26px;
         display: block;
         width: 100%;
     }
 
-    header.siteheader header.h-card img.u-photo {
+    header.siteheader header.meta img.u-photo {
         max-height: 64px;
     }
 
-    header.siteheader header.h-card h1.p-nickname {
+    header.siteheader header.meta h1.p-nickname {
         font-size: 48px;
     }
 
