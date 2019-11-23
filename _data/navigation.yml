@@ -16,6 +16,10 @@
   url: https://mutiny.zone
   icon: /assets/img/mutiny_icon.png
   class: mutiny
+- description: Git
+  url: https://git.somas.is
+  fa-icon: code
+  rel: me
 - fa-icon: twitter
   url: https://twitter.com/kyliesomasis
   description: '@kyliesomasis'
@@ -23,10 +27,6 @@
 - fa-icon: mastodon
   url: https://pickle.zone/@kylie
   description: Mastodon
-  rel: me
-- fa-icon: code-fork
-  url: https://gitlab.com/somasis
-  description: GitLab
   rel: me
 - fa-icon: tumblr
   url: https://tumblr.somas.is/
