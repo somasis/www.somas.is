@@ -10,12 +10,18 @@ layout: compress
     <body>
         {% include site_header.html %}
 
-        <h1 class='articles-header'>Posts
+        <h1 class="articles-header">Posts
             {% if page.type == 'tag' %}tagged #{{ page.title }}...
             {% elsif page.type == 'year' %}from {{ page.date | date: "%Y" }}...
             {% elsif page.type == 'month' %}from {{ page.date | date: "%B" }}...
             {% endif %}
         </h1>
+
+        {% if page.type == 'tag' %}
+            <aside class="articles-tag-description">
+                    {{ site.data.tags.[[page.title]] }}
+            </aside>
+        {% endif %}
 
         <nav class="articles">
             {% for post in page.posts %}
