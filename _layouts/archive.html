@@ -42,11 +42,6 @@ layout: compress
                     <main>
                         <blockquote>{{ post.excerpt }}</blockquote>
                     </main>
-                    {% if post.excerpt != post.content %}
-                        <nav>
-                            <a href="{{ post.url }}">Read more...</a>
-                        </nav>
-                    {% endif %}
                 </article>
             {% endfor %}
         </nav>
