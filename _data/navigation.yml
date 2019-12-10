@@ -12,10 +12,10 @@
   url: https://exherbo.org
   icon: /assets/img/exherbo_icon.png
   class: exherbo
-#- title: Mutiny
-#  url: https://mutiny.zone
-#  icon: /assets/img/mutiny_icon.png
-#  class: mutiny
+- title: Mutiny
+  url: https://mutiny.zone
+  icon: /assets/img/mutiny_icon.png
+  class: mutiny
 - description: Git
   url: https://git.somas.is
   fa-icon: code
