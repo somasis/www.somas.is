@@ -27,7 +27,7 @@ That was a (looking back now, ironic) choice I made for myself.
 I met Violet on Tumblr, I knew her there for years and years, and we started talking more after we
 both were on a Discord server dedicated to a favorite music artist. Had I not chosen to talk more to
 her, I would not have started hormone therapy and escaped the clutches of depression, I would not
-have travelled out of the country for the first time in my life, and I would be a much lonelier
+have traveled out of the country for the first time in my life, and I would be a much lonelier
 person. What does this have to do with anything else mentioned here?
 
 At the time I'm writing this, we have sent 330,097 direct messages back and forth since January 13th,
@@ -48,7 +48,7 @@ I'm rambling again. When me and Violet are together, our chat goes quiet. If one
 chat history they might think something had happened for a month of my life, to cause me to not
 really say much at all to her and vice versa. It scares me for a very irrational reason: a stunning
 amount of my life has changed purely through a single chat window I've had on my computer for multiple
-years. I have no logs of it; I am purely going on the grace of Discord, that they will not suddenly 
+years. I have no logs of it; I am purely going on the grace of Discord, that they will not suddenly
 disappear one day and take all of our words with it. Is Discord profitable? It won't stay profitable.
 No proprietary chat solution has ever stayed profitable. It too, will fall.
 
@@ -100,10 +100,10 @@ almost excuse Discord's "no data gathering and extraction tools" rule, if they p
 logging mechanism of some sort, but they do not. I am, additionally, learning that perhaps this is
 simply a thing I will need to learn to become easy with. Normally I am a very easy going person,
 willing to throw away the concrete and the permanent when it seems bothersome and constricting. Do
-I need to let go of this concreteness, and accept that _all conversations are ephermeral by their very 
+I need to let go of this concreteness, and accept that _all conversations are ephemeral by their very
 nature_? Maybe I do, and perhaps I should also spend less time on the computer.
 
-With IRC, at least you knew what you were getting into. It is ephermeral in a way Snapchat can only
+With IRC, at least you knew what you were getting into. It is ephemeral in a way Snapchat can only
 dream to be, because it only serves to repeat what was sent to it to anyone who happens to be
 listening. So if you wanted to have history, you'd keep logs, and if you really valued it you'd keep
 them for as long as you could. If you didn't have them, maybe you could ask someone else in the
