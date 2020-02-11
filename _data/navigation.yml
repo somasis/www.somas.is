@@ -8,10 +8,6 @@
   url: https://somasis.bandcamp.com
   class: bandcamp
   rel: me
-- title: Exherbo
-  url: https://exherbo.org
-  icon: /assets/img/exherbo_icon.png
-  class: exherbo
 - title: Mutiny
   url: https://mutiny.zone
   icon: /assets/img/mutiny_icon.png
