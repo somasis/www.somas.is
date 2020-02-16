@@ -12,9 +12,9 @@
   url: https://mutiny.zone
   icon: /assets/img/mutiny_icon.png
   class: mutiny
-- description: Git
-  url: https://git.somas.is
-  fa-icon: code
+- description: GitHub
+  url: https://github.com/somasis
+  fa-icon: github
   rel: me
 - fa-icon: twitter
   url: https://twitter.com/kyliesomasis
