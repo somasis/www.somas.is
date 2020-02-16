@@ -1,6 +1,6 @@
 = Memory fades but our words are forever
 :page-description: In defense of plain text and chat logs.
-:page-tags: [meta, computers, memories]
+:page-tags: [computers, irc, violet]
 
 Talking with Violet tonight I realized how scary things are sometimes. I've spent the greater
 portion of my life talking to people online. I've been on IRC since I was 10, younger than anyone
