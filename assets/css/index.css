@@ -19,6 +19,7 @@ nav.articles > article > header > span.post-overview {
 nav.articles > article > header > aside.details {
     display: flex;
     flex-direction: column;
+    text-align: right;
 }
 
 nav.articles > article > header > span.post-overview > h2.title {
