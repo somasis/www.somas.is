@@ -58,7 +58,50 @@ nav.prevnext {
     display: none;
 }
 
+/* openring - https://git.sr.ht/~sircmpwn/openring */
+.webring h3 {
+    margin: 8px 0px;
+    border-bottom: 2px dashed rgba(0, 0, 0, .25);
+}
+
+.webring .articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.webring .title {
+    margin: 0;
+}
+
+.webring .article {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.webring .article:first-child {
+    padding-right: 16px;
+}
+
+.webring .article:last-child {
+    padding-left: 16px;
+}
+
+.webring .summary {
+    font-size: 12px;
+    flex: 1 1 0;
+}
+
 @media only screen and (max-width: 960px) {
+    .webring .articles {
+        flex-direction: column;
+    }
+
+    .webring .article {
+        padding: 0px !important;
+        margin-bottom: 16px;
+    }
+
     main.post > article > header {
         display: inline-block;
     }

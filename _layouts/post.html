@@ -28,7 +28,7 @@
                     <time class="dt-published" datetime="{{ page.date }}" title="{{ page.date | date: '%H:%M:%S %p' }}"><a href="{{ post }}">Posted on {{ page.date | date: '%A, %B %d, %Y' }}.</a></time>
             </article>
         </main>
-
+        {% include webring_out.html %}
         {% include site_footer.html %}
     </body>
 </html>
