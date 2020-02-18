@@ -42,4 +42,4 @@ tasks:
         jekyll build
     - deploy: |
         cd www.somas.is
-        rsync --rsh="ssh -o StrictHostKeyChecking=no" -r _site/ ${deploy}:/srv/www/www.somas.is
+        rsync --rsh="ssh -o StrictHostKeyChecking=no" -vr _site/ ${deploy}:/srv/www/www.somas.is
