@@ -110,5 +110,14 @@ nav.prevnext {
         text-align: left;
         float: left;
     }
+
+    main.post > article > footer > span.tags {
+        width: 100%;
+        display: block;
+    }
+
+    main.post > article > footer > time {
+        float: unset;
+    }
 }
 
