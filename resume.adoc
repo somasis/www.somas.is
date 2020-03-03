@@ -1,0 +1,68 @@
+= Résumé
+:page-description: I am Kylie McClain, I'm multi-faceted, and I refuse limit myself to being good \
+                   at one thing.
+:page-layout: post
+
+Email me at <kylie@somas.is>. Please contact me there if anything more specific is desired.
+
+:exherbo: https://exherbo.org
+:musllibc: https://musl.libc.org
+:skarnet: https://www.skarnet.org
+:execline: {skarnet}/software/execline
+:s6: {skarnet}/software/s6
+
+== Work
+
+:tss: https://support.appstate.edu/services/technology-support-center
+
+* *Student IT Consultant* at {tss}[Appalachian State University Technology Support Services]
+  _(2018-present)_
+    ** Virus removal, data backup, hardware diagnostics, ticket management via Jira
+    ** Customer service, explaining repair steps taken to customers upon them picking up their
+       computers
+    ** Known as the only person in the office who knows what they're doing with Linux, usually
+       machines running Linux that are having problems get referred to me. `:-)`
+
+== Open-source work
+
+* *Core developer*, https://exherbo.org[Exherbo Linux] _(2014-2017)_
+    ** Coordinated efforts with approximately 20 other developers via IRC
+    ** Redesigned site to be more modern and adaptable to mobile devices
+    ** Added support for new platforms such as {musllibc}[musl libc]
+    ** Wrote bootstrapping documentation for new processor architectures
+    ** Wrote documentation for complex code previously written by others
+
+== Side projects
+
+* https://mutiny.zone[Mutiny], a Linux distribution/research project aiming for unique, coherent,
+  and fun computing. _(2016-present)_
+* https://wiki.musl-libc.org[musl libc wiki], a community-maintained wiki documenting the musl
+  libc project. I maintain the build system for it, the stylesheets, and host it.
+
+== Skills & Interests
+
+* *Operating systems*: Alpine Linux, Exherbo Linux, Arch Linux, Debian GNU/Linux, Windows 10
+* *Software*: POSIX Shell/bash, {musllibc}[musl libc], {s6}[s6], {execline}[execline], OpenSSH,
+  pacman, AsciiDoc (this site is written in it), Markdown
+* *Interests*: Minimalist system design, system administration, small systems, efficient use of
+  resources
+
+== Education
+
+* https://appstate.edu[Appalachian State University] _(2018-present)_
+    ** Pursuing a *Bachelor of Philosophy*, majoring in Philosophy and minoring in Gender, Women's and
+       Sexuality Studies
+    ** Arrived with an intent to pursue a degree in computer science, but my lifelong passion for
+       philosophy and desire to learn about it in a deep manner won out. I credit philosophy for all
+       of my opinions about how computers should work.
+* Rowan-Cabarrus Community College _(2016-2018, transferred)_
+* Concord High School _(2012-2016, graduated)_
+* Central Cabarrus High School _(2011-2012, part of STEM program)_
+
+== Hobbies
+
+* https://somasis.bandcamp.com[Music making], using FL Studio. _(2012-, probably until I die)_
+* Somewhat active contributor to https://openstreetmap.org/user/somasis[OpenStreetMap]. It's helped
+  me to find the world around me and the community I live in a lot more interesting. Anywhere new I
+  go ends up on the map sooner or later.
+
