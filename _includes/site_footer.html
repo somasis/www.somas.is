@@ -1,15 +1,17 @@
 <footer class='sitefooter'>
-    <nav class='archives'>
-        <ul>{% for archive in site.archives %}
-            {% if archive.type == 'year' %}
-                {% assign year = archive.date | date: "%Y" %}
-                <li><a href="/{{ year }}">{{ year }}</a></li>
-            {% endif %}
-            {% if archive.type == 'tag' %}
-                <li><a href="/tag/{{ archive.title }}">#{{ archive.title }}</a></li>
-            {% endif %}
-        {% endfor %}</ul>
-    </nav>
+    {% if post.layout == 'post' or post.layout == 'index' %}
+        <nav class='archives'>
+            <ul>{% for archive in site.archives %}
+                {% if archive.type == 'year' %}
+                    {% assign year = archive.date | date: "%Y" %}
+                    <li><a href="/{{ year }}">{{ year }}</a></li>
+                {% endif %}
+                {% if archive.type == 'tag' %}
+                    <li><a href="/tag/{{ archive.title }}">#{{ archive.title }}</a></li>
+                {% endif %}
+            {% endfor %}</ul>
+        </nav>
+    {% endif %}
 
     <p class='meta'>
         This site was created with <a href="https://jekyllrb.com">Jekyll</a>.
