@@ -1,34 +1,28 @@
 environment:
     deploy: deploy@somas.is
 
-image: alpine/latest
+image: archlinux
 
 secrets:
     - 661c57e5-ee95-4872-925d-d4b0d940ee38
 
 sources:
     - https://github.com/somasis/www.somas.is
-    - https://git.sr.ht/~sircmpwn/openring
 
 packages:
     - asciidoctor
-    - go
+    - jekyll
     - rsync
-    - ruby
-    - ruby-bigdecimal
-    - ruby-dev
-    - ruby-ffi
-    - ruby-i18n
 
 tasks:
     - dependencies: |
-        sudo gem install -V jekyll jekyll-asciidoc jekyll-archives jekyll-feed \
+        sudo gem install -V --no-document --no-user-install jekyll-asciidoc jekyll-archives jekyll-feed \
             jekyll-time-to-read jekyll-sitemap jekyll-seo-tag
-        cd openring
-        go build
     - openring: |
+        curl -O https://yukari.sr.ht/openring
+        chmod +x openring
         cd www.somas.is
-        ../openring/openring \
+        ../openring \
             -s https://phidica.tumblr.com/rss \
             -s https://7596ff.com/rss.xml \
             -s https://leahneukirchen.org/blog/index.atom \
