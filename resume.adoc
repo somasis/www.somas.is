@@ -15,7 +15,7 @@ Email me at <kylie@somas.is>. Please contact me there if anything more specific 
 
 :tss: https://support.appstate.edu/services/technology-support-center
 
-* *Student IT Consultant* at {tss}[Appalachian State University Technology Support Services]
+* *Student IT Technician* at {tss}[Appalachian State University Technology Support Services]
   _(2018-present)_
     ** Virus removal, data backup, hardware diagnostics, ticket management via Jira.
     ** Customer service, explaining repair steps taken to customers upon them picking up their
