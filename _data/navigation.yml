@@ -12,6 +12,9 @@
   url: https://mutiny.zone
   icon: /assets/img/mutiny_icon.png
   class: mutiny
+- title: Resume
+  url: /resume.html
+  fa-icon: file
 - description: GitHub
   url: https://github.com/somasis
   fa-icon: github
