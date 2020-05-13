@@ -1,6 +1,7 @@
 - title: spirit / songs for lovers
   description: My latest album
   icon: /assets/img/spirit_songs_for_lovers_icon.png
+  alt: spirit / songs for lovers cover art
   url: https://somasis.bandcamp.com/album/spirit-songs-for-lovers
   class: release
 - title: Music
@@ -11,6 +12,7 @@
 - title: Mutiny
   url: https://mutiny.zone
   icon: /assets/img/mutiny_icon.png
+  alt: Mutiny logo
   class: mutiny
 - title: Résumé
   url: /resume.html
