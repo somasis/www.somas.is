@@ -2,6 +2,7 @@
 :page-description: A short introduction of my new website, the process making it, and some life \
                    events.
 :page-tags: [meta]
+:page-redirect_from: /2019/11/03/introducing.html
 
 Welcome! This is my new website. I became discontent with the way my old one was, since it mostly
 served as a landing page for all my other stuff. With this new site, I'm hoping to actually get into
@@ -19,7 +20,7 @@ Markdown still hasn't really caught up to as the years have gone on, despite the
 CommonMark group.
 
 Before writing setting up this site, I had been first working with a long-time document that I had
-laying around: my pile of notes on https://mutiny.zone[Mutiny], my kinda-sorta project to make a
+laying around: my pile of notes on https://mutiny.red[Mutiny], my kinda-sorta project to make a
 Linux distro that can be best described as "what would my computer look like if we already had
 communism".
 
@@ -31,7 +32,7 @@ now see as a personal lesbian awakening"footnote:[Have you _seen_ Mackenzie Davi
 that show? Jesus.] logo than I did actually making the stupid thing.
 
 .Keep it real though, you know it's really cool lookin'.
-image::https://mutiny.zone/logo.svg[Mutiny logo]
+image::https://mutiny.red/logo.svg[Mutiny logo]
 
 After discovering that AsciiDoctor was really fun to work with and generated some very
 pretty documentation by default, I've basically given up on Markdown. Another perk, one that drew me
