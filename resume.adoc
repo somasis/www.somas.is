@@ -1,7 +1,10 @@
 = Résumé
 :page-description: I am Kylie McClain, I'm multi-faceted, and I refuse limit myself to being good \
                    at one thing.
-:page-layout: post
+:page-layout: page
+:page-liquid:
+
+_{{ page.description }}_
 
 Email me at <kylie@somas.is>. Please contact me there if anything more specific is desired.
 
@@ -34,7 +37,7 @@ Email me at <kylie@somas.is>. Please contact me there if anything more specific 
 
 == Side projects
 
-* https://mutiny.zone[Mutiny], a Linux distribution/research project aiming for unique, coherent,
+* https://mutiny.red[Mutiny], a Linux distribution/research project aiming for unique, coherent,
   and fun computing. _(2016-present)_
 * https://wiki.musl-libc.org[musl libc wiki], a community-maintained wiki documenting the musl
   libc project. I maintain the build system for it, the stylesheets, and host it.
@@ -50,8 +53,8 @@ Email me at <kylie@somas.is>. Please contact me there if anything more specific 
 == Education
 
 * https://appstate.edu[Appalachian State University] _(2018-present)_
-    ** Pursuing a *Bachelor of Philosophy*, majoring in Philosophy and minoring in Gender, Women's and
-       Sexuality Studies.
+    ** Pursuing a *Bachelor of Philosophy*, majoring in Philosophy and minoring in Gender, Women's
+       and Sexuality Studies.
     ** Arrived with an intent to pursue a degree in computer science, but my lifelong passion for
        philosophy and desire to learn about it in a deep manner won out. I credit philosophy for all
        of my opinions about how computers should work.
@@ -61,7 +64,8 @@ Email me at <kylie@somas.is>. Please contact me there if anything more specific 
 
 == Hobbies
 
-* https://somasis.bandcamp.com[Music making], using FL Studio. _(2012-present, probably until I die)_
+* https://somasis.bandcamp.com[Music making], using FL Studio.
+  _(2012-present, probably until I die)_
 * Somewhat active contributor to https://openstreetmap.org/user/somasis[OpenStreetMap]. It's helped
   me to find the world around me and the community I live in a lot more interesting. Anywhere new I
   go ends up on the map sooner or later.

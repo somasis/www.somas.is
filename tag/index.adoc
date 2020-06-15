@@ -1,5 +1,6 @@
 = Tag index
 :page-description: List of all tags used by posts.
+:page-layout: page
 :page-liquid:
 
 {% assign tags = site.tags | sort %}
