@@ -7,6 +7,8 @@
     <body>
         {% include site_header.html %}
 
+        <h1 class="articles-header">{{ page.title | capitalize }}</h1>
+
         <nav class="articles">
             {% for post in site.posts %}
                 <article>

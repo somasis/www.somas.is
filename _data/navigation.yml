@@ -1,3 +1,7 @@
+- title: Blog
+  description: An index of all my blog posts.
+  url: /blog/index.html
+  fa-icon: archive
 - title: spirit / songs for lovers
   description: My latest album
   icon: /assets/img/spirit_songs_for_lovers_icon.png

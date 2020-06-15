@@ -1,0 +1,13 @@
+= Tag index
+:page-description: List of all tags used by posts.
+:page-liquid:
+
+{% assign tags = site.tags | sort %}
+
+{% for tag in tags %}
+
+{% assign tag_name = tag[0] %}
+link:/tag/{{ tag_name }}/index.html[#{{ tag_name }}]::
+    {{ site.data.tags[tag_name] }}
+
+{% endfor %}

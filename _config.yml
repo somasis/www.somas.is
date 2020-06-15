@@ -8,21 +8,14 @@ author: "Kylie McClain"
 url: "https://www.somas.is"
 lang: "en-US"
 
-defaults:
-    -
-        scope:
-            path: ""
-        values:
-            layout: "post"
-
 plugins:
     - jekyll-asciidoc
-    - jekyll-archives
     - jekyll-feed
-    - jekyll-time-to-read
-    - jekyll-sitemap
-    - jekyll-redirect-from
     - jekyll-seo-tag
+    - jekyll-sitemap
+    - jekyll-time-to-read
+    - jekyll-redirect-from
+    - jekyll-archives
 
 asciidoc: {}
 asciidoctor:
@@ -38,8 +31,12 @@ jekyll-archives:
         - year
         - month
         - tags
+        - categories
     layout: archive
+    layouts:
+        category: category
     permalinks:
         year: '/:year/'
         month: '/:year/:month/'
         tag: '/tag/:name/'
+        category: '/:name/'
