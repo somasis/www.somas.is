@@ -17,7 +17,7 @@ packages:
 tasks:
     - dependencies: |
         sudo gem install -V --no-document --no-user-install jekyll-asciidoc jekyll-archives jekyll-feed \
-            jekyll-time-to-read jekyll-sitemap jekyll-seo-tag
+            jekyll-time-to-read jekyll-sitemap jekyll-seo-tag jekyll-redirect-from
     - openring: |
         curl -O https://yukari.sr.ht/openring
         chmod +x openring
