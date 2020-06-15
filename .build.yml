@@ -11,6 +11,7 @@ sources:
 
 packages:
     - asciidoctor
+    - go
     - jekyll
     - rsync
 
@@ -24,11 +25,10 @@ tasks:
             jekyll-sitemap \
             jekyll-seo-tag \
             jekyll-redirect-from
+        go get git.sr.ht/~sircmpwn/openring
     - openring: |
-        curl -O https://yukari.sr.ht/openring
-        chmod +x openring
         cd www.somas.is
-        make OPENRING='../openring' openring
+        make openring
     - build: |
         cd www.somas.is
         jekyll build
