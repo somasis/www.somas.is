@@ -31,7 +31,7 @@ tasks:
         make openring
     - build: |
         cd www.somas.is
-        jekyll build
+        jekyll build --strict_front_matter
     - deploy: |
         cd www.somas.is
         rsync --rsh="ssh -o StrictHostKeyChecking=no" -vr _site/ ${deploy}:/srv/www/www.somas.is
