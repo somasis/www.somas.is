@@ -54,8 +54,4 @@ nav.articles > article > header > aside.description {
     nav.articles > article > header > aside.details > aside {
         display: inline;
     }
-
-    nav.articles > article > header > span.post-overview > aside {
-        float: left;
-    }
 }
