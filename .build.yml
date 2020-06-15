@@ -28,7 +28,7 @@ tasks:
         go get git.sr.ht/~sircmpwn/openring
     - openring: |
         cd www.somas.is
-        make openring
+        make OPENRING=~/go/bin/openring openring
     - build: |
         cd www.somas.is
         jekyll build --strict_front_matter
