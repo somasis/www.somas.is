@@ -23,7 +23,6 @@ tasks:
         chmod +x openring
         cd www.somas.is
         ../openring \
-            -s https://phidica.tumblr.com/rss \
             -s https://7596ff.com/rss.xml \
             -s https://text.causal.agency/feed.atom \
             -s https://1.0.168.192.in-addr.xyz/blag/index.atom \
