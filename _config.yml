@@ -8,6 +8,13 @@ author: "Kylie McClain"
 url: "https://www.somas.is"
 lang: "en-US"
 
+defaults:
+    -
+        scope:
+            path: ""
+        values:
+            layout: "post"
+
 plugins:
     - jekyll-asciidoc
     - jekyll-feed
