@@ -21,6 +21,9 @@
 - title: Résumé
   url: /resume.html
   fa-icon: file
+- description: Git
+  url: https://git.mutiny.red
+  fa-icon: git
 - description: GitHub
   url: https://github.com/somasis
   fa-icon: github
