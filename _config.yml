@@ -47,3 +47,6 @@ jekyll-archives:
         month: '/:year/:month/'
         tag: '/tag/:name/'
         category: '/:name/'
+
+exclude:
+    - Makefile
