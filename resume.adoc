@@ -8,17 +8,17 @@ _{{ page.description }}_
 
 Email me at <kylie@somas.is>. Please contact me there if anything more specific is desired.
 
-:exherbo: https://exherbo.org
-:musllibc: https://musl.libc.org
-:skarnet: https://www.skarnet.org
-:execline: {skarnet}/software/execline
-:s6: {skarnet}/software/s6
+:url-exherbo: https://exherbo.org
+:url-musllibc: https://musl.libc.org
+:url-skarnet: https://www.skarnet.org
+:url-execline: {url-skarnet}/software/execline
+:url-s6: {url-skarnet}/software/s6
 
 == Work
 
-:tss: https://support.appstate.edu/services/technology-support-center
+:url-tss: https://support.appstate.edu/services/technology-support-center
 
-* *Student IT Technician* at {tss}[Appalachian State University Technology Support Services]
+* *Student IT Technician* at {url-tss}[Appalachian State University Technology Support Services]
   _(2018-present)_
     ** Virus removal, data backup, hardware diagnostics, ticket management via Jira.
     ** Customer service, explaining repair steps taken to customers upon them picking up their
@@ -28,7 +28,7 @@ Email me at <kylie@somas.is>. Please contact me there if anything more specific 
 
 == Open-source work
 
-* *Core developer*, https://exherbo.org[Exherbo Linux] _(2014-2017)_
+* *Core developer*, {url-exherbo}[Exherbo Linux] _(2014-2017)_
     ** Coordinated efforts with approximately 20 other developers via IRC.
     ** Redesigned site to be more modern and adaptable to mobile devices.
     ** Added support for new platforms such as {musllibc}[musl libc].
@@ -45,8 +45,8 @@ Email me at <kylie@somas.is>. Please contact me there if anything more specific 
 == Skills & Interests
 
 * *Operating systems*: Alpine Linux, Exherbo Linux, Arch Linux, Debian GNU/Linux, Windows 10
-* *Software*: POSIX Shell/bash, {musllibc}[musl libc], {s6}[s6], {execline}[execline], OpenSSH,
-  pacman, AsciiDoc (this site is written in it), Markdown, etc.
+* *Software*: POSIX Shell/bash, {url-musllibc}[musl libc], {url-s6}[s6], {url-execline}[execline],
+  OpenSSH, pacman, AsciiDoc (this site is written in it), Markdown, etc.
 * *Interests*: Minimalist system design, system administration, small systems, efficient use of
   resources.
 
