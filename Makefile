@@ -16,5 +16,5 @@ _includes/webring_out.html:
 	    < _includes/webring_in.html \
 	    > _includes/webring_out.html
 
-resume.pdf: resume.adoc
+resume.pdf: resume.adoc resume.yml
 	asciidoctor-pdf $< -o $@

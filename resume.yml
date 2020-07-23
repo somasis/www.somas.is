@@ -1,0 +1,32 @@
+extends: default
+
+base:
+    font-size: 10
+
+page:
+    size: Letter
+    margin: [.5in, .5in, .5in, .5in]
+
+heading:
+    h1-font-style: bold_italic
+    h2-margin-bottom: 8
+    h2-font-size: 14
+
+link:
+    text-decoration: underline
+    text-decoration-width: 0.5
+
+outline-list:
+    item-spacing: 4
+
+description-list:
+    term-font-style: normal
+    term-spacing: 0
+    description-indent: 15
+
+footer:
+    border-width: 0
+
+table:
+    cell:
+        padding: [0, 8, 0, 8]

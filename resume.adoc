@@ -6,6 +6,7 @@
 ifdef::backend-pdf[]
 :compress:
 :doctitle: Kylie McClain
+:pdf-theme: resume.yml
 
 [.center,cols="3*^",width="75%",frame="none",grid="none"]
 |===
