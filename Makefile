@@ -1,5 +1,7 @@
 OPENRING ?= openring
 
+all: openring resume.pdf
+
 openring: _includes/webring_out.html
 
 _includes/webring_out.html:
