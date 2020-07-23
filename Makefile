@@ -13,3 +13,6 @@ _includes/webring_out.html:
 	    -s https://ewontfix.com/feed.rss \
 	    < _includes/webring_in.html \
 	    > _includes/webring_out.html
+
+resume.pdf: resume.adoc
+	asciidoctor-pdf $< -o $@

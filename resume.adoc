@@ -1,13 +1,25 @@
-= Résumé
+:doctitle: Résumé
 :page-description: I am Kylie McClain, I'm multi-faceted, and I refuse limit myself to being good \
                    at one thing.
 :page-layout: page
-:page-liquid:
 
-_{{ page.description }}_
+ifdef::backend-pdf[]
+:compress:
+:doctitle: Kylie McClain
 
-Email me at <kylie@somas.is>. Please contact me there if anything more specific is desired.
+[.center,cols="3*^",width="75%",frame="none",grid="none"]
+|===
+|mailto:kylie@somas.is[]|https://somas.is[somas.is]|https://www.openstreetmap.org/relation/178973[Boone, NC]
+|===
+endif::[]
 
+[.text-center]
+Hi! I'm Kylie, a 22 year old philosophy student hailing from North Carolina. +
+Please email me at mailto:kylie@somas.is[] to request further details. I can provide references.
+
+:url-debian: https://debian.org
+:url-arch: https://archlinux.org
+:url-alpine: https://alpinelinux.org
 :url-exherbo: https://exherbo.org
 :url-musllibc: https://musl.libc.org
 :url-skarnet: https://www.skarnet.org
@@ -26,30 +38,6 @@ Email me at <kylie@somas.is>. Please contact me there if anything more specific 
     ** Known as the only person in the office who knows what they're doing with Linux, usually
        machines running Linux that are having problems get referred to me. `:-)`
 
-== Open-source work
-
-* *Core developer*, {url-exherbo}[Exherbo Linux] _(2014-2017)_
-    ** Coordinated efforts with approximately 20 other developers via IRC.
-    ** Redesigned site to be more modern and adaptable to mobile devices.
-    ** Added support for new platforms such as {musllibc}[musl libc].
-    ** Wrote bootstrapping documentation for new processor architectures.
-    ** Wrote documentation for complex code previously written by others.
-
-== Side projects
-
-* https://mutiny.red[Mutiny], a Linux distribution/research project aiming for unique, coherent,
-  and fun computing. _(2016-present)_
-* https://wiki.musl-libc.org[musl libc wiki], a community-maintained wiki documenting the musl
-  libc project. I maintain the build system for it, the stylesheets, and host it.
-
-== Skills & Interests
-
-* *Operating systems*: Alpine Linux, Exherbo Linux, Arch Linux, Debian GNU/Linux, Windows 10
-* *Software*: POSIX Shell/bash, {url-musllibc}[musl libc], {url-s6}[s6], {url-execline}[execline],
-  OpenSSH, pacman, AsciiDoc (this site is written in it), Markdown, etc.
-* *Interests*: Minimalist system design, system administration, small systems, efficient use of
-  resources.
-
 == Education
 
 * https://appstate.edu[Appalachian State University] _(2018-present)_
@@ -60,13 +48,44 @@ Email me at <kylie@somas.is>. Please contact me there if anything more specific 
        of my opinions about how computers should work.
 * Rowan-Cabarrus Community College _(2016-2018, transferred)_
 * Concord High School _(2012-2016, graduated)_
-* Central Cabarrus High School _(2011-2012, part of STEM program)_
+
+== Skills & Interests
+
+[small]#Italicized names indicate projects I have contributed to in some way, be it code,
+documentation, or promotion. Embolded names indicate things I'm currently using.#
+
+*Software*::
+    {url-alpine}[*Alpine Linux*], {url-exherbo}[_Exherbo Linux_], {url-arch}[*Arch Linux*],
+    {url-debian}[Debian GNU/Linux], Windows 10, *POSIX Shell/bash*, {url-musllibc}[*_musl libc_*],
+    {url-s6}[*_s6_*], {url-execline}[*_execline_*], name a Unix tool, I've probably used it. &c.
+
+*Infrastructure experience*::
+    *Jira*, *GitHub*, GitLab, Gerrit
+
+*Interests*::
+    Minimalist system design, system administration, small systems, efficient use of resources.
+
+== Open-source activity
+
+* *Core developer*, {url-exherbo}[Exherbo Linux] _(2014-2017)_
+    ** Coordinated efforts with approximately 20 other developers via IRC.
+    ** Redesigned site to be more modern and adaptable to mobile devices.
+    ** Added support for new platforms such as {url-musllibc}[musl libc], and ARMv7.
+    ** Wrote bootstrapping documentation for new processor architectures.
+    ** Wrote documentation for complex code previously written by others.
+
+== Side projects
+
+* https://mutiny.red[Mutiny], a Linux distribution/research project aiming for unique, coherent,
+  and fun computing. _(2016-present)_
+* https://wiki.musl-libc.org[musl libc wiki], a community-maintained wiki documenting the musl
+  libc project. I maintain the build system for it, the stylesheets, and host it.
 
 == Hobbies
 
 * https://somasis.bandcamp.com[Music making], using FL Studio.
   _(2012-present, probably until I die)_
-* Somewhat active contributor to https://openstreetmap.org/user/somasis[OpenStreetMap]. It's helped
-  me to find the world around me and the community I live in a lot more interesting. Anywhere new I
-  go ends up on the map sooner or later.
+* Somewhat active contributor to https://openstreetmap.org/user/somasis[OpenStreetMap]. +
+  It's helped me to find the world around me and the community I live in a lot more interesting. +
+  Anywhere new I go ends up on the map sooner or later.
 
