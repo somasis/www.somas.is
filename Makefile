@@ -8,7 +8,6 @@ _includes/webring_out.html:
 	${OPENRING} \
 	    -s https://7596ff.com/rss.xml \
 	    -s https://text.causal.agency/feed.atom \
-	    -s https://1.0.168.192.in-addr.xyz/blag/index.atom \
 	    -s https://leahneukirchen.org/blog/index.atom \
 	    -s https://leahneukirchen.org/trivium/index.atom \
 	    -s https://pikhq.com/index.xml \
