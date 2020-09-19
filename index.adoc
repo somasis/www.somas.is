@@ -18,7 +18,7 @@
 A few things about me:
 
 * I spend a lot of time https://somasis.bandcamp.com[_making music_].
-* I spend also a lot of time https://github.com/somasis[_breaking things on my computer_].
+* I spend also a lot of time https://git.mutiny.red[_breaking things on my computer_].
 * I am currently working on a Linux distribution named https://mutiny.red[Mutiny].
 * I have a lovely https://phidica.tumblr.com[wife] and a lovely https://7596ff.com[girlfriend] and
   a lovely dog.
