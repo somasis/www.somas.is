@@ -183,6 +183,8 @@ document, I believe this version, the first version published, was made around A
     ** Exherbo and Gentoo both can do this. I don't have experience with doing it in Gentoo, but
        Exherbo's way was quite clunky in my opinion and left much to be desired. The fact that there
        was no official binaries is disappointing, and usage stayed low because of it.
+    ** Eventually, I had to give it up because it was just... too difficult for me, and I already
+       was spreading myself so thin.
 
 * Use dynamic linking for packages.
     ** This was a choice that stood in contrast to all the other "suckless" distributions floating
