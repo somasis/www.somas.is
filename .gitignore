@@ -1,7 +1,4 @@
-*~
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-_includes/webring_out.html
-resume.pdf
+*.atom
+*.html
+*.pdf
+notes.md

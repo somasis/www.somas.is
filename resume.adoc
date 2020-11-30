@@ -1,17 +1,19 @@
-:doctitle: Résumé
-:page-description: I am Kylie McClain, I'm multi-faceted, and I refuse limit myself to being good \
-                   at one thing.
-:page-layout: page
+= Kylie McClain
+:compress:
+:pdf-theme: ./resume.yml
 
 ifdef::backend-pdf[]
-:compress:
-:doctitle: Kylie McClain
-:pdf-theme: resume.yml
-
 [.center,cols="3*^",width="75%",frame="none",grid="none"]
 |===
-|mailto:kylie@somas.is[]|https://somas.is[somas.is]|https://www.openstreetmap.org/relation/178973[Boone, NC]
+|mailto:kylie@somas.is[]|https://somas.is/|https://www.openstreetmap.org/relation/178973[Boone, NC]
 |===
+endif::[]
+
+ifdef::backend-html5s[]
+:stylesheet: style.css
+:nofooter:
+:linkcss:
+link:resume.pdf[Available in PDF format as well.]
 endif::[]
 
 [.text-center]
@@ -49,25 +51,23 @@ Please email me at mailto:kylie@somas.is[] to request further details. I can pro
 
 == Skills & Interests
 
-[small]#Italicized names indicate projects I have contributed to in some way, be it code,
-documentation, or promotion. Embolded names indicate things I'm currently using.#
-
 *Software*::
     {url-alpine}[*Alpine Linux*], {url-exherbo}[_Exherbo Linux_], {url-arch}[*Arch Linux*],
     {url-debian}[Debian GNU/Linux], Windows 10, *POSIX Shell/bash*, {url-musllibc}[*_musl libc_*],
-    {url-s6}[*_s6_*], {url-execline}[*_execline_*], name a Unix tool, I've probably used it. &c.
+    {url-s6}[*_s6_*], {url-execline}[*_execline_*], name a Unix tool, I've probably used it.
 
 *Infrastructure experience*::
-    *Jira*, *GitHub*, GitLab, Gerrit
+    *Jira*, *GitHub*, GitLab, Gerrit, *Gitolite*
 
 *Interests*::
     Minimalist system design, system administration, small systems, efficient use of resources.
+
+[small]#Italicized: projects I have contributed to in some way. Embolded: things I'm currently using.#
 
 == Open-source activity
 
 * *Core developer*, {url-exherbo}[Exherbo Linux] _(2014-2017)_
     ** Coordinated efforts with approximately 20 other developers via IRC.
-    ** Redesigned site to be more modern and adaptable to mobile devices.
     ** Added support for new platforms such as {url-musllibc}[musl libc], and ARMv7.
     ** Wrote bootstrapping documentation for new processor architectures.
     ** Wrote documentation for complex code previously written by others.

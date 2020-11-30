@@ -1,7 +1,8 @@
 extends: default
 
 base:
-    font-size: 10
+    font-size: 12
+    font-family: Times-Roman
 
 page:
     size: Letter
