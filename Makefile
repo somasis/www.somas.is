@@ -15,12 +15,16 @@ NOTES = \
     note-2019-12-06.html \
     note-2019-11-14.html \
 
+RHIZOME = \
+    rhizome-2020-W47.html
+
 ETC = \
     index-latest-album.jpg \
     index-latest-release.jpg
 
 FEEDS = \
-    notes.atom
+    notes.atom \
+    rhizome.atom
 
 PDFS = \
     resume.pdf
@@ -28,16 +32,21 @@ PDFS = \
 CSS = \
     style.css
 
-OUTPUTS = ${PAGES} ${NOTES} ${FEEDS} ${PDFS} ${CSS} ${ETC}
+OUTPUTS = ${PAGES} ${NOTES} ${RHIZOME} ${FEEDS} ${PDFS} ${CSS} ${ETC}
 
 DESTDIR ?= /srv/www/www.somas.is
 
-all: FRC pages notes feeds pdfs
+all: FRC pages notes rhizome feeds pdfs
 
 pages: FRC ${PAGES}
 notes: FRC ${NOTES} notes.atom notes.md
+rhizome: FRC ${RHIZOME} rhizome.atom rhizome.md
 feeds: FRC ${FEEDS}
 pdfs: FRC ${PDFS}
+
+rhizome.html: rhizome.md
+rhizome.md: ${RHIZOME} rhizome.sh
+	sh ./rhizome.sh ${RHIZOME} > $@
 
 notes.html: notes.md
 notes.md: ${NOTES} notes.sh
@@ -49,6 +58,13 @@ notes.atom: ${NOTES}
 	    -u 'https://somas.is/notes.html' \
 	    -s 'notes and other short-form writings.' \
 	    ${NOTES} > $@
+
+rhizome.atom: ${RHIZOME}
+	sh ./atom.sh \
+	    -t '~somasis/rhizome' \
+	    -u 'https://somas.is/rhizome.html' \
+	    -s 'tumblelog type... thing. ' \
+	    ${RHIZOME} > $@
 
 resume.html: resume.adoc
 	asciidoctor -r asciidoctor-html5s -b html5s -o $@ $<
@@ -65,6 +81,6 @@ install: all
 	cp ${OUTPUTS} ${DESTDIR}
 
 clean: FRC
-	rm -f ${PAGES} ${NOTES} ${FEEDS} ${PDFS} notes.md rhizome.md
+	rm -f ${PAGES} ${NOTES} ${RHIZOME} ${FEEDS} ${PDFS} notes.md rhizome.md
 
 FRC:

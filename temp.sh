@@ -29,11 +29,15 @@ header="<a href='index.html'>~somasis</a>"
 site_title="~somasis"
 
 case "${b}" in
+    rhizome-*)
+        site_title="${site_title}/rhizome"
+        header="${header}/<a href='rhizome.html'>rhizome</a>"
+        ;;
     note-*)
         site_title="${site_title}/notes"
         header="${header}/<a href='notes.html'>notes</a>"
         ;;
-    notes)
+    notes|rhizome)
         site_title="${site_title}/${b}"
         header="${header}/${b}"
         ;;
@@ -71,7 +75,12 @@ cat <<EOF
 EOF
 
 case "${b}" in
-    index|notes) : ;;
+    index|rhizome|notes) : ;;
+    rhizome-*)
+        printf '<header>\n'
+        printf '<h1><time datetime="%s">%s</time></h1>\n' "${title}" "${title}"
+        printf '</header>\n'
+        ;;
     *)
         if [ -n "${title}" ]; then
             printf '<header>\n'
@@ -95,6 +104,8 @@ cat <<EOF
 <small>
 generated at $(TZ=UTC date +"%Y-%d-%mT%H:%M:%S%:z");
 <a href='https://git.mutiny.red/somasis/www.somas.is'>source</a>
+&nbsp;-&nbsp;
+<a href='mailto:kylie@somas.is'>kylie@somas.is</a>
 </small>
 </footer>
 </body>

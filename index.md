@@ -6,6 +6,7 @@ a.k.a. kylie mcclain, 22 year old who does things
 ## what does she do
 
 - [writes some notes](notes.html), on occasion
+- [share some things](rhizome.html), on occasion
 - [music](https://somasis.bandcamp.com)
 - [computer](https://git.mutiny.red) things
     - [Mutiny](https://mutiny.red), a long-term research project/collection of notes on a

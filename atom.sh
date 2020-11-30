@@ -54,6 +54,9 @@ while [ $# -gt 0 ]; do
         note-*)
             date=$(printf '%s\n' "${b}" | cut -d- -f2-4)
             ;;
+        rhizome-*)
+            date="${b#*-}"
+            ;;
         *)
             date=$(lowdown -T html -X date "${b}".md)
             ;;
