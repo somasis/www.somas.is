@@ -33,6 +33,8 @@ main > header > h1 {
     border-bottom: .1rem solid;
 }
 
+/* Article-relevant content. */
+
 article h1 {
     margin-top: 0;
 }
@@ -49,6 +51,13 @@ article img {
 article blockquote {
     border-left: .1rem solid;
     padding-left: 1rem;
+}
+
+/* Article summaries and dates, respectively. */
+main > header > p,
+main > header > time {
+    display: block;
+    text-align: right;
 }
 
 /* Page-specific rules. */
