@@ -39,6 +39,7 @@ case "${b}" in
         ;;
     notes|rhizome)
         site_title="${site_title}/${b}"
+        title="${site_title}"
         header="${header}/${b}"
         ;;
     index)
