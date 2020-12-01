@@ -48,17 +48,17 @@ rhizome.md: ${RHIZOME} rhizome.sh
 	sh ./rhizome.sh ${RHIZOME} > $@
 
 notes.html: notes.md
-notes.md: ${NOTES} notes.sh
+notes.md: notes.sh ${NOTES}
 	sh ./notes.sh ${NOTES} > $@
 
-notes.atom: ${NOTES}
+notes.atom: atom.sh ${NOTES}
 	sh ./atom.sh \
 	    -t '~somasis/notes' \
 	    -u 'https://somas.is/notes.html' \
 	    -s 'notes and other short-form writings.' \
 	    ${NOTES} > $@
 
-rhizome.atom: ${RHIZOME}
+rhizome.atom: atom.sh ${RHIZOME}
 	sh ./atom.sh \
 	    -t '~somasis/rhizome' \
 	    -u 'https://somas.is/rhizome.html' \
