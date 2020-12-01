@@ -37,7 +37,7 @@ cat <<EOF
 <title>${title}</title>
 ${subtitle:+<subtitle>$subtitle</subtitle>}
 <author><name>Kylie McClain</name><email>kylie@somas.is</email></author>
-<link rel="self" href="${site}" />
+<link rel="alternate" href="${site}" />
 <id>${root}</id>
 <updated>${updated}</updated>
 EOF
