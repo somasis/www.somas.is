@@ -76,13 +76,13 @@ resume.pdf: resume.adoc resume.yml
 	sh ./temp.sh $< > $@
 
 redirects: FRC redirect.sh
-	sh ./redirect.sh note-2019-11-14.html \
+	sh ./redirect.sh /note-2019-11-14.html \
 	    2019/11/14/transness-and-philosophy-exclusive.html \
 	    blog/2019/11/14/transness-and-philosophy-exclusive.html
-	sh ./redirect.sh note-2019-12-06.html \
+	sh ./redirect.sh /note-2019-12-06.html \
 	    2019/12/06/reflection-on-therapeutic-philosophy.html \
 	    blog/2019/12/06/reflection-on-therapeutic-philosophy.html
-	sh ./redirect.sh note-2020-02-11.html \
+	sh ./redirect.sh /note-2020-02-11.html \
 	    2020/02/11/memory-fades-but-our-words-are-forever.html \
 	    blog/2020/02/11/memory-fades-but-our-words-are-forever.html
 
