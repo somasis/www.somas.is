@@ -67,6 +67,10 @@ cat <<EOF
 <meta name="description" content="${summary}" />
 <meta property="og:description" content="${summary}" />
 <meta property="twitter:site" content="@kyliesomasis" />
+
+<link href="notes.atom" type="application/atom+xml" rel="alternate" title="~somasis/notes" />
+<link href="rhizome.atom" type="application/atom+xml" rel="alternate" title="~somasis/rhizome" />
+
 </head>
 <body>
 <header>
