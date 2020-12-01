@@ -1,12 +1,11 @@
 #!/bin/sh
 
-set -ex
+set -e
 
 dest="${1}"; shift
 
 while [ "$#" -gt 0 ]; do
     mkdir -p "${DESTDIR:-}$(dirname "${1}")"
-
     cat >"${DESTDIR:-}${1}" <<EOF
 <!DOCTYPE html>
 <html lang="en-US">
