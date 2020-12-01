@@ -4,6 +4,7 @@ set -e
 
 cat <<EOF
 title: index
+summary: a tumblelog apprehending multitudes
 
 [url-trivium]: https://leahneukirchen.org/trivium/
 

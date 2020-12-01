@@ -4,6 +4,7 @@ set -e
 
 cat <<EOF
 title: index
+summary: a place for me to get the thoughts out of my brain
 
 **notes** is a place for me to document and explain things so that I don't forget them, or to get
 thoughts out of my head that are bouncing around incessantly.
