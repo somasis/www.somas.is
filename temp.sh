@@ -102,10 +102,8 @@ cat <<EOF
 </main>
 <footer>
 <small>
-generated at $(TZ=UTC date +"%Y-%d-%mT%H:%M:%S%:z");
-<a href='https://git.mutiny.red/somasis/www.somas.is'>source</a>
-&nbsp;-&nbsp;
-<a href='mailto:kylie@somas.is'>kylie@somas.is</a>
+<a href='https://git.mutiny.red/somasis/www.somas.is'>generated at $(TZ=UTC date +"%Y-%d-%mT%H:%M:%S%:z")</a>
+- <a href='mailto:kylie@somas.is'>kylie@somas.is</a>
 </small>
 </footer>
 </body>
