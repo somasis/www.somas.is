@@ -4,9 +4,9 @@ set -e
 
 title='~somasis'
 
-root='https://somas.is'
+root='https://somas.is/'
 site="${root}"
-updated=$(TZ=UTC date +'%Y-%m-%d%H:%M:%SZ')
+updated=$(TZ=UTC date +'%Y-%m-%dT%H:%M:%SZ')
 
 while getopts :t:r:s:u: arg >/dev/null 2>&1; do
     case "${arg}" in
@@ -24,7 +24,7 @@ while getopts :t:r:s:u: arg >/dev/null 2>&1; do
             ;;
         *)
             printf 'unknown option -- %s\n' "${arg}" >&2
-            printf 'rss.sh [-t TITLE] [-r ROOT] [-u MAIN_URL] [-s SUBTITLE] ITEMS...\n' >&2
+            printf 'atom.sh [-t TITLE] [-r ROOT] [-u MAIN_URL] [-s SUBTITLE] ITEMS...\n' >&2
             exit 69
             ;;
     esac
@@ -37,7 +37,7 @@ cat <<EOF
 <title>${title}</title>
 ${subtitle:+<subtitle>$subtitle</subtitle>}
 <author><name>Kylie McClain</name><email>kylie@somas.is</email></author>
-<link href="${site}" />
+<link rel="self" href="${site}" />
 <id>${root}</id>
 <updated>${updated}</updated>
 EOF
@@ -66,12 +66,12 @@ while [ $# -gt 0 ]; do
 <entry>
 <title type="html">${title}</title>
 <summary>$summary</summary>
-<link href="${url}" rel="alternate" type="text/html" title="${title}" />
+<link rel="alternate" href="${url}" type="text/html" title="${title}" />
 <id>${url}</id>
 <published>${date}T00:00:00+00:00</published>
 <updated>${updated}</updated>
-<content type="html" xml:base="${url}">
-$(lowdown "${b}".md)
+<content type="html">
+$(lowdown "${b}".md | sed 's/</\&lt;/g; s/>/\&gt;/g')
 </content>
 </entry>
 EOF
