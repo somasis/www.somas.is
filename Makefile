@@ -10,7 +10,6 @@ PAGES = \
 
 # newest to oldest
 NOTES = \
-    note-mutiny.html \
     note-2020-02-11.html \
     note-2019-12-06.html \
     note-2019-11-14.html \
