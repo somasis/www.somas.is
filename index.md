@@ -1,4 +1,4 @@
-title: ~somasis
+title: index
 summary: 22 year old who does music and computer and stuff???
 
 a.k.a. kylie mcclain, 22 year old who does things
