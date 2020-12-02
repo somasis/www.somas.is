@@ -10,9 +10,10 @@ PAGES = \
 
 # newest to oldest
 NOTES = \
+    note-2020-12-01.html \
     note-2020-02-11.html \
     note-2019-12-06.html \
-    note-2019-11-14.html \
+    note-2019-11-14.html
 
 RHIZOME = \
     rhizome-2020-W47.html
