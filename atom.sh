@@ -4,7 +4,7 @@ set -e
 
 title='~somasis'
 
-root='https://somas.is/'
+root='https://somas.is'
 site="${root}"
 updated=$(TZ=UTC date +'%Y-%m-%dT%H:%M:%SZ')
 
@@ -38,7 +38,7 @@ cat <<EOF
 ${subtitle:+<subtitle>$subtitle</subtitle>}
 <author><name>Kylie McClain</name><email>kylie@somas.is</email></author>
 <link rel="alternate" href="${site}" />
-<id>${root}</id>
+<id>${root}/</id>
 <updated>${updated}</updated>
 EOF
 
