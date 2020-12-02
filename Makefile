@@ -31,7 +31,7 @@ PDFS = \
 CSS = \
     style.css
 
-OUTPUTS = ${PAGES} ${NOTES} ${RHIZOME} ${FEEDS} ${PDFS} ${CSS} ${ETC}
+INSTALLS = ${PAGES} ${NOTES} ${RHIZOME} ${FEEDS} ${PDFS} ${CSS} ${ETC}
 
 DESTDIR ?= /srv/www/www.somas.is
 
@@ -88,7 +88,7 @@ redirects: FRC redirect.sh
 
 install: all redirects
 	mkdir -p "${DESTDIR}"
-	cp ${OUTPUTS} ${DESTDIR}
+	cp ${INSTALLS} ${DESTDIR}
 
 clean: FRC
 	rm -f ${PAGES} ${NOTES} ${RHIZOME} ${FEEDS} ${PDFS} notes.md rhizome.md
