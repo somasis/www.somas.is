@@ -28,7 +28,7 @@ site_name='~somasis' # Used for the beginning part of the ${header}, and the <ti
 header="<a href='index.html'>${site_name}</a>" # Header displayed on top of <body>.
 page_title="${site_name}" # Passed directly to <title>.
 
-img="<img src='https://www.gravatar.com/avatar/a187e38560bb56f5231cd19e45ad80f6?s=128' />"
+header_image="<img src='https://www.gravatar.com/avatar/a187e38560bb56f5231cd19e45ad80f6?s=128' />"
 
 case "${b}" in
     rhizome-*)
@@ -78,7 +78,7 @@ cat <<EOF
 </head>
 <body>
 <header>
-<h1>${img}${header}</h1>
+<h1>${header_image}${header}</h1>
 </header>
 <main>
 EOF
