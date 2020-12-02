@@ -32,7 +32,7 @@ PDFS = \
 CSS = \
     style.css
 
-INSTALLS = ${PAGES} ${NOTES} ${RHIZOME} ${FEEDS} ${PDFS} ${CSS} ${ETC}
+INSTALLS = ${PAGES} ${NOTES} ${RHIZOME} ${FEEDS} ${PDFS} ${CSS} ${ETC} feed.xml
 
 DESTDIR ?= /srv/www/www.somas.is
 

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>~somasis: this feed have moved</title>
+<subtitle>this feed has been split into two separate feeds.</subtitle>
+<author>
+<name>Kylie McClain</name>
+<email>kylie@somas.is</email>
+</author>
+<link rel="alternate" href="https://somas.is/"/>
+<id>https://somas.is/</id>
+<updated>2020-12-02T19:24:03Z</updated>
+<entry>
+<title type="html">this feed has moved</title>
+<summary>this feed have been split into two feeds.</summary>
+<link rel="alternate" href="https://somas.is/" type="text/html" title="hompeage"/>
+<id>https://somas.is/</id>
+<published>2020-12-01T00:00:00+00:00</published>
+<updated>2020-12-02T19:23:57+00:00</updated>
+<content type="html">
+&lt;p&gt;this feed has been permanently moved, split into two different feeds.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://somas.is/notes.html"&gt;a notes feed&lt;/a&gt;
+in which the blog posts are now posted, and further blog posts will appear
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://somas.is/rhizome.html"&gt;a rhizome feed&lt;/a&gt;
+for a new tumblelog that has been started
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;in the interest of keeping it easy to pick what you want to see, these feeds will not be
+combined and resyndicated here.&lt;/p&gt;
+</content>
+</entry>
+</feed>
