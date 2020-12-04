@@ -21,13 +21,16 @@ if you're the kind of person who likes resumes I have a [resume](resume.html).
 
 ### music
 
-[ss]: https://somasis.bandcamp.com/track/starsailor
-[ssfl]: https://somasis.bandcamp.com/album/spirit-songs-for-lovers
+[release]: https://somasis.bandcamp.com/album/in-nature-together
+[album]: https://somasis.bandcamp.com/album/spirit-songs-for-lovers
 
 I've been making music since 2012.
 
-my most popular album is [spirit / songs for lovers][ssfl], which came out in 2019.
+my most popular album is [spirit / songs for lovers][album], which came out in 2019.
+
+my latest release is [in nature, together][release], a companion piece to it.
+
 <span class='latest-music'>
-[![captive unicorns x somasis - starsailor cover art](index-latest-release.jpg 'captive unicorns x somasis - starsailor')][ss]
-[![somasis - spirit / songs for lover cover art](index-latest-album.jpg 'somasis - spirit / songs for lovers')][ssfl]
+[![somasis - in nature, together cover art](index-latest-release.jpg 'somasis - in nature, together')][release]
+[![somasis - spirit / songs for lover cover art](index-latest-album.jpg 'somasis - spirit / songs for lovers')][album]
 </span>
