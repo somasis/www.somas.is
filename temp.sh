@@ -110,10 +110,8 @@ EOF
 cat <<EOF
 </main>
 <footer>
-<small>
 <a href='https://git.mutiny.red/somasis/www.somas.is'>generated at $(TZ=UTC date +"%Y-%d-%mT%H:%M:%S%:z")</a>
 - <a href='mailto:kylie@somas.is'>kylie@somas.is</a>
-</small>
 </footer>
 </body>
 </html>

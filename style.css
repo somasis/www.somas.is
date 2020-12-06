@@ -26,6 +26,7 @@ body > footer {
     padding-top: 1rem;
     text-align: right;
     border-top: .1rem solid;
+    font-size: 10pt;
 }
 
 /* Main page content. */
