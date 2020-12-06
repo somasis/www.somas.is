@@ -63,6 +63,7 @@ cat <<EOF
 <meta property="og:site_name" content="${site_name}" />
 <meta property="og:title" content="${title}" />
 
+<meta rel="shortcut icon" href="${gravatar_img}" />
 <meta property="og:image" content="${gravatar_img}" />
 <meta property="twitter:image" content="${gravatar_img}" />
 
