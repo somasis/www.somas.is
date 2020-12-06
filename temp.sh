@@ -6,16 +6,6 @@ meta() {
     lowdown -T html -X "${1}" "${2}" 2>/dev/null
 }
 
-ahrefif() {
-    href="$1"; shift
-    n="$1"; shift
-    if [ "${b}" = "${n}" ]; then
-        echo ""
-    else
-        echo "<a href='${href}'>${n}</a>$*"
-    fi
-}
-
 f="${1}"
 b="${1%.md}"
 
