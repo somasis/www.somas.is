@@ -55,14 +55,18 @@ cat <<EOF
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
 <link rel="stylesheet" href="style.css" />
 
-<meta name="title" content="${page_title}" />
+<meta name="description" content="${summary}" />
+<meta property="og:description" content="${summary}" />
+<meta property="twitter:description" content="${summary}" />
+
+<meta property="og:type" content="article" />
 <meta property="og:site_name" content="${site_name}" />
 <meta property="og:title" content="${title}" />
-<meta name="description" content="${summary}" />
+
 <meta property="og:image" content="${gravatar_img}" />
-<meta property="og:description" content="${summary}" />
+<meta property="twitter:image" content="${gravatar_img}" />
+
 <meta property="twitter:site" content="@kyliesomasis" />
-<meta property="og:type" content="article" />
 
 <link href="notes.atom" type="application/atom+xml" rel="alternate" title="~somasis/notes" />
 <link href="rhizome.atom" type="application/atom+xml" rel="alternate" title="~somasis/rhizome" />
