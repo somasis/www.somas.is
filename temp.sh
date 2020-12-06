@@ -18,7 +18,8 @@ site_name='~somasis' # Used for the beginning part of the ${header}, and the <ti
 header="<a href='index.html'>${site_name}</a>" # Header displayed on top of <body>.
 page_title="${site_name}" # Passed directly to <title>.
 
-header_image="<img src='https://www.gravatar.com/avatar/a187e38560bb56f5231cd19e45ad80f6?s=128' />"
+gravatar_img="https://www.gravatar.com/avatar/a187e38560bb56f5231cd19e45ad80f6?s=128"
+header_image="<img src='${gravatar_img}' />"
 
 case "${b}" in
     rhizome-*)
@@ -58,6 +59,7 @@ cat <<EOF
 <meta property="og:site_name" content="${site_name}" />
 <meta property="og:title" content="${title}" />
 <meta name="description" content="${summary}" />
+<meta property="og:image" content="${gravatar_img}" />
 <meta property="og:description" content="${summary}" />
 <meta property="twitter:site" content="@kyliesomasis" />
 <meta property="og:type" content="article" />
