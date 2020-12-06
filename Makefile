@@ -16,7 +16,7 @@ NOTES = \
     note-2019-12-06.html \
     note-2019-11-14.html
 
-RHIZOME = \
+RHIZOMES = \
     rhizome-2020-W47.html
 
 ETC = \
@@ -33,21 +33,21 @@ PDFS = \
 CSS = \
     style.css
 
-INSTALLS = ${PAGES} ${NOTES} ${RHIZOME} ${FEEDS} ${PDFS} ${CSS} ${ETC} feed.xml
+INSTALLS = ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} ${CSS} ${ETC} feed.xml
 
 DESTDIR ?= /srv/www/www.somas.is
 
-all: FRC pages notes rhizome feeds pdfs
+all: FRC pages notes rhizomes feeds pdfs
 
 pages: FRC ${PAGES}
 notes: FRC ${NOTES} notes.atom notes.md
-rhizome: FRC ${RHIZOME} rhizome.atom rhizome.md
+rhizomes: FRC ${RHIZOMES} rhizome.atom rhizome.md
 feeds: FRC ${FEEDS}
 pdfs: FRC ${PDFS}
 
 rhizome.html: rhizome.md
-rhizome.md: ${RHIZOME} rhizome.sh
-	sh ./rhizome.sh ${RHIZOME} > $@
+rhizome.md: ${RHIZOMES} rhizome.sh
+	sh ./rhizome.sh ${RHIZOMES} > $@
 
 notes.html: notes.md
 notes.md: notes.sh ${NOTES}
@@ -60,12 +60,12 @@ notes.atom: atom.sh ${NOTES}
 	    -s 'notes and other short-form writings.' \
 	    ${NOTES} > $@
 
-rhizome.atom: atom.sh ${RHIZOME}
+rhizome.atom: atom.sh ${RHIZOMES}
 	sh ./atom.sh \
 	    -t '~somasis/rhizome' \
 	    -u 'https://somas.is/rhizome.html' \
 	    -s 'tumblelog type... thing. ' \
-	    ${RHIZOME} > $@
+	    ${RHIZOMES} > $@
 
 resume.html: resume.adoc
 	asciidoctor -r asciidoctor-html5s -b html5s -o $@ $<
@@ -93,10 +93,14 @@ install: all redirects
 	cp ${INSTALLS} ${DESTDIR}
 
 clean: FRC
-	rm -f ${PAGES} ${NOTES} ${RHIZOME} ${FEEDS} ${PDFS} notes.md rhizome.md
+	rm -f ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} notes.md rhizome.md
 
-new-note: FRC
+note: FRC
 	@[ -f note-$$(date +%Y-%m-%d).md ] || cp note-template.md note-$$(date +%Y-%m-%d).md
 	@echo note-$$(date +%Y-%m-%d).md
+
+rhizome:
+	@[ -f rhizome-$$(date +%Y-W%W).md ] || cp rhizome-template.md rhizome-$$(date +%Y-W%W).md
+	@echo rhizome-$$(date +%Y-W%W).md
 
 FRC:
