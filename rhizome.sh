@@ -25,7 +25,7 @@ while [ $# -gt 0 ]; do
 
     echo "[${title}](${1})"
     echo
-    [ "${i}" -lt 5 ] && sed -E 's/^([^\[])/> &/' "${1%.html}.md"
+    [ "${i}" -lt 10 ] && sed -E 's/^([^\[])/> &/' "${1%.html}.md"
     echo
     shift
 done

@@ -24,7 +24,7 @@ while [ $# -gt 0 ]; do
 
     echo "${date:+$date - }[${title}](${1})"
     echo
-    if [ "${i}" -lt 5 ]; then
+    if [ "${i}" -lt 10 ]; then
         [ -n "${summary}" ] && echo "> ${summary}"
         echo
     fi
