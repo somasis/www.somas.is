@@ -34,13 +34,6 @@ main > header > h1 {
     border-bottom: .1rem solid;
 }
 
-/* Style links that leave the site. */
-a[href*="//"]:not([href*="somas.is"])::after {
-    content: '🡽';
-    vertical-align: top;
-    font-size: 8pt;
-}
-
 /* Article-relevant content. */
 
 article h1 {
