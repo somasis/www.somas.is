@@ -97,10 +97,10 @@ clean: FRC
 
 note: FRC
 	@[ -f note-$$(date +%Y-%m-%d).md ] || cp note-template.md note-$$(date +%Y-%m-%d).md
-	@echo note-$$(date +%Y-%m-%d).md
+	@echo "${PWD}"/note-$$(date +%Y-%m-%d).md
 
 rhizome:
 	@[ -f rhizome-$$(date +%Y-W%W).md ] || cp rhizome-template.md rhizome-$$(date +%Y-W%W).md
-	@echo rhizome-$$(date +%Y-W%W).md
+	@echo "${PWD}"/rhizome-$$(date +%Y-W%W).md
 
 FRC:
