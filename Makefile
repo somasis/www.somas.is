@@ -94,4 +94,8 @@ install: all redirects
 clean: FRC
 	rm -f ${PAGES} ${NOTES} ${RHIZOME} ${FEEDS} ${PDFS} notes.md rhizome.md
 
+new-note: FRC
+	@[ -f note-$$(date +%Y-%m-%d).md ] || cp note-template.md note-$$(date +%Y-%m-%d).md
+	@echo note-$$(date +%Y-%m-%d).md
+
 FRC:
