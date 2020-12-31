@@ -21,16 +21,16 @@ if you're the kind of person who likes resumes I have a [resume](resume.html).
 
 ### music
 
-[release]: https://somasis.bandcamp.com/album/in-nature-together
-[album]: https://somasis.bandcamp.com/album/spirit-songs-for-lovers
+[major]: https://somasis.bandcamp.com/album/in-nature-together
+[release]: https://somasis.bandcamp.com/album/dashy-hearths-warming-eve
 
 I've been making music since 2012.
 
-my most popular album is [spirit / songs for lovers][album], which came out in 2019.
+my most recent major release is [in nature, together][major].
 
-my latest release is [in nature, together][release], a companion piece to it.
+my most recent release is [dashy / hearth's warming eve][release].
 
 <span class='latest-music'>
-[![somasis - in nature, together cover art](index-latest-release.jpg 'somasis - in nature, together')][release]
-[![somasis - spirit / songs for lover cover art](index-latest-album.jpg 'somasis - spirit / songs for lovers')][album]
+[![somasis - dashy / hearth's warming eve cover art](index-latest-release.jpg 'somasis - dashy / hearth's warming eve')][release]
+[![somasis - in nature, together cover art](index-latest-major.jpg 'somasis - in nature, together')][major]
 </span>
