@@ -20,7 +20,7 @@ RHIZOMES = \
     rhizome-2020-W47.html
 
 ETC = \
-    index-latest-album.jpg \
+    index-latest-major.jpg \
     index-latest-release.jpg
 
 FEEDS = \
