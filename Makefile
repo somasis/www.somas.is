@@ -96,12 +96,18 @@ install: all redirects
 clean: FRC
 	rm -f ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} notes.md rhizome.md
 
-note: FRC
-	@[ -f note-$$(date +%Y-%m-%d).md ] || cp note-template.md note-$$(date +%Y-%m-%d).md
-	@echo "${PWD}"/note-$$(date +%Y-%m-%d).md
+note-new: FRC
+	@[ -f note-current.md ] || cp note-template.md note-current.md
+	@echo "${PWD}"/note-current.md
 
-rhizome:
-	@[ -f rhizome-$$(date +%Y-W%W).md ] || cp rhizome-template.md rhizome-$$(date +%Y-W%W).md
-	@echo "${PWD}"/rhizome-$$(date +%Y-W%W).md
+note-publish: FRC
+	[ -f note-$$(date +%Y-%m-%d).md ] || mv note-current.md note-$$(date +%Y-%m-%d).md
+
+rhizome-new: FRC
+	@[ -f rhizome-current.md ] || cp rhizome-template.md rhizome-current.md
+	@echo "${PWD}"/rhizome-current.md
+
+rhizome-publish: FRC
+	[ -f rhizome-$$(date +%Y-W%W).md ] || mv rhizome-current.md rhizome-$$(date +%Y-W%W).md
 
 FRC:
