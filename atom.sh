@@ -29,13 +29,13 @@ while getopts :t:r:s:u: arg >/dev/null 2>&1; do
             ;;
     esac
 done
-shift $(( OPTIND - 1 ))
+shift $((OPTIND - 1))
 
 cat <<EOF
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>${title}</title>
-${subtitle:+<subtitle>$subtitle</subtitle>}
+${subtitle:+<subtitle>${subtitle}</subtitle>}
 <author><name>Kylie McClain</name><email>kylie@somas.is</email></author>
 <link rel="alternate" href="${site}" />
 <id>${root}/</id>
@@ -65,7 +65,7 @@ while [ $# -gt 0 ]; do
     cat <<EOF
 <entry>
 <title type="html">${title}</title>
-<summary>$summary</summary>
+<summary>${summary}</summary>
 <link rel="alternate" href="${url}" type="text/html" title="${title}" />
 <id>${url}</id>
 <published>${date}T00:00:00+00:00</published>
