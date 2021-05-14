@@ -67,7 +67,7 @@ header="<a href='index.html'>${site_name}</a>" # Header displayed on top of <bod
 page_title="${site_name}" # Passed directly to <title>.
 
 gravatar_img="https://www.gravatar.com/avatar/a187e38560bb56f5231cd19e45ad80f6?s=512"
-header_image="<img src='${gravatar_img}' />"
+header_image="<img alt='picture of me' src='${gravatar_img}' />"
 
 case "${b}" in
     rhizome-*)
