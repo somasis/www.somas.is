@@ -17,7 +17,7 @@ a.k.a. kylie mcclain, 22 year old who does things
 - [tweets](https://twitter.com/kyliesomasis)
 - [mapping](https://www.openstreetmap.org/user/somasis)
 
-if you're the kind of person who likes resumes I have a [resume](resume.html).
+if you're the kind of person who likes résumés I have a [résumé](resume.html).
 
 ### music
 
