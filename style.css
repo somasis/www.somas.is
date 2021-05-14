@@ -3,7 +3,7 @@ body {
     margin: 0 auto;
     max-width: 48rem;
     line-height: 1.6;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 /* Site header. */
@@ -67,7 +67,7 @@ main > header > time {
 article code {
     background-color: #17181a;
     color: #fff;
-    padding: .25rem .5rem;
+    padding: .175rem .35rem;
 }
 
 /* Page-specific rules. */
