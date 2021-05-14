@@ -51,9 +51,6 @@ while [ $# -gt 0 ]; do
     updated=$(LC_ALL=C TZ=UTC stat -c '%y' "${b}".md | sed -E 's/\.[0-9]+ //; s/ /T/; s/([0-9]{2})([0-9]{2})$/\1:\2/')
 
     case "${1}" in
-        note-*)
-            date=$(printf '%s\n' "${b}" | cut -d- -f2-4)
-            ;;
         rhizome-*)
             date="${b#*-}"
             ;;
