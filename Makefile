@@ -39,6 +39,8 @@ INSTALLS = ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} ${CSS} ${ETC} feed.xml
 
 DESTDIR ?= /srv/www/www.somas.is
 
+TIDYFLAGS ?= -q --wrap 0 --warn-proprietary-attributes false --vertical-space auto
+
 all: FRC pages notes rhizomes feeds pdfs
 
 pages: FRC ${PAGES}
@@ -77,7 +79,7 @@ resume.pdf: resume.adoc resume.yml
 
 .SUFFIXES: .md .html
 .md.html:
-	sh ./temp.sh $< > $@
+	sh ./temp.sh $< | tidy ${TIDYFLAGS} > $@
 
 redirects: FRC redirect.sh
 	sh ./redirect.sh /note-2019-11-14.html \
