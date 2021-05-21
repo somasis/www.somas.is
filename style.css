@@ -1,14 +1,57 @@
 /* Base. */
+:root {
+    --color-foreground:     rgb(47,52,63);
+    --color-background:     rgb(235, 235, 235);
+    --color-black:          rgb(79,79,79);
+    --color-red:            rgb(207,67,66);
+    --color-green:          rgb(172,192,68);
+    --color-yellow:         rgb(239,147,36);
+    --color-blue:           rgb(17, 118, 196);
+    --color-pink:           rgb(197,77,122);
+    --color-cyan:           rgb(73,155,175);
+    --color-light-black:    rgb(119,119,119);
+    --color-light-grey:     rgb(216,199,199);
+    --color-light-red:      rgb(254,98,98);
+    --color-light-green:    rgb(196,233,120);
+    --color-light-yellow:   rgb(248,220,60);
+    --color-light-blue:     rgb(150,199,236);
+    --color-light-pink:     rgb(249,124,172);
+    --color-light-cyan:     rgb(48,208,242);
+    --color-light-grey:     rgb(224,214,214);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-foreground:     #e0eaf0;
+        --color-background:     #2f343f;
+    }
+}
+
 body {
+    background: var(--color-background);
+    color: var(--color-foreground);
     margin: 0 auto;
     max-width: 48rem;
     line-height: 1.6;
     padding: 2rem;
 }
 
+a:link {
+    color: var(--color-blue);
+}
+
+a:visited {
+    color: var(--color-pink);
+}
+
+a:focus {
+    color: var(--color-red);
+}
+
 /* Site header. */
 body > header {
     height: 4rem;
+    font-weight: 700;
 }
 
 body > header > h1 {
@@ -64,11 +107,33 @@ main > header > time {
     text-align: right;
 }
 
-article code {
-    background-color: #17181a;
-    color: #fff;
-    padding: .175rem .35rem;
+main > header > p {
+    font-style: italic;
 }
+
+/* ```text Code blocks and `inline code`, respectively. */
+
+article > pre,
+article code {
+    color: var(--color-background);
+    background-color: var(--color-foreground);
+    padding: .175rem .35rem;
+    font-family: monospace;
+}
+
+article pre > code { padding: 0; }
+
+article pre {
+    white-space: pre-wrap;
+}
+
+article a code {
+    text-decoration: underline;
+    text-decoration-color: var(--color-white);
+}
+
+article a code { background-color: var(--color-blue); }
+article a:visited code { background-color: var(--color-pink); }
 
 /* Page-specific rules. */
 
