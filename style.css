@@ -137,6 +137,10 @@ article code {
 
 article pre > code { padding: 0; }
 
+article code {
+    display: inline-block;
+}
+
 article pre {
     white-space: pre-wrap;
 }
