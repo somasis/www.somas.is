@@ -50,7 +50,6 @@ a:focus {
 
 /* Site header. */
 body > header {
-    height: 4rem;
     font-weight: 700;
 }
 
@@ -66,6 +65,15 @@ body > header img {
     vertical-align: middle;
 }
 
+@media (max-width: 420px) {
+    body > header {
+        font-size: 9pt;
+    }
+    body > header img {
+        display: none;
+    }
+}
+
 /* Site footer. */
 body > footer {
     padding-top: 1rem;
@@ -78,6 +86,12 @@ body > footer {
 main > header > h1 {
     border-bottom: .25rem double;
     margin-top: 1rem;
+}
+
+@media (max-width: 420px) {
+    main > header > h1 {
+        font-size: 20pt;
+    }
 }
 
 /* Article-relevant content. */
@@ -125,6 +139,13 @@ article pre > code { padding: 0; }
 
 article pre {
     white-space: pre-wrap;
+}
+
+@media (max-width: 420px) {
+    article pre {
+        white-space: pre;
+        overflow-x: scroll;
+    }
 }
 
 article a code {
