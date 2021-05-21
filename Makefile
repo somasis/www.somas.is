@@ -10,7 +10,7 @@ PAGES = \
 
 # newest to oldest
 NOTES = \
-    note-music-library-organization.html \
+    note-beets-lossless-and-lossy.html \
     note-2021-04-06.html \
     note-2020-12-05.html \
     note-2020-12-01.html \
