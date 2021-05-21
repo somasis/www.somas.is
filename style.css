@@ -27,13 +27,13 @@ body > header img {
 body > footer {
     padding-top: 1rem;
     text-align: right;
-    border-top: .1rem solid;
+    border-top: .125rem dashed;
     font-size: 10pt;
 }
 
 /* Main page content. */
 main > header > h1 {
-    border-bottom: .1rem solid;
+    border-bottom: .25rem double;
     margin-top: 1rem;
 }
 
