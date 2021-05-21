@@ -10,6 +10,7 @@ PAGES = \
 
 # newest to oldest
 NOTES = \
+    note-music-library-organization.html \
     note-2021-04-06.html \
     note-2020-12-05.html \
     note-2020-12-01.html \
@@ -62,14 +63,16 @@ notes.atom: atom.sh ${NOTES}
 	    -t '~somasis/notes' \
 	    -u 'https://somas.is/notes.html' \
 	    -s 'notes and other short-form writings.' \
-	    ${NOTES} > $@
+	    ${NOTES} \
+	    | tidy -xml ${TIDYFLAGS} > $@
 
 rhizome.atom: atom.sh ${RHIZOMES}
 	sh ./atom.sh \
 	    -t '~somasis/rhizome' \
 	    -u 'https://somas.is/rhizome.html' \
 	    -s 'tumblelog type... thing. ' \
-	    ${RHIZOMES} > $@
+	    ${RHIZOMES} \
+	    | tidy -xml ${TIDYFLAGS} > $@
 
 resume.html: resume.adoc
 	asciidoctor -r asciidoctor-html5s -b html5s -o $@ $<
