@@ -51,7 +51,7 @@ feeds: FRC ${FEEDS}
 pdfs: FRC ${PDFS}
 
 rhizome.html: rhizome.md
-rhizome.md: ${RHIZOMES} rhizome.sh
+rhizome.md: rhizome.sh ${RHIZOMES}
 	sh ./rhizome.sh ${RHIZOMES} > $@
 
 notes.html: notes.md
