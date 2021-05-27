@@ -1,7 +1,7 @@
 *.atom
 *.html
 *.pdf
-notes.md
-rhizome.md
-note-current.md
-rhizome-current.md
+notes.adoc
+rhizome.adoc
+note-current.adoc
+rhizome-current.adoc

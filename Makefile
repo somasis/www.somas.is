@@ -40,22 +40,20 @@ INSTALLS = ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} ${CSS} ${ETC} feed.xml
 
 DESTDIR ?= /srv/www/www.somas.is
 
-TIDYFLAGS ?= -q --wrap 0 --warn-proprietary-attributes false --vertical-space auto
-
-all: FRC pages notes rhizomes feeds pdfs
+all: FRC etc pages notes rhizomes feeds pdfs
 
 pages: FRC ${PAGES}
-notes: FRC ${NOTES} notes.atom notes.md
-rhizomes: FRC ${RHIZOMES} rhizome.atom rhizome.md
+notes: FRC ${NOTES} notes.atom notes.adoc
+rhizomes: FRC ${RHIZOMES} rhizome.atom rhizome.adoc
 feeds: FRC ${FEEDS}
 pdfs: FRC ${PDFS}
 
-rhizome.html: rhizome.md
-rhizome.md: rhizome.sh ${RHIZOMES}
+rhizome.html: rhizome.adoc
+rhizome.adoc: rhizome.sh ${RHIZOMES}
 	sh ./rhizome.sh ${RHIZOMES} > $@
 
-notes.html: notes.md
-notes.md: notes.sh ${NOTES}
+notes.html: notes.adoc
+notes.adoc: notes.sh ${NOTES}
 	sh ./notes.sh ${NOTES} > $@
 
 notes.atom: atom.sh ${NOTES}
@@ -63,26 +61,21 @@ notes.atom: atom.sh ${NOTES}
 	    -t '~somasis/notes' \
 	    -u 'https://somas.is/notes.html' \
 	    -s 'notes and other short-form writings.' \
-	    ${NOTES} \
-	    | tidy -xml ${TIDYFLAGS} > $@
+	    ${NOTES} > $@
 
 rhizome.atom: atom.sh ${RHIZOMES}
 	sh ./atom.sh \
 	    -t '~somasis/rhizome' \
 	    -u 'https://somas.is/rhizome.html' \
 	    -s 'tumblelog type... thing. ' \
-	    ${RHIZOMES} \
-	    | tidy -xml ${TIDYFLAGS} > $@
-
-resume.html: resume.adoc
-	asciidoctor -r asciidoctor-html5s -b html5s -o $@ $<
+	    ${RHIZOMES} > $@
 
 resume.pdf: resume.adoc resume.yml
 	asciidoctor -r asciidoctor-pdf -b pdf -o $@ $<
 
-.SUFFIXES: .md .html
-.md.html:
-	sh ./temp.sh $< | tidy ${TIDYFLAGS} > $@
+.SUFFIXES: .adoc .html
+.adoc.html:
+	sh ./temp.sh $< > $@
 
 redirects: FRC redirect.sh
 	sh ./redirect.sh /note-2019-11-14.html \
@@ -100,20 +93,20 @@ install: all redirects
 	cp ${INSTALLS} ${DESTDIR}
 
 clean: FRC
-	rm -f ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} notes.md rhizome.md
+	rm -f ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} notes.adoc rhizome.adoc
 
 note-new: FRC
-	@[ -f note-current.md ] || cp note-template.md note-current.md
-	@echo "${PWD}"/note-current.md
+	@[ -f note-current.adoc ] || cp note-template.adoc note-current.adoc
+	@echo "${PWD}"/note-current.adoc
 
 note-publish: FRC
-	[ -f note-$$(date +%Y-%m-%d).md ] || mv note-current.md note-$$(date +%Y-%m-%d).md
+	[ -f note-$$(date +%Y-%m-%d).adoc ] || mv note-current.adoc note-$$(date +%Y-%m-%d).adoc
 
 rhizome-new: FRC
-	@[ -f rhizome-current.md ] || cp rhizome-template.md rhizome-current.md
-	@echo "${PWD}"/rhizome-current.md
+	@[ -f rhizome-current.adoc ] || cp rhizome-template.adoc rhizome-current.adoc
+	@echo "${PWD}"/rhizome-current.adoc
 
 rhizome-publish: FRC
-	[ -f rhizome-$$(date +%Y-W%W).md ] || mv rhizome-current.md rhizome-$$(date +%Y-W%W).md
+	[ -f rhizome-$$(date +%Y-W%W).adoc ] || mv rhizome-current.adoc rhizome-$$(date +%Y-W%W).adoc
 
 FRC:

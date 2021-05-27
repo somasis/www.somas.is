@@ -1,0 +1,48 @@
+= index
+:descripton: 22 year old who does music and computer and stuff
+
+a.k.a. kylie mcclain, 22 year old who does things
+
+== what does she do
+
+* link:notes.html[writes some notes], on occasion
+* link:rhizome.html[share some things], on occasion
+* https://somasis.bandcamp.com[music]
+
+* https://git.mutiny.red[computer] things
+** https://mutiny.red[Mutiny], a long-term research project/collection of notes on a linux distribution
+** https://github.com/somasis[uses github on occasion]
+** the https://wiki.musl-libc.org/[musl libc wiki]
+** used to develop for https://exherbo.org[exherbo linux]
+
+* https://twitter.com/kyliesomasis[tweets]
+* https://www.openstreetmap.org/user/somasis[mapping]
+
+if you're the kind of person who likes résumés I have a link:resume.html[résumé].
+
+=== music
+
+:name-major: somasis - in nature, together
+:url-major: https://somasis.bandcamp.com/album/in-nature-together
+
+:name-latest: somasis - dashy / hearth's warming eve
+:url-latest: https://somasis.bandcamp.com/album/dashy-hearths-warming-eve
+
+I've been making music since 2012.
+
+my most recent release is {url-latest}[{name-latest}].
+
+my most recent major release is {url-major}[{name-major}].
+
+:figure-caption!:
+
+++++
+<span class="latest-music">
+    <a title="{name-latest}" href="{url-latest}">
+        <img src="index-latest.jpg" alt="{name-latest} cover art" />
+    </a>
+    <a title="{name-major}" href="{url-major}">
+        <img src="index-major.jpg" alt="{name-major} cover art" />
+    </a>
+</span>
+++++

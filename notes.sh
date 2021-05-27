@@ -1,15 +1,16 @@
 #!/bin/sh
 
+export PATH="${PWD}":"${PATH}"
 set -e
 
 cat <<EOF
-title: index
-summary: a place for me to get the thoughts out of my brain
+:doctitle: index
+:description: a place for me to get the thoughts out of my brain
 
-**notes** is a place for me to document and explain things so that I don't forget them, or to get
+*notes* is a place for me to document and explain things so that I don't forget them, or to get
 thoughts out of my head that are bouncing around incessantly.
 
-[subscribe](notes.atom) in your favorite RSS reader.
+link:notes.atom[subscribe] in your favorite RSS reader.
 
 EOF
 
@@ -18,11 +19,11 @@ while [ $# -gt 0 ]; do
     i=$(( i + 1 ))
     b="${1%.html}"
 
-    title=$(lowdown -T html -X title "${b}".md)
-    summary=$(lowdown -T html -X summary "${b}".md | tr '\n' ' ')
-    date=$(lowdown -T html -X date "${b}".md 2>/dev/null || :)
+    title=$(asciidoctor-query "${b}".adoc doctitle)
+    summary=$(asciidoctor-query "${b}".adoc description | tr '\n' ' ')
+    date=$(asciidoctor-query "${b}".adoc docdate 2>/dev/null || :)
 
-    echo "${date:+$date - }[${title}](${1})"
+    echo "${date:+$date - }link:${1}[${title}]"
     echo
     if [ "${i}" -lt 10 ]; then
         [ -n "${summary}" ] && echo "> ${summary}"

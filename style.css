@@ -127,7 +127,7 @@ main > header > p {
 
 /* ```text Code blocks and `inline code`, respectively. */
 
-article > pre,
+article pre,
 article code {
     color: var(--color-background);
     background-color: var(--color-foreground);

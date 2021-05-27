@@ -1,10 +1,8 @@
 #!/bin/sh
 
-set -e
+export PATH="${PWD}":"${PATH}"
 
-meta() {
-    lowdown -T html -X "${1}" "${2}" 2>/dev/null
-}
+set -e
 
 header() {
     cat <<EOF
@@ -56,11 +54,11 @@ EOF
 }
 
 f="${1}"
-b="${1%.md}"
+b="${1%.adoc}"
 
-title=$(meta title "${f}" || printf '%s\n' "${b#*-}")
-summary=$(meta summary "${f}" || printf '')
-date=$(meta date "${f}" || printf '')
+title=$(asciidoctor-query "${f}" doctitle 2>/dev/null || printf '%s\n' "${b#*-}")
+summary=$(asciidoctor-query "${f}" description 2>/dev/null || printf '')
+date=$(asciidoctor-query "${f}" docdate 2>/dev/null || printf '')
 
 site_name='~somasis' # Used for the beginning part of the ${header}, and the <title>.
 header="<a href='index.html'>${site_name}</a>" # Header displayed on top of <body>.
@@ -117,7 +115,7 @@ esac
 
 cat <<EOF
 <article>
-$(lowdown -T html --html-no-escapehtml --html-no-skiphtml "${f}")
+$(asciidoctor -r asciidoctor-html5s -b html5s -s -o - "${f}")
 </article>
 EOF
 
