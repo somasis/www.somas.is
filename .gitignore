@@ -1,6 +1,8 @@
 *.atom
 *.html
 *.pdf
+index-latest.jpg
+index-major.jpg
 notes.adoc
 rhizome.adoc
 note-current.adoc

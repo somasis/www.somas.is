@@ -175,5 +175,6 @@ article span.latest-music a {
 article span.latest-music img {
     display: inline;
     width: 18.75rem; /* this funky number is basically 300px */
+    max-width: 50%;
 }
 

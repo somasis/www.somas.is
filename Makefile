@@ -23,8 +23,8 @@ RHIZOMES = \
     rhizome-2020-W47.html
 
 ETC = \
-    index-latest-major.jpg \
-    index-latest-release.jpg
+    index-latest.jpg \
+    index-major.jpg
 
 FEEDS = \
     notes.atom \
@@ -36,17 +36,31 @@ PDFS = \
 CSS = \
     style.css
 
+LATEST = https://f4.bcbits.com/img/a1581256596_0.jpg
+MAJOR = https://f4.bcbits.com/img/a4175940610_0.jpg
+
 INSTALLS = ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} ${CSS} ${ETC} feed.xml
 
 DESTDIR ?= /srv/www/www.somas.is
 
 all: FRC etc pages notes rhizomes feeds pdfs
 
+etc: FRC ${ETC}
 pages: FRC ${PAGES}
 notes: FRC ${NOTES} notes.atom notes.adoc
 rhizomes: FRC ${RHIZOMES} rhizome.atom rhizome.adoc
 feeds: FRC ${FEEDS}
 pdfs: FRC ${PDFS}
+
+index-latest.jpg:
+	curl -sf -o .tmp_$@ ${LATEST}
+	convert .tmp_$@ -resize 300x300 $@
+	rm -f .tmp_$@
+
+index-major.jpg:
+	curl -sf -o .tmp_$@ ${MAJOR}
+	convert .tmp_$@ -resize 300x300 $@
+	rm -f .tmp_$@
 
 rhizome.html: rhizome.adoc
 rhizome.adoc: rhizome.sh ${RHIZOMES}
@@ -93,7 +107,7 @@ install: all redirects
 	cp ${INSTALLS} ${DESTDIR}
 
 clean: FRC
-	rm -f ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} notes.adoc rhizome.adoc
+	rm -f ${ETC} ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} notes.adoc rhizome.adoc
 
 note-new: FRC
 	@[ -f note-current.adoc ] || cp note-template.adoc note-current.adoc
