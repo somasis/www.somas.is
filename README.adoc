@@ -5,3 +5,4 @@
 * `jq`: used for URL encoding page titles for the `mailto:` link in the footer.
 * `asciidoctor`, `asciidoctor-html5s`: used for most of these pages.
 * `asciidoctor-pdf`: used for my résumé.
+* `imagemagick`: used for shrinking the cover art on `index.md`.
