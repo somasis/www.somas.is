@@ -1,4 +1,8 @@
 = Kylie McClain
+:nofooter:
+:linkcss:
+:stylesheet: ./style.css
+
 :compress:
 :pdf-theme: ./resume.yml
 
@@ -9,10 +13,7 @@ ifdef::backend-pdf[]
 |===
 endif::[]
 
-ifdef::backend-html5s[]
-:stylesheet: style.css
-:nofooter:
-:linkcss:
+ifndef::backend-pdf[]
 link:resume.pdf[Available in PDF format as well.]
 endif::[]
 

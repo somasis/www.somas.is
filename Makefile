@@ -84,6 +84,9 @@ rhizome.atom: atom.sh ${RHIZOMES}
 	    -s 'tumblelog type... thing. ' \
 	    ${RHIZOMES} > $@
 
+resume.html: resume.adoc resume.yml
+	asciidoctor -r asciidoctor-html5s -b html -o $@ $<
+
 resume.pdf: resume.adoc resume.yml
 	asciidoctor -r asciidoctor-pdf -b pdf -o $@ $<
 
