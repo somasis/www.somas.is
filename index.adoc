@@ -1,5 +1,5 @@
 = index
-:descripton: 23 year old who does music and computer and stuff
+:description: 23 year old who does music and computer and stuff
 
 a.k.a. kylie mcclain, 23 year old who does things
 
