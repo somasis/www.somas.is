@@ -54,12 +54,26 @@ pdfs: FRC ${PDFS}
 
 index-latest.jpg:
 	curl -sf -o .tmp_$@ ${LATEST}
-	convert .tmp_$@ -resize 300x300 $@
+	convert .tmp_$@ \
+	    -strip \
+	    -resize 300x300 \
+	    -sampling-factor 4:2:0 \
+	    -quality 85 \
+	    -interlace JPEG \
+	    -colorspace sRGB \
+	    $@
 	rm -f .tmp_$@
 
 index-major.jpg:
 	curl -sf -o .tmp_$@ ${MAJOR}
-	convert .tmp_$@ -resize 300x300 $@
+	convert .tmp_$@ \
+	    -strip \
+	    -resize 300x300 \
+	    -sampling-factor 4:2:0 \
+	    -quality 85 \
+	    -interlace JPEG \
+	    -colorspace sRGB \
+	    $@
 	rm -f .tmp_$@
 
 rhizome.html: rhizome.adoc
