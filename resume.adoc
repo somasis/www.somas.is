@@ -18,7 +18,7 @@ link:resume.pdf[Available in PDF format as well.]
 endif::[]
 
 [.text-center]
-Hi! I'm Kylie, a 22 year old philosophy student hailing from North Carolina. +
+Hi! I'm Kylie, a 23 year old philosophy student hailing from North Carolina. +
 Please email me at mailto:kylie@somas.is[] to request further details. I can provide references.
 
 :url-debian: https://debian.org
