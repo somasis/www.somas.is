@@ -36,7 +36,7 @@ PDFS = \
 CSS = \
     style.css
 
-URL_MUSIC    = https://somasis.bandcamp.com/album/in-nature-together
+URL_MUSIC    = https://somasis.bandcamp.com/track/chameleon
 COVER_LATEST = https://f4.bcbits.com/img/a1050589426_0.jpg
 COVER_MAJOR  = https://f4.bcbits.com/img/a4175940610_0.jpg
 
