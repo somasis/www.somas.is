@@ -36,7 +36,7 @@ PDFS = \
 CSS = \
     style.css
 
-LATEST = https://f4.bcbits.com/img/a1581256596_0.jpg
+LATEST = https://f4.bcbits.com/img/a1050589426_0.jpg
 MAJOR = https://f4.bcbits.com/img/a4175940610_0.jpg
 
 INSTALLS = ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} ${CSS} ${ETC} feed.xml

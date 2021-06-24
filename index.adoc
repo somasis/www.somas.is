@@ -25,14 +25,14 @@ if you're the kind of person who likes résumés I have a link:resume.html[résu
 :name-major: somasis - in nature, together
 :url-major: https://somasis.bandcamp.com/album/in-nature-together
 
-:name-latest: somasis - 2021-03-09: Live from The New Afternoon Show
-:url-latest: https://somasis.bandcamp.com/album/2021-03-09-live-from-the-new-afternoon-show
+:name-latest: somasis - CHAMELEON
+:url-latest: https://somasis.bandcamp.com/track/chameleon
 
 I've been making music since 2012.
 
 my most recent release is {url-latest}[{name-latest}].
 
-my most recent major release is {url-major}[{name-major}].
+my most recent EP is {url-major}[{name-major}].
 
 :figure-caption!:
 
