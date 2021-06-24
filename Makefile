@@ -121,7 +121,6 @@ redirects: FRC redirect.sh
 	    blog/2020/02/11/memory-fades-but-our-words-are-forever.html
 	sh ./redirect.sh ${URL_MUSIC} \
 	    music.html
-	ln -sf music.html ${DESTDIR}music
 
 install: all redirects
 	mkdir -p "${DESTDIR}"
