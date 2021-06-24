@@ -36,8 +36,9 @@ PDFS = \
 CSS = \
     style.css
 
-LATEST = https://f4.bcbits.com/img/a1050589426_0.jpg
-MAJOR = https://f4.bcbits.com/img/a4175940610_0.jpg
+URL_MUSIC    = https://somasis.bandcamp.com/album/in-nature-together
+COVER_LATEST = https://f4.bcbits.com/img/a1050589426_0.jpg
+COVER_MAJOR  = https://f4.bcbits.com/img/a4175940610_0.jpg
 
 INSTALLS = ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} ${CSS} ${ETC} feed.xml
 
@@ -53,7 +54,7 @@ feeds: FRC ${FEEDS}
 pdfs: FRC ${PDFS}
 
 index-latest.jpg:
-	curl -sf -o .tmp_$@ ${LATEST}
+	curl -sf -o .tmp_$@ ${COVER_LATEST}
 	convert .tmp_$@ \
 	    -strip \
 	    -resize 300x300 \
@@ -65,7 +66,7 @@ index-latest.jpg:
 	rm -f .tmp_$@
 
 index-major.jpg:
-	curl -sf -o .tmp_$@ ${MAJOR}
+	curl -sf -o .tmp_$@ ${COVER_MAJOR}
 	convert .tmp_$@ \
 	    -strip \
 	    -resize 300x300 \
@@ -118,6 +119,9 @@ redirects: FRC redirect.sh
 	sh ./redirect.sh /note-2020-02-11.html \
 	    2020/02/11/memory-fades-but-our-words-are-forever.html \
 	    blog/2020/02/11/memory-fades-but-our-words-are-forever.html
+	sh ./redirect.sh ${URL_MUSIC} \
+	    music.html
+	ln -sf music.html music
 
 install: all redirects
 	mkdir -p "${DESTDIR}"
