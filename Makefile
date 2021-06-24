@@ -44,7 +44,7 @@ INSTALLS = ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} ${CSS} ${ETC} feed.xml
 
 DESTDIR ?= /srv/www/www.somas.is
 
-all: FRC etc pages notes rhizomes feeds pdfs
+all: FRC etc pages redirects notes rhizomes feeds pdfs
 
 etc: FRC ${ETC}
 pages: FRC ${PAGES}
