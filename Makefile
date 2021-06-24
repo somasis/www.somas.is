@@ -44,7 +44,7 @@ INSTALLS = ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} ${CSS} ${ETC} feed.xml
 
 DESTDIR ?= /srv/www/www.somas.is
 
-all: FRC etc pages redirects notes rhizomes feeds pdfs
+all: FRC etc pages notes rhizomes feeds pdfs
 
 etc: FRC ${ETC}
 pages: FRC ${PAGES}
@@ -121,7 +121,7 @@ redirects: FRC redirect.sh
 	    blog/2020/02/11/memory-fades-but-our-words-are-forever.html
 	sh ./redirect.sh ${URL_MUSIC} \
 	    music.html
-	ln -sf music.html music
+	ln -sf music.html ${DESTDIR}music
 
 install: all redirects
 	mkdir -p "${DESTDIR}"
