@@ -19,6 +19,7 @@ NOTES = \
     note-2019-11-14.html
 
 RHIZOMES = \
+    rhizome-2021-W26.html \
     rhizome-2021-W02.html \
     rhizome-2020-W47.html
 
