@@ -15,6 +15,7 @@ things I'm up to:
 :url-mimefilter: http://git.mutiny.red/somasis/me/tree/bin/mimefilter?id=810387ef63a19c509411733b98f19e2eb61c40b1
 :url-fdotrash: https://specifications.freedesktop.org/trash-spec/trashspec-latest.html
 
+* I released some music... https://somasis.bandcamp.com/track/chameleon[somasis - CHAMELEON].
 * One of my partners got a PS5 and I've been playing NieR: Automata and NieR: Replicant the past
   few months. They're amazing and I love the story and the universe that's been created within the
   games.
