@@ -14,12 +14,12 @@ ifdef::backend-pdf[]
 endif::[]
 
 ifndef::backend-pdf[]
-link:resume.pdf[Available in PDF format as well.]
+link:resume.pdf[Available as a PDF as well.]
 endif::[]
 
 [.text-center]
-Hi! I'm Kylie, a 23 year old philosophy student hailing from North Carolina. +
-Please email me at mailto:kylie@somas.is[] to request further details. I can provide references.
+Hi! I'm Kylie, a 23 year old philosophy student from North Carolina. +
+Please email me at mailto:kylie@somas.is[] to request further details. I can provide more details.
 
 :url-debian: https://debian.org
 :url-arch: https://archlinux.org
@@ -45,10 +45,17 @@ Please email me at mailto:kylie@somas.is[] to request further details. I can pro
 == Education
 
 * https://appstate.edu[Appalachian State University] _(2018-present)_
-    ** Pursuing a *Bachelor of Philosophy*, majoring in Philosophy and minoring in Gender, Women's
+    ** Pursuing a *Bachelor of Philosophy*, majoring in Philosophy, minoring in Gender, Women's
        and Sexuality Studies.
-* Rowan-Cabarrus Community College _(2016-2018, transferred)_
-* Concord High School _(2012-2016, graduated)_
+    ** Planning to pursue a Master of Philosophy and Doctor of Philosophy afterwards.
+
+=== Extracurricular activities
+
+:url-linuxatapp: https://engage.appstate.edu/organization/linux-app
+
+* *Vice president* of the Appalachian State Philosophical Society _(2021-present)_
+* Member of the Appalachian State Philosophical Society _(2019-present)_
+* Member of {url-linuxatapp}[Linux@App], at Appalachian State University _(2018-2019)_
 
 == Skills & Interests
 
@@ -61,7 +68,7 @@ Please email me at mailto:kylie@somas.is[] to request further details. I can pro
     *Jira*, *GitHub*, GitLab, Gerrit, *Gitolite*
 
 *Interests*::
-    Minimalist system design, system administration, small systems, efficient use of resources.
+    Minimalist system design, system administration, small systems.
 
 [small]#Italicized: projects I have contributed to in some way. Embolded: things I'm currently using.#
 
@@ -76,9 +83,9 @@ Please email me at mailto:kylie@somas.is[] to request further details. I can pro
 == Side projects
 
 * https://mutiny.red[Mutiny], a Linux distribution/research project aiming for unique, coherent,
-  and fun computing. _(2016-present)_
+  and fun computing. _(2016-hiatus)_
 * https://wiki.musl-libc.org[musl libc wiki], a community-maintained wiki documenting the musl
-  libc project. I maintain the build system for it, the stylesheets, and host it.
+  libc project. I maintain the build system for it, the stylesheets, and host it. _(2016-present; my role is minimal as of 2020)_
 
 == Hobbies
 
@@ -87,4 +94,5 @@ Please email me at mailto:kylie@somas.is[] to request further details. I can pro
 * Somewhat active contributor to https://openstreetmap.org/user/somasis[OpenStreetMap]. +
   It's helped me to find the world around me and the community I live in a lot more interesting. +
   Anywhere new I go ends up on the map sooner or later.
-
+* Learning, speaking, and writing https://en.wikipedia.org/wiki/Toki_Pona[Toki Pona], a constructed
+  language known for its minimalism. _sina o, toki pona tawa mi._
