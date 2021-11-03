@@ -44,22 +44,21 @@ of manual sequencing though, like breakcore.
 I don't use hardware unless it's really necessary (no money). Most of the hardware I do have was
 gifted to me.
 
-* https://www.audio-technica.com/en-us/ath-m40x[Audio Technica ATH-M40x Professional Monitor
-Headphones]
-
+https://www.audio-technica.com/en-us/ath-m40x[Audio Technica ATH-M40x Professional Monitor Headphones]::
 I think these are seen as meme headphones or whatever nowadays by lots of people, but they're
 very popular for good reason. These are easily the most affordable, well-built, and just plain
 good for the price headphones you could possibly get for music production. The frequency response
 is tuned very flat, I listen to and mix all my music on these headphones, I'm very happy with
 them.
-
++
 I will say, and I think this is a technique issue of mine more than an issue with the headphones,
 I think I have a tendency to mix my bass a bit too loud sometimes. I don't do enough car tests,
 don't test on lower-quality/more common headphones enough, but perhaps the bass on these
 headphones could be a bit louder. I genuinely can't tell if it's a technique issue or an issue
 with the frequency response not being as flat as it sounds to me.
-
++
 Bottom line: these are the best mixing and mastering headphones you'll get for 99$ dollars.
+
 https://www.audio-technica.com/en-us/at2020[Audio Technica AT2020 Cardioid Condenser Microphone]::
 I use it for recording vocals. I also use it as a room microphone, for when I'm in calls with
 people nowadays. It's really just for vocals, but it's a great general-purpose microphone.
