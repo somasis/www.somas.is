@@ -16,6 +16,7 @@ header() {
 <link rel="stylesheet" href="style.css" />
 
 <meta name="description" content="${summary}" />
+<meta name="keywords" content="${keywords}">
 <meta property="og:description" content="${summary}" />
 <meta property="twitter:description" content="${summary}" />
 
@@ -59,6 +60,7 @@ b="${1%.adoc}"
 title=$(asciidoctor-query "${f}" doctitle 2>/dev/null || printf '%s\n' "${b#*-}")
 summary=$(asciidoctor-query "${f}" description 2>/dev/null || printf '')
 date=$(asciidoctor-query "${f}" docdate 2>/dev/null || printf '')
+keywords=$(asciidoctor-query "${f}" keywords 2>/dev/null || printf '')
 
 site_name='~somasis' # Used for the beginning part of the ${header}, and the <title>.
 header="<a href='index.html'>${site_name}</a>" # Header displayed on top of <body>.
