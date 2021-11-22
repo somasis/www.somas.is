@@ -89,7 +89,7 @@ case "${b}" in
         header='~somasis'
         ;;
     *)
-        page_title="${page_title}${title:+ - $title}"
+        page_title="${page_title}${title:+ - ${title}}"
         ;;
 esac
 
