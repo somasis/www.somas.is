@@ -46,7 +46,7 @@ footer() {
     cat <<EOF
 </main>
 <footer>
-<a href='https://git.mutiny.red/somasis/www.somas.is'>generated at $(TZ=UTC date +"%Y-%d-%mT%H:%M:%S%:z")</a>
+<a href='https://git.mutiny.red/somasis/www.somas.is'>generated at $(TZ=UTC date +"%Y-%m-%dT%H:%M:%S%:z")</a>
 - <a href='mailto:kylie@somas.is${mailto_subject:+?subject=${mailto_subject}}'>kylie@somas.is</a>
 </footer>
 </body>
