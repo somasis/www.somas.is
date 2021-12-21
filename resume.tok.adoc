@@ -98,7 +98,7 @@ mi ken pana e sona mute.
 
 == pali lili mi
 
-* https://mutiny.red[nasin Mutini], li nasin Linu poki, li kulupu pi kama sona.
+* https://mutiny.red[nasin Mutini], li poki pi nasin Linu, li kulupu pi kama sona.
   nasin ni li wile nasin ni pi ilo sona: wile wan, en wile pona, en wile musi.
   _(tenpo sike 2016-pali lape)_
 * https://wiki.musl-libc.org[lipu kulupu pi ilo Musa Lipese], li pali e lipu sona pi ilo ni kepeken
