@@ -6,7 +6,8 @@ PAGES = \
     index.html \
     notes.html \
     rhizome.html \
-    resume.html
+    resume.html \
+    resume.tok.html
 
 # newest to oldest
 NOTES = \
@@ -102,9 +103,13 @@ rhizome.atom: atom.sh ${RHIZOMES}
 	    ${RHIZOMES} > $@
 
 resume.html: resume.adoc resume.yml
+resume.tok.html: resume.tok.adoc resume.yml
+resume.html resume.tok.html:
 	asciidoctor -r asciidoctor-html5s -b html -o $@ $<
 
 resume.pdf: resume.adoc resume.yml
+resume.tok.pdf: resume.tok.adoc resume.yml
+resume.pdf resume.tok.pdf:
 	asciidoctor -r asciidoctor-pdf -b pdf -o $@ $<
 
 .SUFFIXES: .adoc .html
