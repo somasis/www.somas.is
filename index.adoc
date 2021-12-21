@@ -43,6 +43,8 @@ also see all https://git.mutiny.red[my git repositories] (or https://github.com/
 :name-latest: somasis - CHAMELEON
 :url-latest: https://somasis.bandcamp.com/track/chameleon
 
+also see all my music on https://somasis.bandcamp.com[Bandcamp].
+
 I've been making music since 2012.
 
 my most recent release is {url-latest}[{name-latest}].
