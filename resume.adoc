@@ -62,7 +62,7 @@ Please email me at mailto:kylie@somas.is[] to request further details. I can pro
 
 *Software*::
     {url-alpine}[*Alpine Linux*], {url-exherbo}[_Exherbo Linux_], {url-arch}[*Arch Linux*],
-    {url-debian}[Debian GNU/Linux], Windows 10, *POSIX Shell/bash*, {url-musllibc}[*_musl libc_*],
+    {url-debian}[Debian GNU/Linux], Windows, *POSIX Shell/bash*, {url-musllibc}[*_musl libc_*],
     {url-s6}[*_s6_*], {url-execline}[*_execline_*], name a Unix tool, I've probably used it.
 
 *Infrastructure experience*::
@@ -86,7 +86,7 @@ Please email me at mailto:kylie@somas.is[] to request further details. I can pro
 * https://mutiny.red[Mutiny], a Linux distribution/research project aiming for unique, coherent,
   and fun computing. _(2016-hiatus)_
 * https://wiki.musl-libc.org[musl libc wiki], a community-maintained wiki documenting the musl
-  libc project. I maintain the build system for it, the stylesheets, and host it. _(2016-present; my role is minimal as of 2020)_
+  libc project. I maintain the build system for it and the stylesheets. _(2016-present; my role is minimal as of 2020)_
 
 == Hobbies
 
