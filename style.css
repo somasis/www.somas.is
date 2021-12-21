@@ -176,6 +176,19 @@ article a:visited code {
     background-color: var(--color-pink);
 }
 
+article section .block-title {
+    /* Asciidoctor specific class */
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 11pt;
+}
+
+article section.ulist ul {
+    /* Asciidoctor specific class */
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
 /* Page-specific rules. */
 
 /* index.md */

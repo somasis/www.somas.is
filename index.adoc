@@ -5,20 +5,35 @@ a.k.a. kylie mcclain, 23 year old who does things
 
 == what does she do
 
+:url-patreon: https://patreon.com/somasis
+
 * link:notes.html[writes some notes], on occasion
 * link:rhizome.html[share some things], on occasion
-* https://somasis.bandcamp.com[music]
-
-* https://git.mutiny.red[computer] things
-** https://mutiny.red[Mutiny], a long-term research project/collection of notes on a linux distribution
-** https://github.com/somasis[uses github on occasion]
-** the https://wiki.musl-libc.org/[musl libc wiki]
-** used to develop for https://exherbo.org[exherbo linux]
-
+* <<_projects>>
+* <<_music>>, for which I have a {url-patreon}[Patreon]
 * https://twitter.com/kyliesomasis[tweets]
 * https://www.openstreetmap.org/user/somasis[mapping]
 
 if you're the kind of person who likes résumés I have a link:resume.html[résumé].
+
+=== projects
+
+also see all https://git.mutiny.red[my git repositories] (or https://github.com/somasis[my github]).
+
+.current
+* https://git.causal.agency/catgirl/?h=somasis/tokipona[catgirl (in Toki Pona)]: a Toki Pona
+  translation of the `catgirl` terminal IRC client.
+* https://git.mutiny.red/somasis/discord-theme-irc[discord-theme-irc]: a custom theme for Discord
+  that makes it look even more like IRC.
+* https://git.mutiny.red/somasis/discord-tokipona[discord-tokipona]: a Toki Pona translation of the
+  Discord chat program.
+* https://git.mutiny.red/somasis/hunspell-tok[hunspell-tok]: a Toki Pona dictionary for
+  http://hunspell.github.io/[`hunspell(1)`].
+
+.on hiatus
+* https://mutiny.red[Mutiny], a long-term research project/collection of notes on a linux distribution
+* https://wiki.musl-libc.org/[musl libc wiki]
+* https://exherbo.org[exherbo linux]
 
 === music
 
