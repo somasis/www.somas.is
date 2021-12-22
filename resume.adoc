@@ -13,9 +13,9 @@ ifdef::backend-pdf[]
 |===
 endif::[]
 
-ifndef::backend-pdf[]
-xref:resume.tok.adoc[Available in Toki Pona as well!]
+xref:resume.tok.adoc[lipu ni li lon toki pona kin!]
 
+ifndef::backend-pdf[]
 link:resume.pdf[Available as a PDF as well.]
 endif::[]
 

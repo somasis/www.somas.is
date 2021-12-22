@@ -13,6 +13,8 @@ ifdef::backend-pdf[]
 |===
 endif::[]
 
+xref:resume.adoc[Available in English as well!]
+
 ifndef::backend-pdf[]
 link:resume.pdf[lipu ni li lon nasin lipu PDF kin.]
 endif::[]
