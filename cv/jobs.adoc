@@ -1,0 +1,12 @@
+Jul 2024 — Apr 2025: Support Services Associate, Appalachian State University Campus Store::
+    * Gained storefront customer experience and experience working in a retail setting,
+      and engaging in customer service over the phone
+    * Learned how to direct student co-workers and delegate tasks effectively
+    * Worked with inventory management software like Oracle NetSuite
+
+Aug 2018 — May 2024: Student IT Technician, Appalachian State Technology Support Services::
+    * Repairing computers: virus removal, data backup, hardware diagnostics,
+      ticket management via Atlassian Jira
+    * Primarily repaired student and faculty Windows laptops
+    * Customer service: explaining repair steps taken to customers upon them
+      picking up their computers in an understandable way

@@ -1,0 +1,25 @@
+@media screen {
+    body {
+        width: calc(100% - 2in);
+        margin: 2em auto;
+        max-width: 8.5in;
+    }
+}
+
+html {
+    font-family: serif;
+    line-height: 1.5;
+}
+
+body div#header,
+body div#content div#preamble {
+    text-align: center;
+}
+
+body div#content dl dd {
+    margin-inline-start: 40px;
+}
+
+body div#content dl dd ul {
+    margin-inline-start: -40px;
+}

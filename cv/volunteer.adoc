@@ -1,0 +1,16 @@
+:url-nixpkgs:               https://github.com/nixos/nixpkgs
+:url-exherbo:               https://exherbolinux.org
+:url-exherbo-bootstrapping: https://exherbolinux.org/docs/bootstrapping.html
+:url-exherbo-alternatives:  https://exherbolinux.org/docs/eapi/alternatives.html
+:url-musllibc:              https://musl.libc.org
+
+May 2022 — present: Contributor, {url-nixpkgs}[Nixpkgs]::
+    * I run NixOS on all my machines and enjoy learning about weird technology
+      like Nix.
+
+[%breakable]
+2014 — 2017, Developer, {url-exherbo}[Exherbo Linux]::
+    * Added support to system package management structure for new platforms
+      such as {url-musllibc}[musl libc], and ARMv7.
+    * Gained experience doing technical writing, both for {url-exherbo-bootstrapping}[developer
+      audiences] and {url-exherbo-alternatives}[for more general audiences].

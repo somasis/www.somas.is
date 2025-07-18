@@ -1,0 +1,53 @@
+= Kylie McClain
+
+:revnumber: 5
+:revdate: 2024-05
+
+:is-cv:
+:!is-resume:
+
+:doctitle: Curriculum vitae
+
+:link-pdf:
+ifdef::filetype-html[]
+:link-pdf: pass:[ link:cv.pdf[Available as a PDF.]]
+
+[.text-center]
+_{doctitle}_
+
+{link-pdf}
+
+:nofooter:
+endif::filetype-html[]
+
+[.text-center]
+Boone, North Carolina, USA +
+mailto:kylie@somas.is[]
+
+== Education
+
+include::cv/education.adoc[]
+
+== Academics
+
+=== Academic memberships
+
+include::cv/memberships.adoc[]
+
+=== Conference presentations
+
+include::cv/presentations.adoc[]
+
+== Professional experience
+
+include::cv/jobs.adoc[]
+
+[%breakable]
+== Volunteer experience
+
+include::cv/volunteer.adoc[]
+
+== Language competencies
+
+include::cv/languages.adoc[]
+

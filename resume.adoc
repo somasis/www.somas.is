@@ -1,101 +1,64 @@
 = Kylie McClain
-:nofooter:
-:linkcss:
-:stylesheet: ./style.css
 
-:compress:
-:pdf-theme: ./resume.yml
+:revdate: 2025-06
 
-ifdef::backend-pdf[]
-[.center,cols="3*^",width="75%",frame="none",grid="none"]
-|===
-|mailto:kylie@somas.is[]|https://somas.is/|https://www.openstreetmap.org/relation/178973[Boone, NC]
-|===
-endif::[]
+:is-resume:
+:!is-cv:
 
-xref:resume.tok.adoc[lipu ni li lon toki pona kin!]
+:doctitle: Resumé
 
-ifndef::backend-pdf[]
-link:resume.pdf[Available as a PDF as well.]
-endif::[]
+:link-github: https://github.com/somasis
+:link-linkedin: https://www.linkedin.com/in/kylie-mcclain
+
+:link-pdf:
+ifdef::filetype-html[]
+:link-pdf: pass:[ link:resume.pdf[Available as a PDF.]]
 
 [.text-center]
-Hi! I'm Kylie, a 23 year old philosophy student from North Carolina. +
-Please email me at mailto:kylie@somas.is[] to request further details. I can provide more details.
+_{doctitle}_
 
-:url-debian: https://debian.org
-:url-arch: https://archlinux.org
-:url-alpine: https://alpinelinux.org
-:url-exherbo: https://exherbo.org
-:url-musllibc: https://musl.libc.org
-:url-skarnet: https://www.skarnet.org
-:url-execline: {url-skarnet}/software/execline
-:url-s6: {url-skarnet}/software/s6
+{link-pdf}
+
+:nofooter:
+endif::filetype-html[]
+
+[.text-center]
+Concord, North Carolina, USA +
+mailto:kylie@somas.is[] +
+{link-linkedin}[LinkedIn] · {link-github}[GitHub]
 
 == Work
 
-:url-tss: https://support.appstate.edu/services/technology-support-center
+include::cv/jobs.adoc[]
 
-* *Student IT Technician* at {url-tss}[Appalachian State University Technology Support Services]
-  _(2018-present)_
-    ** Virus removal, data backup, hardware diagnostics, ticket management via Jira.
-    ** Customer service, explaining repair steps taken to customers upon them picking up their
-       computers.
-    ** Known as the only person in the office who knows what they're doing with Linux, usually
-       machines running Linux that are having problems get referred to me. `:-)`
+Feb 2018 — Jul 2018: Dishwasher, Cracker Barrel Old Country Store
 
-== Education
+May 2017 — Feb 2018: Hostess, Cracker Barrel Old Country Store
 
-* https://appstate.edu[Appalachian State University] _(2018-present)_
-    ** Pursuing a *Bachelor of Philosophy*, majoring in Philosophy, minoring in Gender, Women's
-       and Sexuality Studies.
-    ** Planning to pursue a Master of Philosophy and Doctor of Philosophy afterwards.
+== Volunteer service
 
-=== Extracurricular activities
-
-:url-linuxatapp: https://engage.appstate.edu/organization/linux-app
-
-* *Co-president* of the Appalachian State Philosophical Society _(2021-present)_
-* *Vice president* of the Appalachian State Philosophical Society _(2021)_
-* Member of the Appalachian State Philosophical Society _(2019-present)_
-* Member of {url-linuxatapp}[Linux@App], at Appalachian State University _(2018-2019)_
-
-== Skills & Interests
-
-*Software*::
-    {url-alpine}[*Alpine Linux*], {url-exherbo}[_Exherbo Linux_], {url-arch}[*Arch Linux*],
-    {url-debian}[Debian GNU/Linux], Windows, *POSIX Shell/bash*, {url-musllibc}[*_musl libc_*],
-    {url-s6}[*_s6_*], {url-execline}[*_execline_*], name a Unix tool, I've probably used it.
-
-*Infrastructure experience*::
-    *Jira*, *GitHub*, GitLab, Gerrit, *Gitolite*
-
-*Interests*::
-    Minimalist system design, system administration, small systems.
-
-[small]#Italicized: projects I have contributed to in some way. Embolded: things I'm currently using.#
-
-== Open-source activity
-
-* *Core developer*, {url-exherbo}[Exherbo Linux] _(2014-2017)_
-    ** Coordinated efforts with approximately 20 other developers via IRC.
-    ** Added support for new platforms such as {url-musllibc}[musl libc], and ARMv7.
-    ** Wrote bootstrapping documentation for new processor architectures.
-    ** Wrote documentation for complex code previously written by others.
-
-== Side projects
-
-* https://mutiny.red[Mutiny], a Linux distribution/research project aiming for unique, coherent,
-  and fun computing. _(2016-hiatus)_
-* https://wiki.musl-libc.org[musl libc wiki], a community-maintained wiki documenting the musl
-  libc project. I maintain the build system for it and the stylesheets. _(2016-present; my role is minimal as of 2020)_
+include::cv/volunteer.adoc[]
 
 == Hobbies
 
-* https://somasis.bandcamp.com[Music making], using FL Studio.
-  _(2012-present, probably until I die)_
-* Somewhat active contributor to https://openstreetmap.org/user/somasis[OpenStreetMap]. +
-  It's helped me to find the world around me and the community I live in a lot more interesting. +
-  Anywhere new I go ends up on the map sooner or later.
-* Learning, speaking, and writing https://en.wikipedia.org/wiki/Toki_Pona[Toki Pona], a constructed
-  language known for its minimalism. _o toki pona tawa mi._
+* I've been a power user of Linux and UNIX-based systems since I was a young kid.
+  My first experience with open-source software was when my grandpa gave me a
+  Ubuntu 5.10 live CD that he got sent in a copy of PCMag, I think. I use NixOS
+  these days, but I've had experience with Arch Linux, Slackware, Debian, Gentoo,
+  OpenBSD, FreeBSD, among others.
+
+=== Skills
+
+include::cv/skills.adoc[]
+
+== Education
+
+include::cv/education.adoc[]
+
+=== Academic memberships
+
+include::cv/memberships.adoc[]
+
+== Language competencies
+
+include::cv/languages.adoc[]

@@ -1,0 +1,43 @@
+= toki pona: common pitfalls
+:description: a collection of common issues people run into when learning it
+:docdate: 2021-12-14
+:keywords: toki pona, language
+
+== how do I say "someone" / "some <thing>"?
+
+When I started learning Toki Pona, I found myself having a hard time understanding how it conflates
+a concept with an instance of that concept.
+
+Take a simple statement like this: "jan li pona."
+
+Since Toki Pona does not default to singularity _or_ plurality, this statement can mean many things:
+* _People are good._
+* _Person is good._
+* _Someone is good._
+* _A person is good._
+
+Figuring out how to say concepts like "someone" in Toki Pona after using the word so widely yet with
+a feeling of such specificity in English requires some reevaluation and shifting of mindset.
+
+A first idea I had for solving this perceived lack in my head was to use the word "seme" as a
+content word; this way is really bad and I quickly learned that as I realized how it introduces
+quite a lot of ambiguity when it comes to formulating questions.
+Don't do this.
+People will not understand you.
+
+I think however that in usage, words like "someone" in English really mean these sorts of things:
+* Any given person.
+* All persons.
+* All people.
+* A random person.
+* One person.
+* A person different from a person previously mentioned.
+
+It's important to try and drill down and determine what subject you're trying to discuss when you
+reach for the word "someone".
+
+== there's no way to say "The <thing>"
+
+What does "the" mean?
+Toki Pona doesn't provide a way to mark definite articles.
+This isn't a 

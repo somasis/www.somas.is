@@ -86,7 +86,7 @@ case "${b}" in
         header="${header}/${b}"
         ;;
     index)
-        header='~somasis'
+        header='kylie somasis'
         ;;
     *)
         page_title="${page_title}${title:+ - ${title}}"

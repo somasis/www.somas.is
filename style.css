@@ -1,208 +1,195 @@
 /* Base. */
 :root {
-    --color-foreground: rgb(47, 52, 63);
-    --color-background: rgb(235, 235, 235);
-    --color-black: rgb(79, 79, 79);
-    --color-red: rgb(207, 67, 66);
-    --color-green: rgb(172, 192, 68);
-    --color-yellow: rgb(239, 147, 36);
-    --color-blue: rgb(17, 118, 196);
-    --color-pink: rgb(197, 77, 122);
-    --color-cyan: rgb(73, 155, 175);
-    --color-light-black: rgb(119, 119, 119);
-    --color-light-grey: rgb(216, 199, 199);
-    --color-light-red: rgb(254, 98, 98);
-    --color-light-green: rgb(196, 233, 120);
-    --color-light-yellow: rgb(248, 220, 60);
-    --color-light-blue: rgb(150, 199, 236);
-    --color-light-pink: rgb(249, 124, 172);
-    --color-light-cyan: rgb(48, 208, 242);
-    --color-light-grey: rgb(224, 214, 214);
+  --color-foreground: #202020;
+  --color-background: #ffffff;
+  --color-black: rgb(79, 79, 79);
+  --color-red: rgb(207, 67, 66);
+  --color-green: rgb(172, 192, 68);
+  --color-yellow: rgb(239, 147, 36);
+  --color-blue: rgb(17, 118, 196);
+  --color-pink: rgb(197, 77, 122);
+  --color-cyan: rgb(73, 155, 175);
+  --color-light-black: rgb(119, 119, 119);
+  --color-light-grey: rgb(216, 199, 199);
+  --color-light-red: rgb(254, 98, 98);
+  --color-light-green: rgb(196, 233, 120);
+  --color-light-yellow: rgb(248, 220, 60);
+  --color-light-blue: rgb(150, 199, 236);
+  --color-light-pink: #e4bebd;
+  --color-light-cyan: rgb(48, 208, 242);
+  --color-light-grey: rgb(224, 214, 214);
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --color-foreground: #e0eaf0;
-        --color-background: #2f343f;
-    }
+  :root {
+    --color-foreground: #ffffff;
+    --color-background: #202020;
+  }
 }
 
 body {
-    background: var(--color-background);
-    color: var(--color-foreground);
-    margin: 0 auto;
-    max-width: 48rem;
-    line-height: 1.6;
-    padding: 2rem;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  max-width: 48rem;
+  padding: 1rem;
 }
 
 a:link {
-    color: var(--color-blue);
+  color: var(--color-blue);
 }
 
 a:visited {
-    color: var(--color-pink);
+  color: var(--color-pink);
 }
 
 a:focus {
-    color: var(--color-red);
+  color: var(--color-red);
 }
 
 /* Site header. */
-body > header {
-    font-weight: 700;
+body header {
+  font-weight: 700;
+  color: var(--color-background);
+  background: var(--color-green);
+  display: block;
 }
 
-body > header > h1 {
-    margin-top: 0;
-    margin-bottom: 0px;
+body header h1 {
+  margin-top: 0;
+  margin-bottom: 0px;
 }
 
-body > header img {
-    width: 4rem;
-    height: 4rem;
-    margin-right: 1rem;
-    vertical-align: middle;
+body header img {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 @media (max-width: 420px) {
-    body > header {
-        font-size: 9pt;
-    }
-    body > header img {
-        display: none;
-    }
+  body header {
+    font-size: 9pt;
+  }
+  body header img {
+    display: none;
+  }
 }
 
 /* Site footer. */
-body > footer {
-    padding-top: 1rem;
-    text-align: right;
-    border-top: 0.125rem dashed;
-    font-size: 10pt;
+body footer {
+  padding-top: 1rem;
+  text-align: right;
+  border-top: 0.125rem dashed;
+  font-size: 10pt;
 }
 
 /* Main page content. */
-main > header {
-    margin-bottom: 1rem;
+main header {
+  margin-bottom: 1rem;
 }
 
-main > header > h1 {
-    border-bottom: 0.25rem double;
-    margin-top: 1rem;
+main header h1 {
+  border-bottom: 0.25rem double;
+  margin-top: 1rem;
 }
 
 @media (max-width: 420px) {
-    main > header > h1 {
-        font-size: 20pt;
-    }
+  main header h1 {
+    font-size: 20pt;
+  }
 }
 
 /* Article-relevant content. */
-article p {
-    text-align: justify;
+main article p {
+  text-align: justify;
 }
 
-article h1 {
-    margin-top: 0;
+main article h1 {
+  margin-top: 0;
 }
 
-article h2 {
-    border-bottom: 0.1rem solid;
-    letter-spacing: 0.15rem;
-    font-weight: 800;
+main article h2 {
+  border-bottom: 0.1rem solid;
+  letter-spacing: 0.15rem;
+  font-weight: 800;
 }
 
-article img {
-    display: block;
-    margin: 1rem auto;
-    max-width: 100%;
+main article img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
 }
 
-article blockquote {
-    border-left: 0.1rem solid;
-    padding-left: 1rem;
+main article blockquote {
+  border-left: 0.1rem solid;
+  padding-left: 1rem;
 }
 
 /* Article summaries and dates, respectively. */
-main > header > p,
-main > header > time {
-    display: block;
-    text-align: right;
+main header p,
+main header time {
+  display: block;
+  text-align: right;
 }
 
-main > header > p {
-    font-style: italic;
+main header p {
+  font-style: italic;
 }
 
 /* ```text Code blocks and `inline code`, respectively. */
 
-article pre,
-article code {
-    color: var(--color-background);
-    background-color: var(--color-foreground);
-    padding: 0.175rem 0.35rem;
-    font-family: monospace;
+main article pre,
+main article code {
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+  font-family: monospace;
 }
 
-article pre > code {
-    padding: 0;
+main article pre > code {
+  padding: 0;
 }
 
-article code {
-    display: inline-block;
+main article code {
+  display: inline-block;
 }
 
-article pre {
-    white-space: pre-wrap;
+main article pre {
+  white-space: pre-wrap;
 }
 
 @media (max-width: 420px) {
-    article pre {
-        white-space: pre;
-        overflow-x: scroll;
-    }
+  main article pre {
+    white-space: pre;
+    overflow-x: scroll;
+  }
 }
 
-article a code {
-    text-decoration: underline;
-    text-decoration-color: var(--color-white);
+main article a code {
+  text-decoration: underline;
+  text-decoration-color: var(--color-white);
+  font-weight: bold;
 }
 
-article a code {
-    background-color: var(--color-blue);
+main article a code {
+  color: var(--color-blue);
 }
-article a:visited code {
-    background-color: var(--color-pink);
-}
-
-article section .block-title {
-    /* Asciidoctor specific class */
-    margin-top: 1rem;
-    margin-bottom: 0;
-    font-size: 11pt;
+main article a:visited code {
+  color: var(--color-pink);
 }
 
-article section.ulist ul {
-    /* Asciidoctor specific class */
-    margin-top: 0;
-    margin-bottom: 1rem;
+main article ul {
+  /* Asciidoctor specific class */
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-inline-start: 20px;
+}
+
+main article ul li p {
+  margin-top: 0;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* Page-specific rules. */
-
-/* index.md */
-article span.latest-music {
-    display: block;
-    text-align: center;
-}
-
-article span.latest-music a {
-    text-decoration: none;
-}
-
-article span.latest-music img {
-    display: inline;
-    width: 18.75rem; /* this funky number is basically 300px */
-    max-width: 50%;
-}
