@@ -51,7 +51,7 @@ CV_DEPS = \
 
 INSTALLS = ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} ${CSS} ${ETC} feed.xml
 
-DESTDIR ?= /srv/www/www.somas.is
+DESTDIR ?= ~/mnt/fastmail/www/somas.is
 
 all: FRC etc pages notes rhizomes feeds pdfs
 
