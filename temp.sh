@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/usr/bin/env bash
+
+set -euo pipefail
 
 export PATH="${PWD}":"${PATH}"
-
-set -e
 
 header() {
     cat <<EOF
@@ -46,7 +46,7 @@ footer() {
     cat <<EOF
 </main>
 <footer>
-<a href='https://git.mutiny.red/somasis/www.somas.is'>generated at $(TZ=UTC date +"%Y-%m-%dT%H:%M:%S%:z")</a>
+generated at $(TZ=UTC date +"%Y-%m-%dT%H:%M:%S%:z")
 - <a href='mailto:kylie@somas.is${mailto_subject:+?subject=${mailto_subject}}'>kylie@somas.is</a>
 </footer>
 </body>
@@ -105,19 +105,19 @@ case "${b}" in
         printf '</header>\n'
         ;;
     *)
-        if [ -n "${title}" ]; then
+        if [[ -n "${title}" ]]; then
             printf '<header>\n'
             printf '<h1>%s</h1>\n' "${title}"
-            [ -n "${summary}" ] && printf '<p>%s</p>\n' "${summary}"
-            [ -n "${date}" ] && printf '<time datetime="%s">%s</time>\n' "${date}" "${date}"
+            [[ -n "${summary}" ]] && printf '<p>%s</p>\n' "${summary}"
+            [[ -n "${date}" ]] && printf '<time datetime="%s">%s</time>\n' "${date}" "${date}"
             printf '</header>\n'
-        fi
+    fi
         ;;
 esac
 
 cat <<EOF
 <article>
-$(asciidoctor -r asciidoctor-html5s -b html5s -s -o - "${f}")
+$(asciidoctor -s -o - "${f}")
 </article>
 EOF
 

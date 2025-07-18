@@ -1,8 +1,14 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env nix-shell
+#! nix-shell -i ruby -p asciidoctor.ruby asciidoctor.gems.asciidoctor
 
 require 'asciidoctor'
 
 if ARGV.length < 2
+    if ARGV.length == 0 then
+        STDERR.puts "error: no file specified"
+    elsif ARGV.length == 1 then
+        STDERR.puts "error: no attribute specified"
+    end
     STDERR.puts "usage: #{File.basename(__FILE__)} FILE ATTRIBUTES..."
     exit 69
 end

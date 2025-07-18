@@ -1,7 +1,9 @@
-#!/bin/sh
+#!/usr/bin/env nix-shell
+#! nix-shell -i bash -p bash
+
+set -euo pipefail
 
 export PATH="${PWD}":"${PATH}"
-set -e
 
 cat <<EOF
 :doctitle: index
@@ -15,20 +17,19 @@ link:notes.atom[subscribe] in your favorite RSS reader.
 EOF
 
 i=0
-while [ $# -gt 0 ]; do
-    i=$(( i + 1 ))
+while [[ $# -gt 0 ]]; do
+    i=$((i + 1))
     b="${1%.html}"
 
     title=$(asciidoctor-query "${b}".adoc doctitle)
     summary=$(asciidoctor-query "${b}".adoc description | tr '\n' ' ')
     date=$(asciidoctor-query "${b}".adoc docdate 2>/dev/null || :)
 
-    echo "${date:+$date - }link:${1}[${title}]"
+    echo "${date:+${date} - }link:${1}[${title}]"
     echo
-    if [ "${i}" -lt 10 ]; then
-        [ -n "${summary}" ] && echo "> ${summary}"
+    if [[ "${i}" -lt 10 ]]; then
+        [[ -n "${summary}" ]] && echo "> ${summary}"
         echo
     fi
     shift
 done
-

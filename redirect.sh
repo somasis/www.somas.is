@@ -2,7 +2,8 @@
 
 set -e
 
-dest="${1}"; shift
+dest="${1}"
+shift
 
 while [ "$#" -gt 0 ]; do
     mkdir -p "${DESTDIR:-}$(dirname "${1}")"
