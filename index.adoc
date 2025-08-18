@@ -235,7 +235,7 @@ It is on streaming services as well, but those could disappear any day, you know
 
 === elsewhere
 
-* https://twitter.com/kyliesomasis[twitter]
+// * https://twitter.com/kyliesomasis[twitter]
 * https://bsky.app/profile/kylie.somas.is[bluesky]
 * https://www.linkedin.com/in/kylie-mcclain/[linkedin]
 * https://steamcommunity.com/id/somasis/[steam]
