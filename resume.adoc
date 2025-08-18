@@ -1,6 +1,6 @@
 = Kylie McClain
 
-:revdate: 2025-06
+:revdate: 2025-08
 
 :is-resume:
 :!is-cv:
@@ -39,6 +39,14 @@ May 2017 — Feb 2018: Hostess, Cracker Barrel Old Country Store
 
 include::cv/volunteer.adoc[]
 
+== Education
+
+include::cv/education.adoc[]
+
+=== Academic memberships
+
+include::cv/memberships.adoc[]
+
 == Hobbies
 
 * I've been a power user of Linux and UNIX-based systems since I was a young kid.
@@ -50,14 +58,6 @@ include::cv/volunteer.adoc[]
 === Skills
 
 include::cv/skills.adoc[]
-
-== Education
-
-include::cv/education.adoc[]
-
-=== Academic memberships
-
-include::cv/memberships.adoc[]
 
 == Language competencies
 

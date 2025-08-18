@@ -1,7 +1,7 @@
 .pre-commit-config.yaml
 *.atom
 *.html
-# *.pdf
+*.pdf
 
 index-latest.jpg
 index-major.jpg
