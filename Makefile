@@ -46,6 +46,7 @@ CV_DEPS = \
     cv/jobs.adoc \
     cv/languages.adoc \
     cv/memberships.adoc \
+    cv/skills.adoc \
     cv/presentations.adoc \
     cv/volunteer.adoc
 
