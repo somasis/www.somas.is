@@ -235,10 +235,10 @@ It is on streaming services as well, but those could disappear any day, you know
 
 === elsewhere
 
-// * https://twitter.com/kyliesomasis[twitter]
-* https://bsky.app/profile/kylie.somas.is[bluesky]
+// * https://twitter.com/kyliesomasis[twitter: kyliesomasis]
+* https://bsky.app/profile/somas.is[bluesky: @somas.is]
 * https://www.linkedin.com/in/kylie-mcclain/[linkedin]
-* https://steamcommunity.com/id/somasis/[steam]
-* https://last.fm/user/kyliesomasis[last.fm]
-* https://listenbrainz.org/user/somasis/[listenbrainz]
-* https://www.openstreetmap.org/user/somasis[openstreetmap]
+* https://steamcommunity.com/id/somasis/[steam: somasis]
+* https://last.fm/user/kyliesomasis[last.fm: kyliesomasis]
+* https://listenbrainz.org/user/somasis/[listenbrainz: somasis]
+* https://www.openstreetmap.org/user/somasis[openstreetmap: somasis]
