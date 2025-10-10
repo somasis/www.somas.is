@@ -1,3 +1,7 @@
-**Systems**:: NixOS, Ubuntu, Debian, Slackware, Windows, Linux from Scratch
-**Skills**:: configuration management, system maintenance and administration,
-advanced shell scripting (Bash and POSIX shells)
+**Certifications**:: CompTIA Linux+
+**Systems, software**:: NixOS, Ubuntu, Debian, Slackware, Windows, Linux from
+Scratch; Bash and POSIX shells (expert); Oracle NetSuite; FL Studio, Pro Tools
+(novice)
+**Skills**:: computer management, computer repair and data recovery, system
+maintenance and administration, advanced shell scripting, open source
+contributions; storefront retail, customer service, phone support

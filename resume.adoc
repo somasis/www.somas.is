@@ -35,6 +35,10 @@ Feb 2018 — Jul 2018: Dishwasher, Cracker Barrel Old Country Store
 
 May 2017 — Feb 2018: Hostess, Cracker Barrel Old Country Store
 
+== Skills
+
+include::cv/skills.adoc[]
+
 == Volunteer service
 
 include::cv/volunteer.adoc[]
@@ -46,18 +50,6 @@ include::cv/education.adoc[]
 === Academic memberships
 
 include::cv/memberships.adoc[]
-
-== Hobbies
-
-* I've been a power user of Linux and UNIX-based systems since I was a young kid.
-  My first experience with open-source software was when my grandpa gave me a
-  Ubuntu 5.10 live CD that he got sent in a copy of PCMag, I think. I use NixOS
-  these days, but I've had experience with Arch Linux, Slackware, Debian, Gentoo,
-  OpenBSD, FreeBSD, among others.
-
-=== Skills
-
-include::cv/skills.adoc[]
 
 == Language competencies
 
