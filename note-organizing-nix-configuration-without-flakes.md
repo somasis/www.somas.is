@@ -135,8 +135,10 @@ We can get a lot of the good parts of Flakes without the bad parts.
 
 For dependency pinning, there's tools like [`niv`][niv], [`npins`][npins],
 [`lon`][lon] (and probably many others) that do dependency pinning just fine.
-I use `npins`, mostly for [reasons outlined in this post by one of Lix's
-maintainers][pinning-nixos-with-npins].
+I use `npins`, mostly because it seems like the most widely used alternative
+to `niv`, and also because of
+[this post by one of Lix's maintainers][pinning-nixos-with-npins]
+that uses it as well.
 
 Regarding schema, I'm not sure why we don't think of `default.nix` more
 creatively (or really, more boringly); why not just imitate Flake
