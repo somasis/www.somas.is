@@ -11,8 +11,8 @@ description: A place for me to get the thoughts out of my brain
 breadcrumbs: <br/>notes
 ---
 
-*notes* is a place for me to document and explain things so that I don't forget them, or to get
-thoughts out of my head that are bouncing around incessantly.
+*notes* is a place for me to document and explain things so that I don't forget
+them, or to get thoughts out of my head that are bouncing around incessantly.
 
 [subscribe](notes.atom) in your favorite RSS reader.
 
