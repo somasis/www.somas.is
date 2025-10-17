@@ -1,5 +1,6 @@
 ---
 title: Organizing your Nix configuration without flakes
+description: How to get the good parts of Nix Flakes without the bad parts
 date: 2025-10-17
 breadcrumbs: <br/><a href='notes.html'>notes</a>
 ---
@@ -239,6 +240,9 @@ let
 in
 {
   inherit self sources;
+
+  # Setting outPath means that you can do things
+  # "${self}/modules/my-cool-module/thing.nix"
   outPath = ./.;
 
   nixosConfigurations.ilo = nixos nixpkgs ./hosts/ilo;
