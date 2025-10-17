@@ -249,7 +249,7 @@ in
 {
   inherit self sources;
 
-  # Setting outPath means that you can do things
+  # Setting outPath means that you can do things like
   # "${self}/modules/my-cool-module/thing.nix"
   outPath = ./.;
 
