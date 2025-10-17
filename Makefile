@@ -26,6 +26,9 @@ RHIZOMES = \
     rhizome-2020-W47.html
 
 ETC = \
+    avatar.jpg \
+    favicon.png \
+    favicon.ico
 
 FEEDS = \
     notes.atom \
@@ -54,12 +57,14 @@ INSTALLS = ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} ${CSS} ${ETC} feed.xml
 
 DESTDIR ?= ~/mnt/fastmail/www/somas.is
 
-all: FRC etc pages notes rhizomes feeds pdfs
+all: FRC etc pages
+all: feeds pdfs
+all: notes rhizomes
 
 etc: FRC ${ETC}
 pages: FRC ${PAGES}
-notes: FRC ${NOTES} notes.atom notes.adoc
-rhizomes: FRC ${RHIZOMES} rhizome.atom rhizome.adoc
+notes: FRC ${NOTES} notes.atom notes.md
+rhizomes: FRC ${RHIZOMES} rhizome.atom rhizome.md
 feeds: FRC ${FEEDS}
 pdfs: FRC ${PDFS}
 
@@ -69,12 +74,12 @@ watch: FRC all Makefile
 	    | rwc -0cdp \
 	    | xe -0s make
 
-rhizome.html: rhizome.adoc
-rhizome.adoc: rhizome.sh ${RHIZOMES}
+rhizome.html: rhizome.md
+rhizome.md: rhizome.sh ${RHIZOMES}
 	./rhizome.sh ${RHIZOMES} > $@
 
-notes.html: notes.adoc
-notes.adoc: notes.sh ${NOTES}
+notes.html: notes.md
+notes.md: notes.sh ${NOTES}
 	./notes.sh ${NOTES} > $@
 
 notes.atom: atom.sh ${NOTES}
@@ -90,6 +95,26 @@ rhizome.atom: atom.sh ${RHIZOMES}
 	    -u 'https://somas.is/rhizome.html' \
 	    -s 'tumblelog type... thing. ' \
 	    ${RHIZOMES} > $@
+
+.SUFFIXES: .md .html
+.md.html:
+	pandoc --standalone \
+	    --defaults=default.md.yml \
+	    --template=templates/default.html \
+	    -t html \
+	    -i $< \
+	    -o $@
+
+avatar.jpg:
+	curl -Lf \
+	    -o $@ \
+	    "https://www.gravatar.com/avatar/a187e38560bb56f5231cd19e45ad80f6?s=512"
+
+favicon.png: avatar.jpg
+	magick $< $@
+
+favicon.ico: avatar.jpg
+	magick $< $@
 
 cv.html: $(CV_DEPS) cv.adoc cv.yml cv.css
 	asciidoctor \
@@ -119,10 +144,6 @@ resume.pdf: $(CV_DEPS) resume.adoc cv.yml
 	    -a pdf-theme=cv.yml \
 	    -o $@ resume.adoc
 
-.SUFFIXES: .adoc .html
-.adoc.html:
-	./temp.sh $< > $@
-
 redirects: FRC redirect.sh
 	./redirect.sh /note-2019-11-14.html \
 	    2019/11/14/transness-and-philosophy-exclusive.html \
@@ -141,22 +162,31 @@ install: all redirects
 	rsync -ru ${INSTALLS} ${DESTDIR}/
 
 clean: FRC
-	rm -f ${ETC} ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} notes.adoc rhizome.adoc
+	rm -f ${ETC} ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} notes.md rhizome.md
 
 note-new: FRC
-	@[ -f note-current.adoc ] || cp note-template.adoc note-current.adoc
-	@echo "${PWD}"/note-current.adoc
+	@[ -f note-current.md ] || cp note-template.md note-current.md
+	@echo "${PWD}"/note-current.md
 
 note-publish: FRC
 	@date=$$(date +%Y-%m-%d) \
-	    && slug=$$(asciidoctor-query title note-current.adoc | slugify --stdin --max-length 48 --word-boundary --save-order || :) \
-	    && if ! [ -e "note-$date.adoc" ]; then mv -v note-current.adoc "note-$date${slug:+-$slug}.adoc"; fi
+	    && slug=$$(
+	        pandoc -t html -i note-current.md -o - \
+	            | pup 'body header h1.title text{}' \
+	            | slugify --stdin \
+	                --max-length 48 \
+	                --word-boundary \
+	                --save-order \
+            || :) \
+	    && if ! [ -e "note-$date.md" ]; then \
+	        mv -v note-current.md "note-$date${slug:+-$slug}.md"
+	    fi
 
 rhizome-new: FRC
-	@[ -f rhizome-current.adoc ] || cp rhizome-template.adoc rhizome-current.adoc
-	@echo "${PWD}"/rhizome-current.adoc
+	@[ -f rhizome-current.md ] || cp rhizome-template.md rhizome-current.md
+	@echo "${PWD}"/rhizome-current.md
 
 rhizome-publish: FRC
-	[ -f rhizome-$$(date +%Y-W%W).adoc ] || mv rhizome-current.adoc rhizome-$$(date +%Y-W%W).adoc
+	[ -f rhizome-$$(date +%Y-W%W).md ] || mv rhizome-current.md rhizome-$$(date +%Y-W%W).md
 
 FRC:

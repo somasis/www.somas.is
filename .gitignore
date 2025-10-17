@@ -3,12 +3,14 @@
 *.html
 *.pdf
 
-index-latest.jpg
-index-major.jpg
-notes.adoc
-rhizome.adoc
-note-current.adoc
-rhizome-current.adoc
+favicon.ico
+favicon.png
+avatar.jpg
+
+notes.md
+rhizome.md
+note-current.md
+rhizome-current.md
 
 # Redirects
 music.html

@@ -3,7 +3,7 @@
 export PATH="${PWD}:${PATH}"
 set -e
 
-title='~somasis'
+title='somas.is'
 
 root='https://somas.is'
 site="${root}"
@@ -47,16 +47,15 @@ while [ $# -gt 0 ]; do
     b="${1%.html}"
 
     url="${root}"/"${1}"
-    title=$(asciidoctor-query "${b}".adoc doctitle 2>/dev/null || printf '%s\n' "${b#*-}")
-    summary=$(asciidoctor-query "${b}".adoc description 2>/dev/null || :)
-    updated=$(LC_ALL=C TZ=UTC stat -c '%y' "${b}".adoc | sed -E 's/\.[0-9]+ //; s/ /T/; s/([0-9]{2})([0-9]{2})$/\1:\2/')
+    title=$(pup 'body header h1.title text{}' <"${1}" || printf '%s\n' "${b#*-}")
+    updated=$(LC_ALL=C TZ=UTC stat -c '%y' "${1}" | sed -E 's/\.[0-9]+ //; s/ /T/; s/([0-9]{2})([0-9]{2})$/\1:\2/')
 
     case "${1}" in
         rhizome-*)
             date="${b#*-}"
             ;;
         *)
-            date=$(asciidoctor-query "${b}".adoc docdate)
+            date=$(pup 'head meta[name="dcterms.date"] attr{content}' <"${1}")
             ;;
     esac
 
@@ -69,7 +68,7 @@ while [ $# -gt 0 ]; do
 <published>${date}T00:00:00+00:00</published>
 <updated>${updated}</updated>
 <content type="html">
-$(asciidoctor -r asciidoctor-html5s -b html5s -s -o - "${b}".adoc | sed 's/</\&lt;/g; s/>/\&gt;/g')
+$(pandoc -t html "$1" -o - | sed 's/</\&lt;/g; s/>/\&gt;/g')
 </content>
 </entry>
 EOF
