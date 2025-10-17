@@ -1,13 +1,12 @@
 ---
 title: transgender ghosts
-title-prefix: somas.is/notes
+
 author: Kylie McClain
 date: 2021-11-22
 # description: sometimes your history is just one life haunting another
 keywords: trans, philosophy, critical theory
 lang: en-US
-breadcrumbs: |
-    [notes](notes.html)
+breadcrumbs: <br/><a href='notes.html'>notes</a>
 ---
 
 Recently I studied an exerpt from *Dialectic of Enlightenment*, by Max

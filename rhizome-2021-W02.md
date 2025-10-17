@@ -1,3 +1,9 @@
+---
+
+author: Kylie McClain
+breadcrumbs: <br/><a href='rhizome.html'>rhizome</a>
+---
+
 - [Should we stop?](http://blog.spencermounta.in/2020/should-we-stop/index.html),
   a really beautifully put together piece thinking about how maybe the world
   must change before software is good.

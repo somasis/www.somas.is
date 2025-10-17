@@ -11,6 +11,7 @@ PAGES = \
 
 # newest to oldest
 NOTES = \
+    note-organizing-nix-configuration-without-flakes.html \
     note-tgirl-ghosts.html \
     note-beets-lossless-and-lossy.html \
     note-2021-04-06.html \
@@ -39,8 +40,7 @@ PDFS = \
     resume.pdf
 
 CSS = \
-    cv.css \
-    style.css
+    cv.css
 
 CV_DEPS = \
     cv.css \

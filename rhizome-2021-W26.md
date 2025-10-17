@@ -1,3 +1,9 @@
+---
+
+author: Kylie McClain
+breadcrumbs: <br/><a href='rhizome.html'>rhizome</a>
+---
+
 lookie:
 
 - [sfizz](https://sfz.tools/sfizz/): Open source soundfont player using

@@ -1,3 +1,9 @@
+---
+
+author: Kylie McClain
+breadcrumbs: <br/><a href='rhizome.html'>rhizome</a>
+---
+
 lookie:
 
 - [catclock](https://github.com/BarkyTheDog/catclock), an adorable

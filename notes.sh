@@ -7,10 +7,8 @@ export PATH="${PWD}":"${PATH}"
 
 cat <<EOF
 ---
-title: notes
-title-prefix: somas.is/notes
-author: Kylie McClain
 description: A place for me to get the thoughts out of my brain
+breadcrumbs: <br/>notes
 ---
 
 *notes* is a place for me to document and explain things so that I don't forget them, or to get

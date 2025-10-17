@@ -5,9 +5,9 @@ set -e
 
 cat <<EOF
 ---
-title-prefix: somas.is/rhizome
 author: Kylie McClain
 description: a tumblelog apprehending multitudes
+breadcrumbs: <br />rhizome
 ---
 
 *rhizome* is a tumblelog inspired by Leah Neukirchen's
@@ -23,17 +23,15 @@ EOF
 
 i=0
 while [ $# -gt 0 ]; do
-    i=$(( i + 1 ))
-    b="${1%.html}"
-    title="${b#rhizome-}"
+        i=$((i + 1))
+        b="${1%.html}"
+        title="${b#rhizome-}"
 
-    echo "[${title}](${1})"
-    [ "${i}" -lt 10 ] \
-        && cat <<EOF
+        echo "[${title}](${1})"
+        [ "${i}" -lt 10 ] &&
+                cat <<EOF
 <blockquote>$(pandoc -t markdown -o - "${b}.md")</blockquote>
 EOF
-    echo
-    shift
+        echo
+        shift
 done
-
-

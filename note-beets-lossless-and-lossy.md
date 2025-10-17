@@ -1,9 +1,10 @@
 ---
 title: music library maintenance
-title-prefix: somas.is notes
+
 description: I have lots of music and I am a cheapskate who will never buy a new hard drive
 lang: en-US
 date: 2021-05-21
+breadcrumbs: <br/><a href='notes.html'>notes</a>
 ---
 
 I was talking with a friend a few days ago because they posted about how
