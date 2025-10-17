@@ -125,7 +125,7 @@ Here's everything I've done:
   `execline` would be the primary system scripting language, and
   LLVM/clang/libc/lld would be the C/C toolchain; there would be an
   emphasis on better support for internationalization than most systems
-  of this breed would usually provide, and *all* documentation would be
+  of this breed would usually provide, and _all_ documentation would be
   provided in `mandoc` format, no GNU Info or anything like that. Most
   importantly, it had a very cool logo. It got nowhere, but it was fun
   to have a hobby horse for a while. The toolchain was one of the
@@ -269,7 +269,7 @@ Here's everything I've done:
   > Upon hitting the Quit Button, \"You want to quit this awesome
   > game?\" popped up in front of me. I'm still not sure what game it
   > was talking about.
-  ---[MFGG user Zero Kirby](https://mfgg.net/index.php?act=resdb&param=02&c=3&id=14606&gid=13515)
+  > ---[MFGG user Zero Kirby](https://mfgg.net/index.php?act=resdb&param=02&c=3&id=14606&gid=13515)
 
 ### music
 

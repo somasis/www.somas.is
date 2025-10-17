@@ -1,56 +1,56 @@
 extends: default-for-print-with-font-fallbacks
 
 font:
-    catalog:
-        merge: true
-        Times-Roman:
-            normal: LiberationSerif-Regular.ttf
-            italic: LiberationSerif-Italic.ttf
-            bold: LiberationSerif-Bold.ttf
-            bold_italic: LiberationSerif-BoldItalic.ttf
+  catalog:
+    merge: true
+    Times-Roman:
+      normal: LiberationSerif-Regular.ttf
+      italic: LiberationSerif-Italic.ttf
+      bold: LiberationSerif-Bold.ttf
+      bold_italic: LiberationSerif-BoldItalic.ttf
 
 page:
-    margin: [1in, 1in, 1in, 1in]
-    size: Letter
+  margin: [1in, 1in, 1in, 1in]
+  size: Letter
 
 base:
-    font-family: Times-Roman
-    font-size: 12
-    line-height: 1.25
-    text-align: left
+  font-family: Times-Roman
+  font-size: 12
+  line-height: 1.25
+  text-align: left
 
 heading:
-    min-height-after: auto
+  min-height-after: auto
 
-    font-size: 12
+  font-size: 12
 
-    h1-font-size: 16
-    h2-font-size: 12
-    h3-font-size: 12
-    h4-font-size: 11
-    h5-font-size: 11
-    h6-font-size: 11
+  h1-font-size: 16
+  h2-font-size: 12
+  h3-font-size: 12
+  h4-font-size: 11
+  h5-font-size: 11
+  h6-font-size: 11
 
-    h1-line-height: 0
-    h2-text-decoration: underline
+  h1-line-height: 0
+  h2-text-decoration: underline
 
 link:
-    font-color: 0000ff
+  font-color: 0000ff
 
 description-list:
-    term-font-style: normal
+  term-font-style: normal
 
 footer:
-    border-width: 0
-    font-size: 12
-    height: 1in
-    recto:
-        left:
-            content: ''
-        right:
-            content: 'McClain {page-number}'
-    verso:
-        left:
-            content: ''
-        right:
-            content: 'McClain {page-number}'
+  border-width: 0
+  font-size: 12
+  height: 1in
+  recto:
+    left:
+      content: ""
+    right:
+      content: "McClain {page-number}"
+  verso:
+    left:
+      content: ""
+    right:
+      content: "McClain {page-number}"

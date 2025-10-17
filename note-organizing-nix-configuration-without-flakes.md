@@ -12,7 +12,6 @@ breadcrumbs: <br/><a href='notes.html'>notes</a>
 [not-channels-vs-flakes]: https://samuel.dionne-riel.com/blog/2024/05/07/its-not-flakes-vs-channels.html
 [npins-module]: https://github.com/somasis/puter/blob/4f8f4a48eec440501f8fb844d16458060ec04955/modules/nixos/npins.nix
 [puter]: https://github.com/somasis/puter/tree/4f8f4a48eec440501f8fb844d16458060ec04955
-
 [niv]: https://github.com/nmattia/niv
 [npins]: https://github.com/andir/npins/
 [lon]: https://github.com/nikstur/lon
@@ -41,13 +40,15 @@ The reasons that we have Flakes make lots of sense,
 but the implementation of it, as it stands now,
 is [kinda already a form of technical debt][flakes-feature-freeze].
 
-[^learning]: Plus, if you've oriented your understanding of Nix around flakes,
+[^learning]:
+    Plus, if you've oriented your understanding of Nix around flakes,
     some parts of the language will look kinda weird comparatively,
     and you'll probably avoid learning how to properly "hold" the tools that
     Nix gives you, usually trying to do _everything_ through the mechanisms
     that Flakes provide, when they could be done much more simply.
 
 ### The good parts of Flakes
+
 1.  They provide a schema for accessing parts of a project
     (`nixosModules`, `nixosConfigurations`, `packages`, etc.), whereas
     it feels like every module structures everything differently in lieu
@@ -67,7 +68,8 @@ is [kinda already a form of technical debt][flakes-feature-freeze].
     it somewhere like `project.nixosModules.default`, which sounds a
     lot better.
 
-[^channels]: And when I say \"channels\", to be precise,
+[^channels]:
+    And when I say \"channels\", to be precise,
     I'm referring to the model of dependency management implemented with
     `nix-channel`, where a channel (like `nixpkgs`, or `home-manager`)
     is configured _by the system environment, and not the Nix stuff being built_,
@@ -79,12 +81,14 @@ is [kinda already a form of technical debt][flakes-feature-freeze].
     which is then looked up when the code says `import <nixpkgs> {}`...​
     [See here for a better explanation.][not-channels-vs-flakes]
 
-[^default.nix]: `default.nix` could be an attribute set, or one single
+[^default.nix]:
+    `default.nix` could be an attribute set, or one single
     `stdenv.mkDerivation`. Or maybe the project doesn't even provide
     a `default.nix` and you need to `import "${project}/nixos-module.nix"`
     instead...​
 
 ### The bad parts of Flakes
+
 1.  the Flake schema is very limited and it is **under**-standardized,
     and sometimes it feels like every module structures everything a
     little differently, because the schema and implementation hasn't
@@ -102,7 +106,8 @@ is [kinda already a form of technical debt][flakes-feature-freeze].
     proposed, its permanent experimental state—eventually, there's a lot
     of horrible rabbit holes you fall into once you try to get creative.[^creative]
 
-[^creative]: The Flake schema is not, as it might appear, a normal
+[^creative]:
+    The Flake schema is not, as it might appear, a normal
     attribute set, and also you have to deal with nixpkgs' systems
     (`x86_64-linux` etc.) the moment you step out from the `nixosConfigurations.`
     comfort zone, because you want to put a package you made under `packages`
@@ -151,7 +156,7 @@ have never been much of a programmer in the first place.
 Our solution of having `default.nix` just imitate the Flakes schema is
 nice for our own uses, and for anyone who might want to use something
 from our Nix project. That said, the real benefit of the schema imposed
-by Flakes is that *other people use it too*, so it helps those unfamiliar
+by Flakes is that _other people use it too_, so it helps those unfamiliar
 to get a feeling for how a Nix project is laid out, if they have the work
 of others to refer to.
 So it's not really a complete replacement there.
@@ -159,7 +164,8 @@ But if you can live with the inconsistency of how modules get
 found[^imports-inconsistency] in your system configurations's `imports` list,
 it's pretty nice.
 
-[^imports-inconsistency]: To name a few examples:
+[^imports-inconsistency]:
+    To name a few examples:
     `self.nixosModules.my-cool-module`,
     `"${agenix}/modules/age.nix"`,
     `"${agenix}/modules/age-home.nix"`,
@@ -324,5 +330,6 @@ It's very nice and it feels much simpler in terms of project structure.
 
 Feel free to dig around in my [configuration][puter] for more.
 
-[^/etc/npins]: Using a layer of indirection in `/etc/npins/<source>` which points
+[^/etc/npins]:
+    Using a layer of indirection in `/etc/npins/<source>` which points
     to `sources.<source>`.

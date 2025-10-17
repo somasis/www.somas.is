@@ -9,12 +9,12 @@ lang: en-US
 breadcrumbs: <br/><a href='notes.html'>notes</a>
 ---
 
-Recently I studied an exerpt from *Dialectic of Enlightenment*, by Max
+Recently I studied an exerpt from _Dialectic of Enlightenment_, by Max
 Horkheimer and Theodor Adorno in class, and recalled something from a
 past transgender history class. This is adapted from a writing for that
 class that I feel particularly good about.
 
-------------------------------------------------------------------------
+---
 
 I will draw some comparisons that may appear crude on the surface,
 because the comparison between someone's transition and their death has
@@ -24,7 +24,7 @@ Unfortunately, I can't at the moment find the exact sources which I
 first read about this, so I'll be using a source that is not where I
 actually first read this. I'll also draw on my own anecdotal experience.
 
-## a past life haunting the present {#_a_past_life_haunting_the_present}
+## a past life haunting the present {#\_a_past_life_haunting_the_present}
 
 In \"On The Theory of Ghosts\", Sigmund Freud's theory of the belief in
 ghosts is discussed:
@@ -41,7 +41,7 @@ ghosts is discussed:
 > a mere succession of instantaneous presents, which leave behind no
 > trace, or rather, the trace of \[...​\] something irrational,
 > superfluous, utterly obsolete.
---- On The Theory of Ghosts, Dialectic of Enlightenment
+> --- On The Theory of Ghosts, Dialectic of Enlightenment
 
 The past is viewed with contempt and is liable to be suspect. As seen
 plenty with current online toxic transphobic discussions, with

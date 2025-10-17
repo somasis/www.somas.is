@@ -1,5 +1,4 @@
 ---
-
 author: Kylie McClain
 breadcrumbs: <br/><a href='rhizome.html'>rhizome</a>
 ---

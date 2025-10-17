@@ -79,7 +79,7 @@ Again, it's using the `-{min,max}depth` so as to catch all the
 categorizing directories (\"stores-\*\", \"rips\"), but nothing under
 them.
 
-## actually importing the music {#_actually_importing_the_music}
+## actually importing the music {#\_actually_importing_the_music}
 
 When I get a new music release, I put it in the corresponding source
 directory, and run `make beet-import`.
@@ -91,41 +91,41 @@ it comes to what my music library contains. If a single thing is linked
 to a release other than what it actually is, it invalidates my trust in
 the accuracy of my entire library's tagging. Accuracy is important for
 me, as someone who has a lot of music and uses much of it when
-*producing* more music. So, I run it in timid mode and validate the
+_producing_ more music. So, I run it in timid mode and validate the
 results myself.
 
 The music is imported to "/mnt/raid/library/audio/lossless". I like to
 keep the directory mounted over `sshfs`, so I can access it from
 "~/audio/lossless" on my laptop.
 
-## converting the music {#_converting_the_music}
+## converting the music {#\_converting_the_music}
 
 The relevant beets `config.yml` snippet:
 
 ```yaml
 convert:
-    copy_album_art: yes
-    album_art_maxwidth: 800
-    embed: no
-    never_convert_lossy_files: yes
-    formats:
-        opus:
-            command: ffmpeg -i $source -y -vn -acodec libopus -ab 96k -ar 48000 $dest
-            extension: opus
+  copy_album_art: yes
+  album_art_maxwidth: 800
+  embed: no
+  never_convert_lossy_files: yes
+  formats:
+    opus:
+      command: ffmpeg -i $source -y -vn -acodec libopus -ab 96k -ar 48000 $dest
+      extension: opus
 ```
 
 Which is to say...​
 
 - `embed:no, copy_album_art: yes`: No embedding the artwork, it takes up
-  more space since it duplicates the art for *every single track you
-  store*. Copy it instead, to \"cover.jpg\".
+  more space since it duplicates the art for _every single track you
+  store_. Copy it instead, to \"cover.jpg\".
 - `album_art_maxwidth: 800`: The cover art for Minecraft, Volume Alpha,
   is 2676x2676. I assure you my phone doesn't need that resolution.
 - `never_convert_lossy_files: yes`: No converting files that are already
   a lossy format (which for me tends to be mp3s, because pony music is
   always released in a bespoke fashion).
 - Lastly, define how we want to convert our library to `opus`. I use 96k
-  Opus, and the `-ar 48000` *looks* unnecessary, but actually is not:
+  Opus, and the `-ar 48000` _looks_ unnecessary, but actually is not:
   it's to make sure I don't have a 96kHz rip of something converted to
   Opus, with the codec happily supporting a sample rate that large. So
   just homogenize everything down to 48k, Opus's default sample rate.
@@ -141,12 +141,12 @@ I wish I could just stop there and say that's how I maintain the two
 copies of my library, but alas. We have arrived upon the first problem
 with `beet convert`.
 
-## duplicates and workarounds, or, the important headache you'll eventally get {#_duplicates_and_workarounds_or_the_important_headache_youll_eventally_get}
+## duplicates and workarounds, or, the important headache you'll eventally get {#\_duplicates_and_workarounds_or_the_important_headache_youll_eventally_get}
 
 Though [beets's homepage](https://beets.io/) proudly displays the
 [`beet convert`](https://beets.readthedocs.io/en/v1.4.9/plugins/convert.html)
 plugin for transcoding audio to any format desired, it does not do the
-upkeep of maintaining a library's *structure* in the process as well.
+upkeep of maintaining a library's _structure_ in the process as well.
 
 The problem lies in removing and renaming tracks. beets will shift files
 in your library directory (which in my case is the lossless directory)
@@ -168,13 +168,13 @@ script in my \"\~/bin\" as well. It's a little wonky in terms of false
 positives when it comes to beets\' asciification, for reasons I have not
 yet figured out.
 
-## so yeah {#_so_yeah}
+## so yeah {#\_so_yeah}
 
 This is essentially the hard parts. The rest is pretty standard beets
-configuration, and the documentation is *otherwise* excellent, except
+configuration, and the documentation is _otherwise_ excellent, except
 for these particularly irritating pitfalls.
 
-beets does...​ a *staggering* amount, and without choking as hard as it
+beets does...​ a _staggering_ amount, and without choking as hard as it
 could. I've really considered writing my own music managing utility as
 of late but I just haven't had the motivation to uproot my library
 again.
