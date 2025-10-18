@@ -11,22 +11,22 @@ bluesky-post: https://bsky.app/profile/somas.is/post/3m3ghkp7jd22b
 [flakes-stabilization-proposal]: https://wiki.lix.systems/books/lix-contributors/page/flake-stabilisation-proposal
 [pinning-nixos-with-npins]: https://jade.fyi/blog/pinning-nixos-with-npins/
 [not-channels-vs-flakes]: https://samuel.dionne-riel.com/blog/2024/05/07/its-not-flakes-vs-channels.html
-[npins-module]: https://github.com/somasis/puter/blob/4f8f4a48eec440501f8fb844d16458060ec04955/modules/nixos/npins.nix
-[puter]: https://github.com/somasis/puter/tree/4f8f4a48eec440501f8fb844d16458060ec04955
+[npins-module]: https://github.com/somasis/puter/blob/main/modules/nixos/npins.nix
+[puter]: https://github.com/somasis/puter
 [niv]: https://github.com/nmattia/niv
-[npins]: https://github.com/andir/npins/
+[npins]: https://github.com/andir/npins
 [lon]: https://github.com/nikstur/lon
 
-Once, I used Flakes. Then, I realized how much they actually complicate
-things. Which is to say, this week I decided to rip out all the Flakes
-stuff from my [dotfiles][puter]. This is a
-big event, I suppose, because Flakes were the first thing I had an
-opinion about when I started using NixOS in 2022, and I figured they
-were the way of the future and that they'd not be experimental
-eventually and that I might as well learn that now while I'm getting
-started. It is now 2025, and I am unemployed and trying to find some way
-into tech pretty unsuccessfully so far, having blown off grad school; as
-you can imagine, I have lots of free time.
+Once, I used [Flakes](https://wiki.nixos.org/wiki/Flakes).
+Then, I realized how much they actually complicate things.
+Which is to say, this week I decided to rip out all the Flakes stuff from my
+[dotfiles][puter].
+This is a big event, I suppose, because Flakes were the first thing I had an
+opinion about when I started using NixOS in 2022,
+and I figured they were the way of the future and that they'd not be experimental
+eventually and that I might as well learn that now while I'm getting started.
+It is now 2025, and I am unemployed and trying to find some way into tech pretty
+unsuccessfully so far, having blown off grad school; as you can imagine, I have lots of free time.
 
 Flakes are good for finding a place to get your footing when starting to learn
 the Nix language—there are in fact, _too many_ places to start from in Nix—and
@@ -59,15 +59,15 @@ is [kinda already a form of technical debt][flakes-feature-freeze].
     version control (like `nix flake update --commit-lock-file`),
 3.  they give us an okay/fine built-in alternative to Nix
     Channels,[^channels] which we ought to discourage using because
-    Channels as demonstrated by resources like the NixOS Manual are
-    a very undeterministically designed concept that sticks out like
-    a sore thumb once you're familiar with the ideas behind Flakes
+    Channels (as demonstrated by resources like the NixOS Manual)
+    are a very undeterministically designed concept that sticks out
+    like a sore thumb once you're familiar with the ideas behind Flakes
     at least,
 4.  and they present an obvious entry-point to a Nix project, whereas
     otherwise the entry-point could be basically anything.[^default.nix]
     But if every project has a `flake.nix`, then you could just expect
-    it somewhere like `project.nixosModules.default`, which sounds a
-    lot better.
+    your NixOS module somewhere like `project.nixosModules.default`,
+    which sounds a lot better.
 
 [^channels]:
     And when I say \"channels\", to be precise,
@@ -100,12 +100,13 @@ is [kinda already a form of technical debt][flakes-feature-freeze].
 2.  Flakes seems to be stuck in a state of eternal experimental status,
     and many stakeholders involved seem intent to just run with it now,
     especially because company projects, through sheer labor power and
-    marketing, can divide an ecosystem very easily, if the goal is a
-    paycheck and not a community authored, well-designed language, but I
-    digress;
-3.  as a result of these other factors—its lack of evolution since being
-    proposed, its permanent experimental state—eventually, there's a lot
-    of horrible rabbit holes you fall into once you try to get creative.[^creative]
+    marketing, can divide an ecosystem very easily, particularly if the
+    goal is a paycheck and not a community authored, well-designed
+    language, but I digress;
+3.  as a result of these other factors—Flakes' lack of evolution since
+    being proposed, and its permanent experimental state—eventually,
+    there's a lot of horrible rabbit holes you fall into once you try
+    to get creative.[^creative]
 
 [^creative]:
     The Flake schema is not, as it might appear, a normal
@@ -130,16 +131,27 @@ is [kinda already a form of technical debt][flakes-feature-freeze].
     if I want something like `pkgs.unstable.firefox`, and there's the whole
     `inputs.*.follows.*` thing...​ It is a real disaster.
 
+[flakeless-pure-eval]: https://github.com/NixOS/nix/issues/9329
+[devenv-eval-cache]: https://devenv.sh/blog/2024/10/03/devenv-13-instant-developer-environments-with-nix-caching/#how-does-it-work
+
 We can get a lot of the good parts of Flakes without the bad parts.
+
+There are still some features that we cannot easily separate from Flakes.
+Namely:
+pure evaluation,
+[which doesn't _necessarily_ need to be tied to Flakes][flakeless-pure-eval];
+and evaluation caching, though [projects
+like devenv have found tricks to do it without Flakes][devenv-eval-cache].
 
 ## What instead?
 
 For dependency pinning, there's tools like [`niv`][niv], [`npins`][npins],
 [`lon`][lon] (and probably many others) that do dependency pinning just fine.
-I use `npins`, mostly because it seems like the most widely used alternative
-to `niv`, and also because of
+I use `npins`,
+mostly because it seems like the most widely used alternative to `niv`,
+and also because of
 [this post by one of Lix's maintainers][pinning-nixos-with-npins]
-that uses it as well.
+that makes it look really nice.
 
 Regarding schema, I'm not sure why we don't think of `default.nix` more
 creatively (or really, more boringly); why not just imitate Flake
@@ -158,26 +170,28 @@ have never been much of a programmer in the first place.
 
 Our solution of having `default.nix` just imitate the Flakes schema is
 nice for our own uses, and for anyone who might want to use something
-from our Nix project. That said, the real benefit of the schema imposed
+from our Nix project.
+That said, the real benefit of the schema imposed
 by Flakes is that _other people use it too_, so it helps those unfamiliar
 to get a feeling for how a Nix project is laid out, if they have the work
 of others to refer to.
 So it's not really a complete replacement there.
 But if you can live with the inconsistency of how modules get
-found[^imports-inconsistency] in your system configurations's `imports` list,
+found in your system configurations's `imports` list[^imports-inconsistency]
 it's pretty nice.
 
 [^imports-inconsistency]:
-    To name a few examples:
-    `self.nixosModules.my-cool-module`,
+    To show a few examples of all the different ways you might import a module:
+    there's `self.nixosModules.my-cool-module`,
     `"${agenix}/modules/age.nix"`,
     `"${agenix}/modules/age-home.nix"`,
-    `"${nixpkgs}/nixos/modules/profiles/hardened.nix"` (profiles are also
-    accessed like this in Flakes, to be fair),
+    `"${nixpkgs}/nixos/modules/profiles/hardened.nix"` (nixpkgs' profiles are
+    also accessed like this in Flakes, to be fair),
     `"${home-manager}/nixos"`,
     `"${impermanence}/nixos.nix"`,
     `"${impermanence}/home-manager.nix"`,
-    `(imports sources.nixos-cli { inherit pkgs; }).module`,
+    `(imports sources.nixos-cli { inherit pkgs; }).module` (honestly this
+    one might be my fault),
     `self.homeManagerModules.my-cool-module`,
     and `"${plasma-manager}/modules"`. That's just what's in my own config.
     I dunno, I guess it just bugs me to see so much variation in how you just
@@ -305,10 +319,18 @@ in
 }
 ```
 
-I imagine some reading may have objections to passing things via `specialArgs`,
-but I think this is an exception that makes sense given how we're integrating
-`npins` into the whole structure, equivalent to how people use `inputs` in
-Flakes land.
+I imagine some reading may have objections to passing `sources` and `self`
+to things via `specialArgs`,
+but I think this is an exception that makes sense.
+We're integrating `npins` into the whole structure of our project^[or directory,
+or repository, whatever you want to call it, whatever it is], in a way that is
+basically equivalent to how people use `self` in Flakes land to refer to the
+top level of their Flake, and `inputs` to get its input sources.
+Usually, one should use `_module.args`;
+but since we want to be able to use our `sources` value in `imports`,
+we have to pass it through `specialArgs`,
+otherwise it'd cause you to run into an infinite recursion
+while the NixOS module system tries to get the value of `sources`.
 
 [no-specialArgs]: https://github.com/NixOS/nixpkgs/blob/32397eb652bd302011080df0a4531165a907637c/nixos/default.nix#L1-L4
 
@@ -316,8 +338,9 @@ As to why not use `import "${nixpkgs}/nixos"`, following the channels-utilizing
 convention of `import <nixpkgs/nixos>`? Well, that was what I thought would look
 nicer as well, but [that interface doesn't allow for setting `specialArgs`, for
 some reason][no-specialArgs]; the only arguments it accepts are `configuration`
-and `modules`. I might submit a pull request, but I can imagine there's also
-just some reason for this choice that I don't know.
+and `modules`.
+There's [a pull request](https://github.com/NixOS/nixpkgs/pull/442886) open to
+add `specialArgs` to its function arguments, it turns out.
 
 If you want to use this workflow for your system, you might also want to check
 out [this little module][npins-module] I wrote that ensures usage of `npins`
@@ -336,3 +359,18 @@ Feel free to dig around in my [configuration][puter] for more.
 [^/etc/npins]:
     Using a layer of indirection in `/etc/npins/<source>` which points
     to `sources.<source>`.
+
+---
+
+Update (2025-10-22):
+
+- [Discussed on NixOS Discourse](https://discourse.nixos.org/t/organizing-your-nix-configuration-without-flakes/71009/3).
+- [Discussed on Lobste.rs](https://lobste.rs/s/ikcg1l/organizing_your_nix_configuration).
+- Changed remark about `import <nixpkgs/nixos>` not accepting `specialArgs`
+  to include a pull request brought to my attention on NixOS Discourse.
+- Added a remark about why we use `specialArgs` instead of the more common
+  `_module.args`.
+- Added a remark about the features that we cannot yet easily do without Flakes,
+  in particular pure evaluation and evaluation caching.
+
+Thanks everyone for all your feedback on this post!

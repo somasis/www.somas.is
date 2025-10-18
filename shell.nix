@@ -8,6 +8,7 @@ let
 in
 pkgs.mkShell {
   buildInputs = git-hooks.enabledPackages ++ [
+    pkgs.devd
     pkgs.minify
     pkgs.gnumake
     pkgs.npins
