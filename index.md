@@ -3,67 +3,79 @@ title: the homepage of Kylie McClain
 description: The personal homepage of Kylie McClain / somasis.
 ---
 
-## who
-
-Kylie McClain: 27/f/NC; somasis: musician and username
+Kylie McClain: 27/f/NC[^username]
 
 [check out my resume](resume.html).
 
 [notes](notes.html)
 
-## did what
+[^username]: a.k.a. somasis [/soʊmeɪsɪs/; so·may·sis]: musician and username
+
+## things I've done
+
+[LinkedIn]: https://www.linkedin.com/in/kylie-mcclain/
+[june]: https://causal.agency
+[nixpkgs]: https://github.com/nixos/nixpkgs
+[catgirl]: https://git.causal.agency/catgirl
+[catgirl-tokipona]: https://git.causal.agency/catgirl/?h=somasis/tokipona
+[somasis/puter]: https://github.com/somasis/puter
+[somasis/hunspell-tok]: https://github.com/somasis/hunspell-tok
+[somasis/discord-theme-irc]: https://github.com/somasis/discord-theme-irc
+[somasis/discord-tokipona]: https://github.com/somasis/discord-tokipona
+[music-wnyu]: https://somasis.bandcamp.com/album/2021-03-09-live-from-the-new-afternoon-show
 
 Most of my projects are immaterial right now.
-[I'm looking for work please hire me.](https://www.linkedin.com/in/kylie-mcclain/)
+[I'm looking for work please hire me.][LinkedIn]
 
 Here's everything I've done:
 
-- In 2024, I finally, finally, finally, graduated from Appalachian State
-  with my B.A. in Philosophy with a minor in Gender, Women, and
-  Sexuality Studies.
-- In late 2023, I presented my capstone to Appalachian State
-  University's Department of Philosophy and Religion. It was titled
-  "Beyond Plunderphonics: A prolegomena to any future revolutionary
-  music."
-- In early 2023, I presented a paper at the 23rd annual Southern
-  Appalachian Undergraduate Philosophy Conference, which took place at
+[Organizing your Nix configuration without flakes]: note-organizing-nix-configuration-without-flakes.html
+
+- In 2025, I wrote a blog post: [Organizing your Nix configuration without flakes].
+- In 2024,
+  I finally, finally, finally, graduated from Appalachian State University
+  with a B.A. in Philosophy, minoring in Gender, Women, and Sexuality Studies.
+  I am a better person for it.
+- In late 2023,
+  I presented my capstone to Appalachian State University's
+  Department of Philosophy and Religion. It was titled "Beyond Plunderphonics:
+  A prolegomena to any future revolutionary music."
+- In early 2023, I presented a paper at the 23rd annual
+  Southern Appalachian Undergraduate Philosophy Conference, which took place at
   UNC Asheville. It was titled "Whatever's Left of Woman." It won first
   place.
-- In 2022, I started using NixOS. I'm a contributor to
-  [nixpkgs](https://github.com/nixos/nixpkgs). I have a kinda decent
-  understanding of the Nix language at this point, having had no prior
-  experience with functional programming paradigms. [Here's my NixOS
-  configuration](https://github.com/somasis/puter).
-- In 2022, I translated [`catgirl`](https://git.causal.agency/catgirl),
-  a terminal-based IRC client that I use developed by my friend june,
-  [to Toki Pona](https://git.causal.agency/catgirl/?h=somasis/tokipona).
-  It's kinda outdated right now but it got the job done. I still use
-  `catgirl`.
-- In 2021, I made
-  [hunspell-tok](https://github.com/somasis/hunspell-tok), a Toki Pona
-  dictionary for [`hunspell(1)`](http://hunspell.github.io/), a popular
-  spell checking library used by many open-source projects.
-- In 2021, I made
-  [discord-theme-irc](https://github.com/somasis/discord-theme-irc), a
-  custom CSS stylesheet for Discord that makes it look a little more
-  like IRC. It's obsolete because I don't really have the energy to
-  maintain it and keep it working. I do use some custom CSS on Discord
-  still, though.
-- In 2021, I made
-  [`discord-tokipona`](https://github.com/somasis/discord-tokipona), a
-  plugin for Powercord (a Discord client mod) that provided an
-  unofficial Toki Pona translation for the client, done in large part by
-  yours truly. I found the [original author's
-  plugin](https://github.com/cominixo/tokipona-discord), and began
-  working on it to improve and further flesh out the translation of
-  Discord's official English strings into Toki Pona (which I had learned
-  over the last year). Eventually, I drifted away from the primary toki
-  pona Discord a little, and the plugin was obsoleted by the
-  discontinuation of Powercord itself; I didn't really have the
-  motivation to get it working on a new client mod, because Discord
-  client mods come and go so much.
-- In early 2021, I hit the big time and [got to make a set for
-  WNYU](https://somasis.bandcamp.com/album/2021-03-09-live-from-the-new-afternoon-show),
+- In 2022, I started using NixOS.
+  I'm a contributor to [nixpkgs].
+  I have a kinda decent understanding of the Nix language at this point,
+  having had no prior experience with functional programming paradigms.
+  [Here's my NixOS configuration][somasis/puter].
+- In 2022, I translated [`catgirl`][catgirl],
+  a terminal-based IRC client that I use developed by my friend [june],
+  [to Toki Pona][catgirl-tokipona].
+  It's kinda outdated right now but it got the job done.
+  I still use `catgirl`.
+- In 2021, I made [hunspell-tok][somasis/hunspell-tok],
+  a Toki Pona dictionary for [`hunspell(1)`](http://hunspell.github.io/),
+  a popular spell checking library used by many open-source projects.
+- In 2021, I made [discord-theme-irc][somasis/discord-theme-irc],
+  a custom CSS stylesheet for Discord that makes it look a little more
+  like an IRC client usually does.
+  It's obsolete because I don't really have the energy to maintain it and
+  keep it working, and Discord is proprietary software that's constantly
+  changing. I do use some custom CSS on Discord still, though.
+- In 2021, I made [discord-tokipona][somasis/discord-tokipona],
+  a plugin for Powercord (a Discord client mod) that provided an unofficial
+  Toki Pona translation for the client, doing most of the translation myself.
+  It was forked from the
+  [original author's plugin](https://github.com/cominixo/tokipona-discord),
+  after I found it and saw it was relatively unmaintained.
+  I began working on it to improve and further flesh out the translation of
+  Discord's official English strings into Toki Pona (a conlang which I had
+  learned over the last year). Eventually, I drifted away from the primary
+  toki pona Discord a little, and the plugin was obsoleted by the discontinuation
+  of Powercord itself; I didn't really have the motivation to get it working on
+  a new client mod, because Discord client mods come and go so much.
+- In early 2021, I hit the big time and [got to make a set for WNYU][music-wnyu],
   the college radio station of, yes, NYU. Then later that year, [I
   released another
   single](https://somasis.bandcamp.com/track/chameleon). And [a cover of
@@ -114,10 +126,10 @@ Here's everything I've done:
   integrated much more flexibly with `s6`, and fit the DJB-type of
   simplicity I really wanted to make a legitimately usable testbed for;
   CI for the distribution would be managed using a very minimalistic
-  daemon called `laminar` that looked cool and tried to follow a Unix
-  Philosophy type design very closely; packages would be written using a
-  bespoke format inspired by KISS Linux and Exherbo's exheres-0 format,
-  named
+  daemon called [`laminar`](https://github.com/ohwgiles/laminar)
+  that looked cool and tried to follow a Unix Philosophy type design
+  very closely; packages would be written using a bespoke format
+  inspired by KISS Linux and Exherbo's exheres-0 format, named
   [`theory`](https://github.com/somasis/praxis/blob/main/theory.5.adoc);
   even better, the package manager would be called
   [`praxis`](https://github.com/somasis/praxis); musl libc would be the
@@ -262,8 +274,8 @@ Here's everything I've done:
   remade](https://github.com/joshua-redfield/lauf)...​
 - In 2008, at the ripe age of 10, I made an account on MFGG---Mario Fan
   Games Galaxy---and published a really poorly made game made by Game
-  Maker, [\"Super Mario Bros.
-  Remasted!\"](https://mfgg.net/index.php?act=resdb&param=02&c=2&id=13515).
+  Maker, ["Super Mario Bros.
+  Remasted!"](https://mfgg.net/index.php?act=resdb&param=02&c=2&id=13515).
   It got rave reviews:
 
   > Upon hitting the Quit Button, \"You want to quit this awesome
@@ -276,7 +288,7 @@ Here's everything I've done:
 Hear all my music on [Bandcamp](https://somasis.bandcamp.com). It is on
 streaming services as well, but those could disappear any day, you know.
 
-### elsewhere
+### socials and other places
 
 - [bluesky: @somas.is](https://bsky.app/profile/somas.is)
 - [linkedin](https://www.linkedin.com/in/kylie-mcclain/)
