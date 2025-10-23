@@ -20,7 +20,7 @@ treefmt-nix.mkWrapper pkgs {
 
     prettier = {
       enable = true;
-      excludes = [ "templates/*" ];
+      excludes = [ "templates/*.html" ];
     };
   };
 }

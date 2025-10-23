@@ -8,10 +8,20 @@ let
 in
 pkgs.mkShell {
   buildInputs = git-hooks.enabledPackages ++ [
+    # keep-sorted start
+    pkgs.asciidoctor-with-extensions
+    pkgs.curlMinimal
     pkgs.devd
-    pkgs.minify
+    pkgs.gitMinimal
     pkgs.gnumake
+    pkgs.imagemagick
+    pkgs.minify
     pkgs.npins
+    pkgs.python3Packages.python-slugify
+    pkgs.rsync
+    pkgs.rwc
+    pkgs.xe
+    # keep-sorted end
     treefmt
   ];
 }
