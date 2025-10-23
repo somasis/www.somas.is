@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+<head>
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+<link rel="webmention" href="https://webmention.io/somas.is/webmention" />
+<script src="https://unpkg.com/webmention.js@0.5.5/static/webmention.min.js" async ></script>
+<link rel="stylesheet" href="https://unpkg.com/webmention.js@0.5.5/static/webmention.css" />
+
+$if(bluesky-post)$
+<link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.12.0/dist/bluesky-comments.css" />
+<script defer type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18",
+    "react-dom/client": "https://esm.sh/react-dom@18/client",
+    "bluesky-comments": "https://unpkg.com/bluesky-comments@0.12.0/dist/bluesky-comments.es.js"
+  }
+}
+</script>
+<script defer type="module">
+  import { createElement } from 'react';
+  import { createRoot } from 'react-dom/client';
+  import { BlueskyComments } from 'bluesky-comments';
+
+  const author = 'somas.is';
+  const container = document.getElementById('bluesky-comments');
+  const root = createRoot(container);
+  root.render(
+    createElement(BlueskyComments, {
+      "author": author,
+      "uri": "$bluesky-post$",
+    })
+  );
+</script>
+<style>
+#bluesky-comments ._container_yf3k8_1 {
+  max-width: unset;
+}
+</style>
+$endif$
+
+$for(author-meta)$
+<meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+<meta name="dcterms.date" content="$date-meta$" />
+$endif$
+$if(keywords)$
+<meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+$endif$
+$if(description-meta)$
+<meta name="description" content="$description-meta$" />
+<meta property="og:description" content="$description-meta$" />
+$endif$
+<title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+<meta property="og:title" content="$title$" />
+$for(css)$
+<link rel="stylesheet" href="$css$" />
+$endfor$
+$for(header-includes)$
+$header-includes$
+$endfor$
+$if(math)$
+$math$
+$endif$
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+<nav>
+$if(breadcrumbs)$
+<a href='index.html'>somas.is</a>$breadcrumbs$
+$else$
+somas.is
+$endif$
+</nav>
+$if(title)$
+<header id="title-block-header">
+<h1 class="title">$title$</h1>
+$if(subtitle)$
+<p class="subtitle">$subtitle$</p>
+$endif$
+$if(abstract)$
+<div class="abstract">
+<div class="abstract-title">$abstract-title$</div>
+$abstract$
+</div>
+$endif$
+</header>
+$endif$
+$if(toc)$
+<nav id="$idprefix$TOC" role="doc-toc">
+$if(toc-title)$
+<h2 id="$idprefix$toc-title">$toc-title$</h2>
+$endif$
+$table-of-contents$
+</nav>
+$endif$
+$body$
+$for(author)$
+$if(author.name)$
+<p class="author">$author.name$
+$if(author.email)$&lt;<a href="mailto:$author.email$" $author.rel$>$author.email$</a>&gt;$endif$
+</p>
+$endif$
+$endfor$
+$if(date)$
+<p class="date">$date$</p>
+$endif$
+<div id="webmentions"></div>
+$if(bluesky-post)$<div id="bluesky-comments"></div>$endif$
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>
+

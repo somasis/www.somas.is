@@ -3,6 +3,7 @@ title: Organizing your Nix configuration without flakes
 description: How to get the good parts of Nix Flakes without the bad parts
 date: 2025-10-17
 breadcrumbs: <br/><a href='notes.html'>notes</a>
+bluesky-post: https://bsky.app/profile/somas.is/post/3m3ghkp7jd22b
 ---
 
 [flakes-experiment]: https://samuel.dionne-riel.com/blog/2023/09/06/flakes-is-an-experiment-that-did-too-much-at-once.html

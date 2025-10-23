@@ -1,2 +1,5 @@
 metadata:
-  author: Kylie McClain <kylie@somas.is>
+  author:
+    - name: Kylie McClain
+      email: kylie@somas.is
+      rel: me

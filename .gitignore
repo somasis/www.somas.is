@@ -2,6 +2,7 @@
 *.atom
 *.html
 *.pdf
+!templates/*
 
 favicon.ico
 favicon.png
