@@ -52,14 +52,11 @@ Kylie McClain: 27/f/NC[^username]
 [rccmd]: https://github.com/somasis/RCcmd
 [gnome-shell-theme-seeha]: https://github.com/aur-archive/gnome-shell-theme-seeha
 [Simplicity]: https://www.tapatalk.com/groups/wadder/viewtopic.php?p=305
-
 [Meet Alawalk]: https://www.omgubuntu.co.uk/2010/08/meet-alawalk-possibly-the-lightest-launcher-ever
 [Alawalk update]: https://www.omgubuntu.co.uk/2010/08/super-light-launcher-alawalk-0-4-released-boasts-21-plug-ins
 [lauf]: https://github.com/joshua-redfield/lauf
 [Super Mario Bros. Remasted!]: https://mfgg.net/index.php?act=resdb&param=02&c=2&id=13515
-
 [DJB]: https://cr.yp.to/djb.html
-
 [Bandcamp]: https://somasis.bandcamp.com
 [Gak Attack vol. 1]: https://gakattackrecords.bandcamp.com/album/gak-attack-vol-1
 [Gak Attack vol. 2]: https://gakattackrecords.bandcamp.com/album/gak-attack-vol-2
