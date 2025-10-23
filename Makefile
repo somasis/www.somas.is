@@ -104,6 +104,8 @@ rhizome.atom: atom.sh ${RHIZOMES}
 	    -t html \
 	    -i $< \
 	    -o $@
+	minify -o $@.min $@
+	mv $@.min $@
 
 avatar.jpg:
 	curl -Lf \
