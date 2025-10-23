@@ -101,6 +101,7 @@ rhizome.atom: atom.sh ${RHIZOMES}
 	pandoc --standalone \
 	    --defaults=default.md.yml \
 	    --template=templates/default.html \
+	    --metadata=input-filename:$< \
 	    -t html \
 	    -i $< \
 	    -o $@

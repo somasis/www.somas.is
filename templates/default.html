@@ -108,9 +108,14 @@ $if(author.email)$&lt;<a href="mailto:$author.email$" $author.rel$>$author.email
 </p>
 $endif$
 $endfor$
+<p class="history">
 $if(date)$
-<p class="date">$date$</p>
+$date$
+<small>
+(<a href="https://github.com/somasis/www.somas.is/commits/main/$input-filename$">view edit history</a>)
+</small>
 $endif$
+</p>
 <div id="webmentions"></div>
 $if(bluesky-post)$<div id="bluesky-comments"></div>$endif$
 $for(include-after)$
