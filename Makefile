@@ -27,7 +27,7 @@ RHIZOMES = \
     rhizome-2020-W47.html
 
 ETC = \
-    avatar.jpg \
+    avatar.png \
     favicon.png \
     favicon.ico
 
@@ -108,16 +108,16 @@ rhizome.atom: atom.sh ${RHIZOMES}
 	minify -o $@.min $@
 	mv $@.min $@
 
-avatar.jpg:
+avatar.png:
 	curl -Lf \
 	    -o $@ \
 	    "https://www.gravatar.com/avatar/a187e38560bb56f5231cd19e45ad80f6?s=512"
 
-favicon.png: avatar.jpg
-	magick $< $@
+favicon.png: avatar.png
+	magick $< -interpolative-resize 32x32 $@
 
-favicon.ico: avatar.jpg
-	magick $< $@
+favicon.ico: avatar.png
+	magick $< -interpolative-resize 32x32 $@
 
 cv.html: $(CV_DEPS) cv.adoc cv.yml cv.css
 	asciidoctor \
