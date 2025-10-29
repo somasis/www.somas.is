@@ -1,7 +1,8 @@
 **Certifications**:: CompTIA Linux+
-**Systems, software**:: NixOS, Ubuntu, Debian, Slackware, Windows, Linux from
-Scratch; Bash and POSIX shells (expert); Oracle NetSuite; FL Studio, Pro Tools
-(novice)
+**Systems, software**:: Linux (in general; my main OS for 15 years), NixOS,
+Ubuntu, Debian, Slackware, Windows, Linux from Scratch; Docker, Podman,
+Kubernetes (novice); Bash and POSIX shell (expert); Oracle NetSuite;
+FL Studio, Pro Tools (novice)
 **Skills**:: computer management, computer repair and data recovery, system
 maintenance and administration, advanced shell scripting, open source
 contributions; storefront retail, customer service, phone support
