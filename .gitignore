@@ -1,7 +1,6 @@
 .pre-commit-config.yaml
 *.atom
 *.html
-*.pdf
 !templates/*
 
 favicon.ico
