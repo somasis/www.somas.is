@@ -20,8 +20,6 @@ base:
   text-align: left
 
 heading:
-  min-height-after: auto
-
   font-size: 12
 
   h1-font-size: 16
