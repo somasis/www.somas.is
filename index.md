@@ -96,8 +96,11 @@ Most of my projects are immaterial right now.
 Here's everything I've done:
 
 [Organizing your Nix configuration without flakes]: note-organizing-nix-configuration-without-flakes.html
+[Understanding beets, the music organizer]: note-understanding-beets.html
 
-- In 2025, I wrote a blog post: [Organizing your Nix configuration without flakes].
+- In 2025, I've started trying to write blog posts again.
+  I've written two so far: [Organizing your Nix configuration without flakes],
+  and [Understanding beets, the music organizer].
 - In 2024,
   I finally, finally, finally, graduated from Appalachian State University
   with a B.A. in Philosophy, minoring in Gender, Women, and Sexuality Studies.
