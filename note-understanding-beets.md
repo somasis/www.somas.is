@@ -99,7 +99,7 @@ When you execute `beet import <directory>`, it
    b. putting together a search query based on those tags,
 
    c. and finally, asking you to pick a matching album from those sources.^[
-   (all this behavior is turned off with `--noautotag`)].
+   (all this behavior is turned off with `--noautotag`)]
 
 2. Then, once the file importing really starts,
 
