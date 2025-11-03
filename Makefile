@@ -11,6 +11,7 @@ PAGES = \
 
 # newest to oldest
 NOTES = \
+    note-understanding-beets.html \
     note-organizing-nix-configuration-without-flakes.html \
     note-tgirl-ghosts.html \
     note-beets-lossless-and-lossy.html \
