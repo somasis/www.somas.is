@@ -111,7 +111,7 @@ When you execute `beet import <directory>`, it
    Meaning that tags like comments
    will be available in the fields by default.]
 
-   d. and (again, if auto tagging)
+   d. and (if auto-tagging, which is the default behavior)
    updates the fields for each file based on the fetched metadata,
    replacing tags for which there is corresponding fetched metadata with
    that fetched metadata.
