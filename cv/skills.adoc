@@ -1,4 +1,6 @@
 **Certifications**:: CompTIA Linux+
+**Programming languages**:: Bash and POSIX shell (expert);
+C (novice), Python (novice), Perl (novice)
 **Systems, software**:: Linux (in general; my main OS for 15 years), NixOS,
 Ubuntu, Debian, Slackware, Linux from Scratch; Windows (not a user,
 but very familiar with repairing and supporting Windows users);
