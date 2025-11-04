@@ -24,7 +24,7 @@ Unfortunately, I can't at the moment find the exact sources which I
 first read about this, so I'll be using a source that is not where I
 actually first read this. I'll also draw on my own anecdotal experience.
 
-## a past life haunting the present {#\_a_past_life_haunting_the_present}
+## a past life haunting the present
 
 In \"On The Theory of Ghosts\", Sigmund Freud's theory of the belief in
 ghosts is discussed:

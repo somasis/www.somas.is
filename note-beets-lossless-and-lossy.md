@@ -79,7 +79,7 @@ Again, it's using the `-{min,max}depth` so as to catch all the
 categorizing directories (\"stores-\*\", \"rips\"), but nothing under
 them.
 
-## actually importing the music {#\_actually_importing_the_music}
+## actually importing the music
 
 When I get a new music release, I put it in the corresponding source
 directory, and run `make beet-import`.
@@ -98,7 +98,7 @@ The music is imported to "/mnt/raid/library/audio/lossless". I like to
 keep the directory mounted over `sshfs`, so I can access it from
 "~/audio/lossless" on my laptop.
 
-## converting the music {#\_converting_the_music}
+## converting the music
 
 The relevant beets `config.yml` snippet:
 
@@ -141,7 +141,7 @@ I wish I could just stop there and say that's how I maintain the two
 copies of my library, but alas. We have arrived upon the first problem
 with `beet convert`.
 
-## duplicates and workarounds, or, the important headache you'll eventally get {#\_duplicates_and_workarounds_or_the_important_headache_youll_eventally_get}
+## duplicates and workarounds, or, the important headache you'll eventally get
 
 Though [beets's homepage](https://beets.io/) proudly displays the
 [`beet convert`](https://beets.readthedocs.io/en/v1.4.9/plugins/convert.html)
@@ -168,7 +168,7 @@ script in my \"\~/bin\" as well. It's a little wonky in terms of false
 positives when it comes to beets\' asciification, for reasons I have not
 yet figured out.
 
-## so yeah {#\_so_yeah}
+## so yeah
 
 This is essentially the hard parts. The rest is pretty standard beets
 configuration, and the documentation is _otherwise_ excellent, except
