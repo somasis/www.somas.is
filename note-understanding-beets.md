@@ -1,8 +1,8 @@
 ---
-breadcrumbs: <br/><a href='notes.html'>notes</a>
 title: Understanding beets, the music organizer
 description: An attempt to explain how beets works and why it can be so confusing.
 date: 2025-11-02
+breadcrumbs: <br/><a href='notes.html'>notes</a>
 bluesky-post: https://bsky.app/profile/somas.is/post/3m4pgyetnus25
 ---
 
