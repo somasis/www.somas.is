@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+
+<header>
+  {{ if eq .Title "" }}
+  <h1><span class="title">{{ .Date.Format "2006-01-02" }}</span></h1>
+  {{ else }}
+  <h1><span class="title">{{ .Title | markdownify }}</span></h1>
+  {{ end }}
+</header>
+
+<main>{{ .Content }}</main>
+
+<date>{{ .Date.Format "2006-01-02" }}</date>
+
+{{ partial "footer.html" . }}

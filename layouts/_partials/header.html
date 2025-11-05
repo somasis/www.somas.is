@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
+    {{ with .OutputFormats.Get "rss" }}
+      {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+    {{ end }}
+    {{ if .Params.bluesky }}
+    {{ partial "bluesky-comments.html" . }}
+    {{ end }}
+  </head>
+  {{ partial "breadcrumbs.html" . }}
+  <body>
+    {{ if .Page.IsHome }}
+    <h1>{{ .Page.Title }}</h1>
+    {{ end }}

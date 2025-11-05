@@ -1,0 +1,19 @@
+  <footer>
+  <small>
+  {{ range .Site.Params.author }}
+  {{ .name }} &lt;<a href="mailto:{{ .email }}">{{ .email }}</a>&gt;<br />
+  {{ end }}
+  {{ with .File }}
+  (<a href="https://github.com/somasis/www.somas.is/commits/main/content/{{ .Path }}">view page history</a>)
+  {{ end }}
+  </small>
+  {{ if .Params.bluesky }}
+  <div id="bluesky-comments"></div>
+  {{ end }}
+  {{ with .Site.Params.footer }}
+  <hr/>
+  {{ replace . "{Year}" now.Year | markdownify }}
+  {{ end }}
+  </footer>
+  </body>
+</html>

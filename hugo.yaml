@@ -1,0 +1,16 @@
+baseURL: https://somas.is/
+languageCode: en-us
+
+title: somas.is
+description: the homepage of Kylie McClain
+
+params:
+  author:
+    - name: Kylie McClain
+      email: kylie@somas.is
+
+# Allow for passing HTML through Markdown documents.
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

@@ -23,5 +23,7 @@ pkgs.mkShell {
     pkgs.xe
     # keep-sorted end
     treefmt
+
+    pkgs.hugo
   ];
 }

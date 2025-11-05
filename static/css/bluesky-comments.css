@@ -1,0 +1,43 @@
+#bluesky-comments {
+  font-size: initial !important;
+
+  ._container_yf3k8_1 {
+    max-width: unset;
+  }
+
+  ._commentsTitle_yf3k8_50 {
+    display: none;
+  }
+
+  ._commentsList_yf3k8_65 {
+    margin-top: 0;
+
+    blockquote {
+      margin-bottom: 0;
+    }
+
+    blockquote:first-child {
+      margin-top: 0.5rem;
+    }
+  }
+
+  ._commentsList_yf3k8_65,
+  ._commentContent_yf3k8_95 {
+    gap: initial;
+  }
+
+  ._replyText_yf3k8_56 {
+    font-style: italic;
+    margin-top: 0;
+  }
+
+  ._replyText_yf3k8_56,
+  ._commentContainer_yf3k8_90 {
+    font-size: initial;
+  }
+
+  ._avatar_yf3k8_114 {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
