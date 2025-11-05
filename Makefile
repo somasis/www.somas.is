@@ -5,9 +5,7 @@
 PAGES = \
     index.html \
     notes.html \
-    rhizome.html \
-    cv.html \
-    resume.html
+    rhizome.html
 
 # newest to oldest
 NOTES = \
@@ -36,9 +34,15 @@ FEEDS = \
     notes.atom \
     rhizome.atom
 
-PDFS = \
+DOCS = \
+    cv.html \
     cv.pdf \
+    resume.html \
     resume.pdf
+
+METADATAS = \
+    templates/default.html \
+    default.md.yml
 
 CSS = \
     cv.css
@@ -54,12 +58,12 @@ CV_DEPS = \
     cv/presentations.adoc \
     cv/volunteer.adoc
 
-INSTALLS = ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} ${CSS} ${ETC} feed.xml
+INSTALLS = ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${DOCS} ${CSS} ${ETC} feed.xml
 
 DESTDIR ?= ~/mnt/fastmail/www/somas.is
 
 all: FRC etc pages
-all: feeds pdfs
+all: feeds docs
 all: notes rhizomes
 
 etc: FRC ${ETC}
@@ -67,7 +71,7 @@ pages: FRC ${PAGES}
 notes: FRC ${NOTES} notes.atom notes.md
 rhizomes: FRC ${RHIZOMES} rhizome.atom rhizome.md
 feeds: FRC ${FEEDS}
-pdfs: FRC ${PDFS}
+docs: FRC ${DOCS}
 
 GNUMAKEFLAGS = --no-print-directory
 watch: FRC all Makefile
@@ -79,18 +83,21 @@ rhizome.html: rhizome.md
 rhizome.md: rhizome.sh ${RHIZOMES}
 	./rhizome.sh ${RHIZOMES} > $@
 
+${PAGES}: ${METADATAS}
+${NOTES}: ${METADATAS}
+${RHIZOMES}: ${METADATAS}
+
 notes.html: notes.md
 notes.md: notes.sh ${NOTES}
 	./notes.sh ${NOTES} > $@
-
-notes.atom: atom.sh ${NOTES}
+notes.atom: atom.sh ${METADATAS} ${NOTES}
 	./atom.sh \
 	    -t '~somasis/notes' \
 	    -u 'https://somas.is/notes.html' \
 	    -s 'notes and other short-form writings.' \
 	    ${NOTES} > $@
 
-rhizome.atom: atom.sh ${RHIZOMES}
+rhizome.atom: atom.sh ${METADATAS} ${RHIZOMES}
 	./atom.sh \
 	    -t '~somasis/rhizome' \
 	    -u 'https://somas.is/rhizome.html' \
@@ -166,7 +173,7 @@ install: all redirects
 	rsync -ru ${INSTALLS} ${DESTDIR}/
 
 clean: FRC
-	rm -f ${ETC} ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${PDFS} notes.md rhizome.md
+	rm -f ${ETC} ${PAGES} ${NOTES} ${RHIZOMES} ${FEEDS} ${DOCS} notes.md rhizome.md
 
 note-new: FRC
 	@[ -f note-current.md ] || cp note-template.md note-current.md
