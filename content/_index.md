@@ -7,9 +7,9 @@ params:
 
 Kylie McClain: 27/f/NC[^username]
 
-[check out my resume](resume.html).
-
 [notes](/notes) · [rhizome](/rhizome)
+
+[my resume](/doc/resume.pdf).
 
 [^username]: a.k.a. somasis [/soʊmeɪsɪs/; so·may·sis]: musician and username
 
