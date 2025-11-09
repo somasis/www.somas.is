@@ -1,2 +1,6 @@
+/assets/jsconfig.json
+hugo_stats.json
+*.lock
 public/
+/resources/_gen/
 static/doc/resume.pdf
