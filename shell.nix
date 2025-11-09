@@ -1,29 +1,76 @@
+{
+  sources ? import ./npins,
+  nixpkgs ? sources.nixpkgs,
+
+  pkgs ? import nixpkgs { },
+  lib ? pkgs.lib,
+}:
 let
-  sources = import ./npins;
+  git-hooks = import ./git-hooks.nix { };
+  treefmt = import ./treefmt.nix { };
 
-  pkgs = import sources.nixpkgs { };
+  npins-auto-update = pkgs.writeShellScript "npins-auto-update" ''
+    edo() {
+        local arg string
+        string=
+        for arg; do
+            if [[ ''${arg@Q} == "'$arg'" ]] && ! [[ ''${arg} =~ [[:blank:]] ]]; then
+                string+="''${string:+ }$arg"
+            else
+                string+="''${string:+ }''${arg@Q}"
+            fi
+        done
 
-  git-hooks = import ./git-hooks.nix;
-  treefmt = import ./treefmt.nix;
+        printf '$ %s\n' "''${string}" >&2
+        # alt: printf '$ %s\n' "$(condquote "$@")" >&2
+
+        "$@"
+    }
+
+    PATH=${
+      lib.makeBinPath (
+        with pkgs;
+        [
+          dateutils
+          gitMinimal
+          npins
+          nix
+        ]
+      )
+    }"''${PATH:+:$PATH}"
+
+    if ! git diff-index --quiet --cached HEAD --; then
+        printf 'npins-auto-update: Git repository is dirty, not updating\n' >&2
+        exit 1
+    fi
+
+    last_npins_change=$(
+        stat -c '%Y' npins/* | sort -nr | head -n1
+    )
+    days_since_change=$(datediff -i '%s' -f '%d' -- "$last_npins_change" now)
+    if [ "$days_since_change" -gt 1 ]; then
+        edo npins update
+        edo git commit -m 'npins: update' npins/
+    fi
+
+    exit 0
+  '';
 in
 pkgs.mkShell {
+  shellHook = git-hooks.shellHook + ''
+    ${npins-auto-update}
+  '';
+
   buildInputs = git-hooks.enabledPackages ++ [
     # keep-sorted start
-    pkgs.asciidoctor-with-extensions
     pkgs.curlMinimal
-    pkgs.devd
     pkgs.gitMinimal
     pkgs.gnumake
+    pkgs.hugo
     pkgs.imagemagick
-    pkgs.minify
     pkgs.npins
-    pkgs.python3Packages.python-slugify
-    pkgs.rsync
-    pkgs.rwc
-    pkgs.xe
+    pkgs.rclone
     # keep-sorted end
     treefmt
-
-    pkgs.hugo
   ];
 }

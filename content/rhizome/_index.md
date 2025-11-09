@@ -10,4 +10,4 @@ it mostly features links I think are cool,
 but might on occasion be a place for sharing things I'm up to
 that don’t really warrant a more fleshed out discussion.
 
-[subscribe](/rhizome/index.xml) in your favorite RSS reader.
+[Subscribe](/rhizome/index.xml) in your favorite RSS reader.

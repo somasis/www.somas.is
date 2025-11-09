@@ -23,6 +23,6 @@ static/doc/resume.pdf:
 
 install: FRC deploy
 deploy: FRC hugo
-	rclone sync -u public/ fastmail:www/somas.is/
+	rclone sync --update --refresh-times --progress public/ fastmail:www/somas.is/
 
 FRC:

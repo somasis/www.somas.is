@@ -9,7 +9,7 @@ draft: true
 
 [Gentoo]: https://gentoo.org
 [Exherbo]: https://exherbo.org
-[Paludis]: http://paludis.exherbo.org
+[Paludis]: https://paludis.exherbo.org
 
 Years ago, I was a developer for the [Exherbo] Linux distribution,
 a distribution made by a group of former [Gentoo] Linux developers,
@@ -108,4 +108,3 @@ One of the things I became interested in doing while I was an Exherbo developer
 was trying to bootstrap a non-glibc based Linux system.
 I had never tried something like that, but I considered myself to be smart enough
 to figure it out, and well, [I did manage to do it][exherbo-bootstrapping].
-

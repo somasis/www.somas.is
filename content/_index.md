@@ -15,71 +15,74 @@ Kylie McClain: 27/f/NC[^username]
 
 ## things I've done
 
-[june]: https://causal.agency
-[nixpkgs]: https://github.com/nixos/nixpkgs
-[catgirl]: https://git.causal.agency/catgirl
-[catgirl-tokipona]: https://git.causal.agency/catgirl/?h=somasis/tokipona
-[musl-wiki]: https://wiki.musl-libc.org
-[makedown]: https://github.com/somasis/makedown
-[wget-curl]: https://github.com/somasis/wget-curl
-[wget-curl-removal]: https://github.com/LineageOS/android_vendor_lineage/commit/0623e975037cd68b15966fe154af59e4de6a7e00
-[puter]: https://github.com/somasis/puter
-[praxis]: https://github.com/somasis/praxis
-[ohwgiles/laminar]: https://github.com/ohwgiles/laminar
-[hunspell-tok]: https://github.com/somasis/hunspell-tok
-[discord-theme-irc]: https://github.com/somasis/discord-theme-irc
-[discord-tokipona]: https://github.com/somasis/discord-tokipona
-[passage]: https://github.com/somasis/passage
-[praxis]: https://github.com/somasis/praxis
-[Toybox]: https://www.landley.net/toybox/
-[bsdunzip]: https://github.com/somasis/bsdunzip
-[beginning]: https://github.com/somasis/beginning
-[s6]: http://skarnet.org/software/s6/
-[git-gerrit]: https://github.com/somasis/git-gerrit
-[shiki-colors-revival]: https://github.com/somasis/shiki-colors-revival
-[gnome-colors]: https://github.com/gnome-colors/gnome-colors
-[lux]: https://github.com/somasis/lux
-[bootstrapped-demo]: https://bootstrapped-demo.tumblr.com
-[rccmd]: https://github.com/somasis/RCcmd
-[gnome-shell-theme-seeha]: https://github.com/aur-archive/gnome-shell-theme-seeha
-[Simplicity]: https://www.tapatalk.com/groups/wadder/viewtopic.php?p=305
-[Meet Alawalk]: https://www.omgubuntu.co.uk/2010/08/meet-alawalk-possibly-the-lightest-launcher-ever
+<!-- keep-sorted start -->
+
+[3'48 Shark]: https://somasis.bandcamp.com/track/3-48-shark-somasis-silence-massive-get-hype-by-somasis
+[A Most Beautiful Sight]: https://somasis.bandcamp.com/album/a-most-beautiful-sight
+[ACADEMY OF BOOTY]: https://pinkamenaparty.bandcamp.com/album/pinkamena-party-iii-academy-of-booty
+[Acetate 2014]: https://somasis.bandcamp.com/album/acetate-2014
 [Alawalk update]: https://www.omgubuntu.co.uk/2010/08/super-light-launcher-alawalk-0-4-released-boasts-21-plug-ins
-[lauf]: https://github.com/joshua-redfield/lauf
-[Super Mario Bros. Remasted!]: https://mfgg.net/index.php?act=resdb&param=02&c=2&id=13515
-[DJB]: https://cr.yp.to/djb.html
 [Bandcamp]: https://somasis.bandcamp.com
+[Boundary ft. ANDR (somasis remix)]: https://somasis.bandcamp.com/track/boundary-ft-andr-somasis-remix
+[Chameleon]: https://somasis.bandcamp.com/track/chameleon
+[DJB]: https://cr.yp.to/djb.html
+[Dashy / Hearth's Warming Eve]: https://somasis.bandcamp.com/album/dashy-hearths-warming-eve
+[Dedicated (somasis remix)]: https://somasis.bandcamp.com/track/dedicated-somasis-remix
 [Gak Attack vol. 1]: https://gakattackrecords.bandcamp.com/album/gak-attack-vol-1
 [Gak Attack vol. 2]: https://gakattackrecords.bandcamp.com/album/gak-attack-vol-2
-[Scattered, We Unified]: https://somasis.bandcamp.com/album/scattered-we-unified
-[ACADEMY OF BOOTY]: https://pinkamenaparty.bandcamp.com/album/pinkamena-party-iii-academy-of-booty
+[Hawk and Crow (somasis remixes)]: https://somasis.bandcamp.com/album/hawk-crow-somasis-remixes
 [INCOHESIVE HORSE ADHESIVE]: https://pinkamenaparty.bandcamp.com/album/incohesive-horse-adhesive
-[RAINBOW DASH IMPALES HERSELF]: https://pinkamenaparty.bandcamp.com/album/rainbow-dash-impales-herself-on-a-wrought-iron-fence
-[A Most Beautiful Sight]: https://somasis.bandcamp.com/album/a-most-beautiful-sight
-[i'm no jungalist massif]: https://somasis.bandcamp.com/album/im-no-jungalist-massif
-[talent show]: https://somasis.bandcamp.com/album/talent-show
-[talent show: the remixes]: https://somasis.bandcamp.com/album/talent-show-the-remixes
-[the lonesome planetarium]: https://somasis.bandcamp.com/album/the-lonesome-planetarium
-[sleepless]: https://somasis.bandcamp.com/album/sleepless
-[3'48 Shark]: https://somasis.bandcamp.com/track/3-48-shark-somasis-silence-massive-get-hype-by-somasis
-[Acetate 2014]: https://somasis.bandcamp.com/album/acetate-2014
-[The Infinite Sadness]: https://somasis.bandcamp.com/album/the-infinite-sadness-2
-[Rejected from the Tapedeck Spaceship]: https://somasis.bandcamp.com/album/rejected-from-the-tapedeck-spaceship
-[gak-attack-vol-2]: https://somasis.bandcamp.com/album/gak-attack-vol-2
-[Starsailor]: https://somasis.bandcamp.com/track/starsailor
 [Live from the New Afternoon Show]: https://somasis.bandcamp.com/album/2021-03-09-live-from-the-new-afternoon-show
 [Live from the Tapedeck Spaceship]: https://somasis.bandcamp.com/album/live-from-the-tapedeck-spaceship
-[Chameleon]: https://somasis.bandcamp.com/track/chameleon
-[Hawk and Crow (somasis remixes)]: https://somasis.bandcamp.com/album/hawk-crow-somasis-remixes
-[pagan holiday]: https://pinkamenaparty.bandcamp.com/track/pagan-holiday
-[sunraiser / revolution means beauty]: https://somasis.bandcamp.com/album/sunraiser-revolution-means-beauty
-[Boundary ft. ANDR (somasis remix)]: https://somasis.bandcamp.com/track/boundary-ft-andr-somasis-remix
+[Meet Alawalk]: https://www.omgubuntu.co.uk/2010/08/meet-alawalk-possibly-the-lightest-launcher-ever
+[RAINBOW DASH IMPALES HERSELF]: https://pinkamenaparty.bandcamp.com/album/rainbow-dash-impales-herself-on-a-wrought-iron-fence
+[Rejected from the Tapedeck Spaceship]: https://somasis.bandcamp.com/album/rejected-from-the-tapedeck-spaceship
+[Scattered, We Unified]: https://somasis.bandcamp.com/album/scattered-we-unified
 [Season Infinity (replacer cover)]: https://somasis.bandcamp.com/track/season-infinity-replacer-cover
-[Dedicated (somasis remix)]: https://somasis.bandcamp.com/track/dedicated-somasis-remix
+[Simplicity]: https://www.tapatalk.com/groups/wadder/viewtopic.php?p=305
+[Starsailor]: https://somasis.bandcamp.com/track/starsailor
+[Super Mario Bros. Remasted!]: https://mfgg.net/index.php?act=resdb&param=02&c=2&id=13515
+[The Infinite Sadness]: https://somasis.bandcamp.com/album/the-infinite-sadness-2
+[Toybox]: https://www.landley.net/toybox/
+[`theory`]: https://github.com/somasis/praxis/blob/main/theory.5.adoc
+[beginning]: https://github.com/somasis/beginning
+[bootstrapped-demo]: https://bootstrapped-demo.tumblr.com
+[bsdunzip]: https://github.com/somasis/bsdunzip
+[catgirl-tokipona]: https://git.causal.agency/catgirl/?h=somasis/tokipona
+[catgirl]: https://git.causal.agency/catgirl
+[discord-theme-irc]: https://github.com/somasis/discord-theme-irc
+[discord-tokipona]: https://github.com/somasis/discord-tokipona
+[git-gerrit]: https://github.com/somasis/git-gerrit
+[gnome-colors]: https://github.com/gnome-colors/gnome-colors
+[gnome-shell-theme-seeha]: https://github.com/aur-archive/gnome-shell-theme-seeha
+[hunspell-tok]: https://github.com/somasis/hunspell-tok
+[i'm no jungalist massif]: https://somasis.bandcamp.com/album/im-no-jungalist-massif
 [in nature, together]: https://somasis.bandcamp.com/album/in-nature-together
-[spirit / songs for lovers]: https://somasis.bandcamp.com/album/spirit-songs-for-lovers
 [january]: https://somasis.bandcamp.com/track/january-2
-[Dashy / Hearth's Warming Eve]: https://somasis.bandcamp.com/album/dashy-hearths-warming-eve
+[june]: https://causal.agency
+[lauf]: https://github.com/joshua-redfield/lauf
+[lux]: https://github.com/somasis/lux
+[makedown]: https://github.com/somasis/makedown
+[musl-wiki]: https://wiki.musl-libc.org
+[nixpkgs]: https://github.com/nixos/nixpkgs
+[ohwgiles/laminar]: https://github.com/ohwgiles/laminar
+[pagan holiday]: https://pinkamenaparty.bandcamp.com/track/pagan-holiday
+[passage]: https://github.com/somasis/passage
+[praxis]: https://github.com/somasis/praxis
+[puter]: https://github.com/somasis/puter
+[rccmd]: https://github.com/somasis/RCcmd
+[s6]: https://skarnet.org/software/s6/
+[shiki-colors-revival]: https://github.com/somasis/shiki-colors-revival
+[sleepless]: https://somasis.bandcamp.com/album/sleepless
+[spirit / songs for lovers]: https://somasis.bandcamp.com/album/spirit-songs-for-lovers
+[sunraiser / revolution means beauty]: https://somasis.bandcamp.com/album/sunraiser-revolution-means-beauty
+[talent show: the remixes]: https://somasis.bandcamp.com/album/talent-show-the-remixes
+[talent show]: https://somasis.bandcamp.com/album/talent-show
+[the lonesome planetarium]: https://somasis.bandcamp.com/album/the-lonesome-planetarium
+[wget-curl-removal]: https://github.com/LineageOS/android_vendor_lineage/commit/0623e975037cd68b15966fe154af59e4de6a7e00
+[wget-curl]: https://github.com/somasis/wget-curl
+
+<!-- keep-sorted end -->
 
 Most of my projects are immaterial right now.
 [I'm looking for work please hire me.](https://www.linkedin.com/in/kylie-mcclain)
@@ -115,7 +118,7 @@ Here's everything I've done:
   It's kinda outdated right now but it got the job done.
   I still use `catgirl`.
 - In 2021, I made [hunspell-tok][hunspell-tok],
-  a Toki Pona dictionary for [`hunspell(1)`](http://hunspell.github.io/),
+  a Toki Pona dictionary for [`hunspell(1)`](https://hunspell.github.io/),
   a popular spell checking library used by many open-source projects.
 - In 2021, I made [discord-theme-irc][discord-theme-irc],
   a custom CSS stylesheet for Discord that makes it look a little more
@@ -182,8 +185,8 @@ Here's everything I've done:
   CI for the distribution would be managed using a very minimalistic
   daemon called [`laminar`][ohwgiles/laminar] that looked cool and
   tried to follow a Unix Philosophy type design very closely;
-  packages would be written using a bespoke format inspired by KISS Linux and Exherbo's exheres-0 format,
-  named [`theory`](https://github.com/somasis/praxis/blob/main/theory.5.adoc);
+  packages would be written using a bespoke format inspired by KISS Linux
+  and Exherbo's exheres-0 format, named [`theory`];
   even better, the package manager would be called [`praxis`][praxis];
   musl libc would be the preferred standard C library,
   `toybox` would provide coreutils,
@@ -212,9 +215,8 @@ Here's everything I've done:
   libc project (after it fell into disrepair by its administrator) to a
   more hip technology: a static Markdown wiki. I wrote the tools to
   build it myself, because I felt that other site generators of that
-  type felt a bit overengineered. You can check out the wiki
-  [here][musl-wiki]. The tools I wrote, named
-  [`makedown`][makedown] are available as
+  type felt a bit overengineered. You can [check out the wiki][musl-wiki].
+  The tools I wrote, named [`makedown`][makedown] are available as
   well, but poorly documented unfortunately. I don't really work on it
   anymore, having handed over maintainership to other people in the
   developer community around 2021, if I remember correctly.
@@ -281,7 +283,9 @@ Here's everything I've done:
   then, I worked with some friends from the Brony music scene on an
   IDM/breakbeat hardcore netlabel called Gak Attack Records,
   and we did that thing computer musicians do when they come together,
-  and [we made a compilation][Gak Attack vol. 1] that was pretty good.
+  and [we made a compilation][Gak Attack vol. 1] that was pretty good,
+  and then lastly I made [a remix of a Christmas song][pagan holiday]
+  for another Pinkamena Party album.
 - Back in 2012, I wrote a set of scripts for a Minecraft server plugin
   called CommandHelper, called [rccmd], which provided a set of general
   commands for server users and administrators, as an alternative to more
@@ -320,6 +324,7 @@ It is on streaming services as well, but those could disappear any day, you know
 
 ### socials and other places
 
+<!-- markdownlint-disable no-inline-html -->
 <ul>
 <li><a href="https://github.com/somasis" rel="me">GitHub: @somasis</a></li>
 <li><a href="https://www.linkedin.com/in/kylie-mcclain" rel="me">LinkedIn</a></li>

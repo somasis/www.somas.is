@@ -1,12 +1,13 @@
 # <https://github.com/numtide/treefmt-nix>
 # Used by ./shell.nix.
-let
-  sources = import ./npins;
+{
+  sources ? import ./npins,
+  nixpkgs ? sources.nixpkgs,
+  treefmt-nix ? sources.treefmt-nix,
 
-  pkgs = import sources.nixpkgs { };
-  treefmt-nix = import sources.treefmt-nix;
-in
-treefmt-nix.mkWrapper pkgs {
+  pkgs ? import nixpkgs { },
+}:
+(import treefmt-nix).mkWrapper pkgs {
   # See also <https://github.com/numtide/treefmt-nix/tree/main/programs>
   projectRootFile = "npins/sources.json";
 
@@ -20,7 +21,30 @@ treefmt-nix.mkWrapper pkgs {
 
     prettier = {
       enable = true;
-      excludes = [ "templates/*.html" ];
+      package =
+        with pkgs;
+        prettier.override {
+          plugins = with nodePackages; [
+            (
+              prettier-plugin-go-template
+              // {
+                packageName = "prettier-plugin-go-template";
+                outPath = toString prettier-plugin-go-template;
+              }
+            )
+          ];
+        };
+
+      excludes = [
+        "layouts/_partials/*"
+      ];
+
+      settings.overrides = [
+        {
+          files = [ "*.html" ];
+          options.parser = "go-template";
+        }
+      ];
     };
   };
 }

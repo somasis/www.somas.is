@@ -8,11 +8,13 @@ aliases:
   - /blog/2019/11/14/transness-and-philosophy-exclusive.html
 ---
 
+[Marcus Aurelius' Meditations]: https://www.gutenberg.org/ebooks/2680
+
 In class this afternoon, I began to realize these thoughts and wrote
 them down frantically into my notebook, because something was bothering
 me that I couldn't quite grasp fully. We were discussing Stoicism, but
-in particular, [Marcus Aurelius' Meditations](https://www.gutenberg.org/ebooks/2680). Discussing the use
-of nature in it, my professor started to speak of Aurelius\' ideas of
+in particular, [Marcus Aurelius' Meditations]. Discussing the use
+of nature in it, my professor started to speak of Aurelius' ideas of
 nature. Our class was taking issue with nature and naturalism's current
 through Stoicism, which really ended up being more a current through
 Greek and Roman philosophy anyway.

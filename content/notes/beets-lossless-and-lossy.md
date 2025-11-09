@@ -65,6 +65,8 @@ already imported from in the past.
 
 I have a simple `Makefile` for importing, which simply runs...​
 
+<!-- markdownlint-disable no-hard-tabs -->
+
 ```makefile
 beet-import:
 	find /mnt/raid/library/audio/source \
@@ -157,15 +159,24 @@ Really, the main problem is that `beet convert` (and
 folders change, filenames change, the problem is then that you have
 duplicates, and you'll have the converted library structure fall out of
 sync over time if you want to keep the same directory
-structure.{fn-structure}
+structure.[^structure]
 
-As of now, I fix this problem with a little script named
-[`beet-rmdupes`](https://git.mutiny.red/somasis/me/tree/bin/beet-rmdupes?id=13e74a56a636c691d03b9edc1adce275bb28afd5);
-it also requires the
-[`mimefilter`](https://git.mutiny.red/somasis/me/tree/bin/mimefilter?id=810387ef63a19c509411733b98f19e2eb61c40b1)
-script in my \"\~/bin\" as well. It's a little wonky in terms of false
-positives when it comes to beets\' asciification, for reasons I have not
-yet figured out.
+[^structure]:
+    TODO: another solution I've wondered about is just completely eschewing
+    duplicating the folder structure,
+    and just doing something like naming files and directories
+    after their MusicBrainz release IDs, perhaps.
+    Since most music players can just read the tags,
+    and don't rely at all on structure,
+    this wouldn't be that big of a problem I imagine.
+
+As of now, I fix this problem with a little script named [`beet-rmdupes`][beet-rmdupes];
+it also requires the [`mimefilter`][mimefilter] script in my `~/bin` as well.
+It's a little wonky in terms of false positives when it comes to beets'
+asciification, for reasons I have not yet figured out.
+
+[beet-rmdupes]: https://github.com/somasis/me/commit/13e74a56a636c691d03b9edc1adce275bb28afd5/bin/beet-rmdupes
+[mimefilter]: https://github.com/somasis/me/commit/810387ef63a19c509411733b98f19e2eb61c40b1/bin/mimefilter
 
 ## so yeah
 
@@ -178,8 +189,7 @@ could. I've really considered writing my own music managing utility as
 of late but I just haven't had the motivation to uproot my library
 again.
 
-However, there's
-[bits](https://git.mutiny.red/somasis/me/tree/bin/envtag?id=4989c360786a7eb522a9d83d1aa0848e4cef7a24)
-and
-[pieces](https://git.mutiny.red/somasis/me/tree/bin/envtag-format?id=4989c360786a7eb522a9d83d1aa0848e4cef7a24)
-laying around...​ someday.
+However, there's [bits] and [pieces] laying around...​ someday.
+
+[bits]: https://github.com/somasis/me/commit/4989c360786a7eb522a9d83d1aa0848e4cef7a24/bin/envtag
+[pieces]: https://github.com/somasis/me/commit/4989c360786a7eb522a9d83d1aa0848e4cef7a24/bin/envtag-format

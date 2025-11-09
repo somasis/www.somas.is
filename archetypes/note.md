@@ -2,7 +2,7 @@
 draft: true
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
 description: # TODO
-date: '{{ .Date }}'
+date: "{{ .Date }}"
 bluesky-post: # TODO
 ---
 

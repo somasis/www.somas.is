@@ -121,8 +121,7 @@ When you execute `beet import <directory>`, it
 
 [^noautotag]: (all this behavior can be turned off with `--noautotag`)
 
-[^fields-from-tags]:
-    Meaning that tags like comments will be available in the fields by default.
+[^fields-from-tags]: Meaning that tags like comments will be available in the fields by default.
 
 ### Managing imported files
 

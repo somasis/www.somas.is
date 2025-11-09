@@ -333,8 +333,7 @@ we have to pass it through `specialArgs`,
 otherwise it'd cause you to run into an infinite recursion
 while the NixOS module system tries to get the value of `sources`.
 
-[^disambig]:
-    or directory, or repository, whatever you want to call it, whatever it is.
+[^disambig]: or directory, or repository, whatever you want to call it, whatever it is.
 
 [no-specialArgs]: https://github.com/NixOS/nixpkgs/blob/32397eb652bd302011080df0a4531165a907637c/nixos/default.nix#L1-L4
 

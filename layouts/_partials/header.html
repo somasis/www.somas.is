@@ -9,7 +9,7 @@
       {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
     {{ end }}
     {{ if .Params.bluesky }}
-    {{ partial "bluesky-comments.html" . }}
+      {{ partial "bluesky-comments.html" . }}
     {{ end }}
   </head>
   {{ partial "breadcrumbs.html" . }}
