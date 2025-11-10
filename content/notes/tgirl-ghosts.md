@@ -121,7 +121,7 @@ uncommon](https://www.nytimes.com/2019/10/18/opinion/sunday/gender-transition-de
 [for parents to
 react](https://www.theatlantic.com/family/archive/2020/07/i-love-my-trans-daughter-but-im-still-struggling/613786/)
 [to their child's real gender
-identity](https://www.justplainbeth.com/you-can-grieve-and-support-your-child/)
+identity](https://web.archive.org/web/20221202200014/https://www.justplainbeth.com/you-can-grieve-and-support-your-child/)
 [with a sense their actual child is
 dying](https://www.sciendo.com/article/10.2478/genst-2020-0011). Of
 course, even a term like deadname isn't meant literally---​one can easily

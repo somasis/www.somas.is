@@ -7,11 +7,11 @@ draft: true
 
 lookie:
 
-- [links](TODO)
-- [go](TODO)
-- [here](TODO)
+- [TODO links](https://example.org)
+- [TODO go](https://example.org)
+- [TODO here](https://example.org)
 
 things I'm up to:
 
-- me doing this
-- me doing that
+- TODO me doing this
+- TODO me doing that
