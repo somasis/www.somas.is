@@ -30,8 +30,6 @@ git-hooks'.run {
         "npins/.*"
       ];
 
-      stages = [ "pre-push" ];
-
       settings.flags = lib.concatStringsSep " " [
         "--suggest" # Suggest archived versions of dead URLs.
         "--require-https" # When HTTPS is available, insist on using it.
