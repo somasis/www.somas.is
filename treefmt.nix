@@ -36,7 +36,7 @@
         };
 
       excludes = [
-        "layouts/_partials/*"
+        "themes/somasis/layouts/_partials/*"
       ];
 
       settings.overrides = [

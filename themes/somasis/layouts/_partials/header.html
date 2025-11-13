@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ .Site.LanguageCode }}">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ .Title }}</title>
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
     {{ with .OutputFormats.Get "rss" }}
@@ -15,5 +15,7 @@
   {{ partial "breadcrumbs.html" . }}
   <body>
     {{ if .Page.IsHome }}
-    <h1>{{ .Page.Title }}</h1>
+      <h1>{{ .Page.Title }}</h1>
     {{ end }}
+  </body>
+</html>

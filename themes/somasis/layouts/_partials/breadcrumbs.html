@@ -1,9 +1,9 @@
 <nav aria-label="breadcrumb">
   <ul id="breadcrumbs">
     {{- range .Ancestors.Reverse }}
-    <li>
-      <a href="{{ .RelPermalink }}">{{ or .Params.breadcrumb .Title }}</a>
-    </li>
+      <li>
+        <a href="{{ .RelPermalink }}">{{ or .Params.breadcrumb .Title }}</a>
+      </li>
     {{- end }}
   </ul>
 </nav>

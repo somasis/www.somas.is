@@ -4,6 +4,8 @@ languageCode: en-us
 title: somas.is
 description: the homepage of Kylie McClain
 
+theme: "somasis"
+
 params:
   author:
     - name: Kylie McClain
