@@ -233,7 +233,9 @@ Here's everything I've done:
   I was in the process of trying to enable `toybox` to provide a
   `coreutils` alternative on Exherbo Linux.
   - I also lightly ported FreeBSD's `libarchive`-utilizing `unzip` implementation,
-    and I called it [bsdunzip].
+    and I called it [bsdunzip]. In 2023, `libarchive` started including [their
+    own port](https://github.com/libarchive/libarchive/releases/tag/v3.7.0)
+    of FreeBSD's `unzip`, so I archived my port.
 - In 2015, I wrote a silly little init daemon called [beginning];
   it was a fun project but I eventually realized that
   [`s6`][s6] was a much more
