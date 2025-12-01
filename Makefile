@@ -16,7 +16,7 @@ static/favicon.png static/favicon.ico: static/avatar.png
 	magick $< -interpolative-resize 32x32 $@
 
 static: static/doc/resume.pdf
-static/doc/resume.pdf:
+static/doc/resume.pdf: FRC
 	mkdir -p static/doc
 	make -C ~/doc/resume
 	cp ~/doc/resume/resume.pdf static/doc/resume.pdf
