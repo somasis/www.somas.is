@@ -9,15 +9,15 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "20e71a403c5de9ce5bd799031440da9728c1cda1",
-      "url": "https://github.com/cachix/git-hooks.nix/archive/20e71a403c5de9ce5bd799031440da9728c1cda1.tar.gz",
-      "hash": "1pai2m4w99vsafi1yaqp7hsrlzrwwx33mxg960nq3wgmy6rnm15q"
+      "revision": "50b9238891e388c9fdc6a5c49e49c42533a1b5ce",
+      "url": "https://github.com/cachix/git-hooks.nix/archive/50b9238891e388c9fdc6a5c49e49c42533a1b5ce.tar.gz",
+      "hash": "01z1ihgpc7z7s97k9gn7vskw5zl8p6xavysdlmis1w0w4c3jfms2"
     },
     "nixpkgs": {
       "type": "Channel",
       "name": "nixpkgs-unstable",
-      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-25.11pre898874.a8d610af3f1a/nixexprs.tar.xz",
-      "hash": "0c6xkxlszx0js6imwqf8parm1nidxyhrakz5kzr0k7fr2j7nj42p"
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.05pre904864.c1cb7d097cb2/nixexprs.tar.xz",
+      "hash": "1phfyk46wb8y3as12gv4g5icg193c8acqfc61z6f36accawqh194"
     },
     "treefmt-nix": {
       "type": "Git",
