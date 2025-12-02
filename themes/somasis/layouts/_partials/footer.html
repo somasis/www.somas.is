@@ -16,4 +16,7 @@
   {{ end }}
   </footer>
   </body>
+  {{ if .Params.showNowPlaying }}
+    {{ partial "now-playing.html" . }}
+  {{ end }}
 </html>

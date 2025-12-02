@@ -7,6 +7,7 @@ description: the homepage of Kylie McClain
 theme: "somasis"
 
 params:
+  listenBrainzUser: somasis
   author:
     - name: Kylie McClain
       email: kylie@somas.is

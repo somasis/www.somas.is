@@ -3,6 +3,7 @@ title: the homepage of Kylie McClain
 description: The personal homepage of Kylie McClain / somasis.
 params:
   breadcrumb: somas.is
+  showNowPlaying: true
 ---
 
 Kylie McClain: 27/f/NC[^username]
@@ -12,6 +13,8 @@ Kylie McClain: 27/f/NC[^username]
 [my resume](/doc/resume.pdf).
 
 [^username]: a.k.a. somasis [/soʊmeɪsɪs/; so·may·sis]: musician and username
+
+<div id="now-playing"></div>
 
 ## things I've done
 

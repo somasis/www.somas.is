@@ -57,6 +57,9 @@ git-hooks'.run {
 
         # Ignore line-length since I exceed it sometimes for brevity's sake.
         line-length = false;
+
+        # Allow inline HTML.
+        no-inline-html = false;
       };
 
       excludes = [

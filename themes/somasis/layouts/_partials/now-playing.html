@@ -1,0 +1,25 @@
+<script type="text/javascript" async>
+  let listenbrainz_username = {{ .Site.Params.listenBrainzUser }};
+  let listenbrainz_page = `https://listenbrainz.org/user/${listenbrainz_username}`;
+  let np = document.getElementById("now-playing");
+
+  if (np != null) {
+    window.onload = async function now_playing() {
+      let response = await fetch(
+        `https://api.listenbrainz.org/1/user/${listenbrainz_username}/playing-now`,
+      );
+
+      if (response.ok) {
+        let r = (await response.json()).payload;
+        if (r.playing_now) {
+          let t = r.listens[0].track_metadata;
+
+          np.innerHTML = `
+          <a href=${listenbrainz_page}>now playing</a>:
+          ${t.artist_name} - ${t.track_name} (from <em>${t.release_name}</em>)
+        `;
+        }
+      }
+    };
+  }
+</script>
