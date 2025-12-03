@@ -4,6 +4,7 @@
   let np = document.getElementById("now-playing");
 
   if (np != null) {
+    np.style = "min-height: 1lh";
     window.onload = async function now_playing() {
       let response = await fetch(
         `https://api.listenbrainz.org/1/user/${listenbrainz_username}/playing-now`,
