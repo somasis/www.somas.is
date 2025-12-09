@@ -325,7 +325,10 @@ Here's everything I've done:
 ### music
 
 Hear all my music on [Bandcamp].
-It is on streaming services as well, but those could disappear any day, you know.
+My music used to be on streaming services, but I've removed them as of 2025
+because though it was giving my art some good exposure,
+I just wasn't breaking even,
+and I've never really been a supporter of the streaming model myself.
 
 ### socials and other places
 
