@@ -57,24 +57,20 @@ let
   '';
 in
 pkgs.mkShell {
-  shellHook =
-    # git-hooks.shellHook +
-    ''
-      ${npins-auto-update}
-    '';
+  shellHook = git-hooks.shellHook + ''
+    ${npins-auto-update}
+  '';
 
-  buildInputs =
-    # git-hooks.enabledPackages ++
-    [
-      # keep-sorted start
-      pkgs.curlMinimal
-      pkgs.gitMinimal
-      pkgs.gnumake
-      pkgs.hugo
-      pkgs.imagemagick
-      pkgs.npins
-      pkgs.rclone
-      # keep-sorted end
-      treefmt
-    ];
+  buildInputs = git-hooks.enabledPackages ++ [
+    # keep-sorted start
+    pkgs.curlMinimal
+    pkgs.gitMinimal
+    pkgs.gnumake
+    pkgs.hugo
+    pkgs.imagemagick
+    pkgs.npins
+    pkgs.rclone
+    # keep-sorted end
+    treefmt
+  ];
 }
