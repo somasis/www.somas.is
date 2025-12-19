@@ -6,6 +6,9 @@ hugo: static FRC
 open: FRC
 	hugo server --openBrowser --buildDrafts --minify
 
+clean: FRC
+	rm -f static/avatar.png static/favicon.png static/favicon.ico static/doc/resume.pdf
+
 static: static/avatar.png
 static/avatar.png: FRC
 	curl -Lfs --remote-time --time-cond $@ -o $@ \
