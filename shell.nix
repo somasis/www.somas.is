@@ -69,6 +69,7 @@ pkgs.mkShell {
     pkgs.hugo
     pkgs.imagemagick
     pkgs.npins
+    pkgs.optipng
     pkgs.rclone
     # keep-sorted end
     treefmt
