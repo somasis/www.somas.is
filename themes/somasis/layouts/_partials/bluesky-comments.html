@@ -17,7 +17,7 @@
   import { createRoot } from 'react-dom/client';
   import { BlueskyComments } from 'bluesky-comments';
 
-  const author = 'somas.is';
+  const author = {{ .Site.Params.blueskyAuthor | jsonify }};
   const container = document.getElementById('bluesky-comments');
   const root = createRoot(container);
   root.render(
