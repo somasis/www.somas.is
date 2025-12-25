@@ -24,3 +24,13 @@ body > footer > small {
   display: block;
   font-style: italic;
 }
+
+li[id^="fn:"]:target {
+  background-color: #ffdd00;
+}
+
+@media (prefers-color-scheme: dark) {
+  li[id^="fn:"]:target {
+    background-color: #ffbb009d;
+  }
+}
