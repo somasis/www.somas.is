@@ -32,6 +32,6 @@ static/favicon.ico: static/favicon.png
 
 install: FRC deploy
 deploy: FRC hugo
-	rclone sync --update --refresh-times --progress public/ fastmail:www/somas.is/
+	rclone sync --update --progress --check-first --checksum public/ fastmail:www/somas.is/
 
 FRC:
