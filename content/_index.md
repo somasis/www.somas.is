@@ -10,8 +10,6 @@ Kylie McClain: 27/f/NC[^username]
 
 [notes](/notes) · [rhizome](/rhizome)
 
-[my resume](/doc/resume.pdf).
-
 [^username]: a.k.a. somasis [/soʊmeɪsɪs/; so·may·sis]: musician and username
 
 <div id="now-playing"></div>
@@ -86,9 +84,6 @@ Kylie McClain: 27/f/NC[^username]
 [wget-curl]: https://github.com/somasis/wget-curl
 
 <!-- keep-sorted end -->
-
-Most of my projects are immaterial right now.
-[I'm looking for work please hire me.](https://www.linkedin.com/in/kylie-mcclain)
 
 Here's everything I've done:
 

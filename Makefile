@@ -7,7 +7,8 @@ open: FRC
 	hugo server --openBrowser --buildDrafts --minify
 
 clean: FRC
-	rm -f static/avatar.png static/favicon.png static/favicon.ico static/doc/resume.pdf
+	rm -f static/avatar.png static/favicon.png static/favicon.ico
+#	rm -f static/doc/resume.pdf
 
 static: static/avatar.png
 static/avatar.png: FRC
@@ -23,11 +24,11 @@ static: static/favicon.ico
 static/favicon.ico: static/favicon.png
 	magick $< $@
 
-static: static/doc/resume.pdf
-static/doc/resume.pdf: FRC
-	mkdir -p static/doc
-	make -C ~/doc/resume
-	cp ~/doc/resume/resume.pdf static/doc/resume.pdf
+#static: static/doc/resume.pdf
+#static/doc/resume.pdf: FRC
+#	mkdir -p static/doc
+#	make -C ~/doc/resume
+#	cp ~/doc/resume/resume.pdf static/doc/resume.pdf
 
 install: FRC deploy
 deploy: FRC hugo
