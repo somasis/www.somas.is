@@ -330,7 +330,6 @@ and I've never really been a supporter of the streaming model myself.
 <!-- markdownlint-disable no-inline-html -->
 <ul>
 <li><a href="https://github.com/somasis" rel="me">GitHub: @somasis</a></li>
-<li><a href="https://www.linkedin.com/in/kylie-mcclain" rel="me">LinkedIn</a></li>
 <li><a href="https://bsky.app/profile/somas.is" rel="me">Bluesky: @somas.is</a></li>
 <li><a href="https://steamcommunity.com/id/somasis" rel="me">Steam: somasis</a></li>
 <li><a href="https://last.fm/user/kyliesomasis" rel="me">Last.fm: kyliesomasis</a></li>
