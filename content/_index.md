@@ -330,11 +330,10 @@ and I've never really been a supporter of the streaming model myself.
 <!-- markdownlint-disable no-inline-html -->
 <ul>
 <li><a href="https://github.com/somasis" rel="me">GitHub: @somasis</a></li>
-<li><a href="https://bsky.app/profile/somas.is" rel="me">Bluesky: @somas.is</a></li>
 <li><a href="https://steamcommunity.com/id/somasis" rel="me">Steam: somasis</a></li>
 <li><a href="https://last.fm/user/kyliesomasis" rel="me">Last.fm: kyliesomasis</a></li>
 <li><a href="https://listenbrainz.org/user/somasis" rel="me">ListenBrainz: somasis</a></li>
-<li><a href="https://www.openstreetmap.org/user/somasis" rel="me">OpenStreetMap: somasis</a></li>
+<link href="https://bsky.app/profile/somas.is" rel="me" />
 <link href="https://gitlab.com/somasis" rel="me" />
 <link href="https://codeberg.org/somasis" rel="me" />
 </ul>
