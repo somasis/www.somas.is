@@ -24,7 +24,7 @@
       package =
         with pkgs;
         prettier.override {
-          plugins = with nodePackages; [
+          plugins = [
             (
               prettier-plugin-go-template
               // {
