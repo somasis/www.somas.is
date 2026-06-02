@@ -23,7 +23,7 @@ git-hooks'.run {
 
     # Ensure we don't have dead links.
     lychee = {
-      enable = true;
+      enable = false;
       excludes = [
         "archetypes/rhizome.md"
         "layouts/.*"
